@@ -1,0 +1,3 @@
+# Don't exclude docs or data
+!docs/
+!*.json
