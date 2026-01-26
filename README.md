@@ -23,7 +23,6 @@ The main workflow consists of 7 steps:
 - **algo10_data_all.py** - Main data processing and enrichment
 - **publish_json_holds_all.py** - JSON publisher
 - **investing_functions.py** - Utility functions for data processing
-- **html_functions.py** - HTML generation utilities
 
 ### Web Files (html/)
 - **welcome.html** - Main stock screener interface (loads holds_json_data_all.json)

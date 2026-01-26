@@ -1,0 +1,42 @@
+Symbol,Name,Last Sale,Net Change,% Change,Market Cap,Country,IPO Year,Volume,Sector,Industry
+AAPL,Apple Inc. Common Stock,$175.01,-0.73,-0.415%,2736146942320.00,United States,1980,109208138,Technology,Computer Manufacturing
+ABBV,AbbVie Inc. Common Stock,$152.12,-1.52,-0.989%,268498900962.00,United States,2012,8861503,Health Care,Biotechnology: Pharmaceutical Preparations
+ADBE,Adobe Inc. Common Stock,$528.89,-23.27,-4.214%,242601843000.00,United States,1986,9769047,Technology,Computer Software: Prepackaged Software
+AMZN,Amazon.com Inc. Common Stock,$140.39,-4.33,-2.992%,1448509034250.00,United States,1997,102867207,Consumer Discretionary,Catalog/Specialty Distribution
+ASML,ASML Holding N.V. New York Registry Shares,$596.66,-25.24,-4.059%,235435717967.00,Netherlands,1995,2840885,Technology,Industrial Machinery/Components
+AVGO,Broadcom Inc. Common Stock,$851.68,-19.96,-2.29%,351518574047.00,United States,2009,5017063,Technology,Semiconductors
+BABA,Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share,$87.07,-0.93,-1.057%,223400045273.00,China,2014,10133251,Consumer Discretionary,Business Services
+BAC,Bank of America Corporation Common Stock,$28.84,-0.36,-1.233%,229173361501.00,United States,,61577169,Finance,Major Banks
+BHP,BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares),$58.45,0.05,0.086%,296014693308.00,Australia,,3046083,Basic Materials,Metal Mining
+COST,Costco Wholesale Corporation Common Stock,$556.36,-8.41,-1.489%,246550088889.00,United States,,2944912,Consumer Discretionary,Department/Specialty Retail Stores
+CRM,Salesforce Inc. Common Stock,$214.61,-4.17,-1.906%,208815530000.00,United States,2004,9930264,Technology,Computer Software: Prepackaged Software
+CSCO,Cisco Systems Inc. Common Stock (DE),$56.04,-0.33,-0.585%,227234230159.00,United States,1990,43939028,Telecommunications,Computer Communications Equipment
+CVX,Chevron Corporation Common Stock,$166.50,-0.73,-0.437%,310896328797.00,United States,,17415885,Energy,Integrated oil Companies
+GOOG,Alphabet Inc. Class C Capital Stock,$138.30,-0.69,-0.496%,1743824700000.00,United States,2004,48947720,Technology,Computer Software: Programming Data Processing
+GOOGL,Alphabet Inc. Class A Common Stock,$137.40,-0.70,-0.507%,1732476600000.00,United States,2004,38908679,Technology,Computer Software: Programming Data Processing
+HD,Home Depot Inc. (The) Common Stock,$321.40,-8.23,-2.497%,321421206615.00,United States,,7112567,Consumer Discretionary,RETAIL: Building Materials
+HSBC,HSBC Holdings plc. Common Stock,$39.27,-0.10,-0.254%,773344110000.00,United Kingdom,,2105387,Finance,Savings Institutions
+JNJ,Johnson & Johnson Common Stock,$161.45,-2.29,-1.399%,419603640951.00,United States,,13388889,Health Care,Biotechnology: Pharmaceutical Preparations
+JPM,JP Morgan Chase & Co. Common Stock,$148.81,-0.44,-0.295%,432454549475.00,United States,,19824379,Finance,Major Banks
+KO,Coca-Cola Company (The) Common Stock,$57.94,-0.52,-0.889%,250552538407.00,United States,,55694515,Consumer Staples,Beverages (Production/Distribution)
+LLY,Eli Lilly and Company Common Stock,$575.66,-15.95,-2.696%,546471259289.00,United States,,5938295,Health Care,Biotechnology: Pharmaceutical Preparations
+MA,Mastercard Incorporated Common Stock,$414.31,0.97,0.235%,392704811120.00,United States,2006,4753777,Consumer Discretionary,Business Services
+MCD,McDonald's Corporation Common Stock,$278.23,-6.53,-2.293%,202763855250.00,United States,,5720365,Consumer Discretionary,Restaurants
+META,Meta Platforms Inc. Class A Common Stock,$300.31,-11.41,-3.66%,769614057131.00,United States,2012,28107582,Technology,Computer Software: Programming Data Processing
+MRK,Merck & Company Inc. Common Stock (new),$107.52,-0.72,-0.665%,272834276091.00,United States,,9638955,Health Care,Biotechnology: Pharmaceutical Preparations
+MSFT,Microsoft Corporation Common Stock,$330.22,-8.48,-2.504%,2453456576279.00,United States,1986,37668432,Technology,Computer Software: Prepackaged Software
+NGG,National Grid Transco PLC National Grid PLC (NEW) American Depositary Shares,$64.23,-0.59,-0.91%,236882023860.00,United Kingdom,,488350,Utilities,Natural Gas Distribution
+NVDA,NVIDIA Corporation Common Stock,$439.00,-16.81,-3.688%,1084330000000.00,United States,1999,50576976,Technology,Semiconductors
+NVO,Novo Nordisk A/S Common Stock,$190.43,-2.44,-1.265%,852738241961.00,Denmark,,2254515,Health Care,Biotechnology: Biological Products (No Diagnostic Substances)
+NVS,Novartis AG Common Stock,$102.63,0.80,0.786%,217535477520.00,Switzerland,,1663706,Health Care,Biotechnology: Pharmaceutical Preparations
+ORCL,Oracle Corporation Common Stock,$113.91,0.25,0.22%,312093010110.00,United States,1986,23209460,Technology,Computer Software: Prepackaged Software
+PEP,PepsiCo Inc. Common Stock,$179.84,-1.39,-0.767%,247564257082.00,United States,,11656022,Consumer Staples,Beverages (Production/Distribution)
+PG,Procter & Gamble Company (The) Common Stock,$153.47,-1.30,-0.84%,361775780519.00,United States,,10255636,Consumer Discretionary,Package Goods/Cosmetics
+SHEL,Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares) ,$64.65,-0.69,-1.056%,432548001150.00,Netherlands,2022,4787441,Energy,Oil & Gas Production
+TM,Toyota Motor Corporation Common Stock,$189.20,1.22,0.649%,260685465137.00,Japan,,393568,Consumer Discretionary,Auto Manufacturing
+TSLA,Tesla Inc. Common Stock,$274.39,-1.65,-0.598%,870912341800.00,United States,2010,133459720,Consumer Discretionary,Auto Manufacturing
+TSM,Taiwan Semiconductor Manufacturing Company Ltd.,$89.25,-2.22,-2.427%,462857291211.00,Taiwan,1997,19924366,Technology,Semiconductors
+UNH,UnitedHealth Group Incorporated Common Stock (DE),$486.70,3.10,0.641%,450832711151.00,United States,,5327525,Health Care,Medical Specialities
+V,Visa Inc.,$241.07,-0.43,-0.178%,448833910067.00,United States,,13051331,Consumer Discretionary,Business Services
+WMT,Walmart Inc. Common Stock,$164.64,-0.61,-0.369%,443139072264.00,United States,,21266283,Consumer Discretionary,Department/Specialty Retail Stores
+XOM,Exxon Mobil Corporation Common Stock,$116.70,-1.82,-1.536%,467172598243.00,United States,,34545391,Energy,Integrated oil Companies
