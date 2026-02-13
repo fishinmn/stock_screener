@@ -1,42 +1,42 @@
 Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,roe,score
-LLY,Eli Lilly and Company,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,954089996288,16.06,1.546,0.724,53.900000000000006,83.03,52.09,32.47,1.26,0,0.59,480.40000000000003,30.990000000000002,0.8699999999999999,74.62,16
-UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,322714075136,0.74,0.823,0.745,12.2,19.7,18.56,20.06,0.52,0,2.48,-60.199999999999996,4.04,1.54,15.55,14
-TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,1736804794368,0.46,2.618,2.298,20.5,59.89,31.95,18.61,0.15,0,1.01,40.6,45.1,0.45999999999999996,27.29,14
-META,"Meta Platforms, Inc.",Communication Services,Internet Content & Information,internet-content-information,1660422848512,8.76,1.978,1.671,26.200000000000003,82.01,29.15,21.91,1.16,0,0.32,-82.6,30.89,1.52,34.14,14
-ADBE,Adobe Inc.,Technology,Software - Application,software-application,126027907072,5.3,0.996,0.877,10.5,89.27000000000001,18.02,11.41,0.51,0,0.0,17.2,30.0,2.96,61.34,14
-AMZN,"Amazon.com, Inc.",Consumer Cyclical,Internet Retail,internet-retail,2556672081920,3.7,1.009,0.76,13.4,50.05,33.78,30.43,1.6,0,0.0,36.4,11.06,0.76,20.72,12
-JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,530382225408,5.63,0.0,0.0,9.1,68.07,19.96,17.63,1.63,0,2.36,48.6,28.46,0.8500000000000001,19.68,12
-NVO,Novo Nordisk A/S,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,276651016192,0.88,0.776,0.533,5.1,83.44,16.96,17.95,0.14,0,2.77,-26.5,32.879999999999995,0.96,70.38,12
-MRK,"Merck & Co., Inc.",Healthcare,Drug Manufacturers - General,drug-manufacturers-general,270210203648,4.21,1.661,1.09,3.6999999999999997,77.85,14.31,17.5,0.9,0,3.14,87.0,29.630000000000003,1.46,36.96,12
-V,Visa Inc.,Financial Services,Credit Services,credit-services,629493858304,15.74,1.078,0.757,11.5,97.76,31.95,22.61,0.31,0,0.82,-1.4000000000000001,50.13999999999999,1.38,53.97,12
-TM,Toyota Motor Corporation,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,296311422976,0.01,1.255,1.059,8.200000000000001,17.95,10.14,14.34,0.0,0,2.53,66.5,9.379999999999999,0.06999999999999999,,12
-MA,Mastercard Incorporated,Financial Services,Credit Services,credit-services,474371162112,15.07,1.122,0.72,16.7,100.0,33.55,27.45,0.0,0,0.66,22.900000000000002,45.28,0.74,198.52,12
-PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,197941198848,2.14,0.912,0.676,2.7,54.269999999999996,27.49,16.9,0.95,0,3.94,-10.8,7.82,1.58,53.09,10
-BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,413556211712,0.41,1.456,0.841,4.8,41.17,23.1,19.5,0.23,0,0.61,-51.800000000000004,12.19,2.3,12.88,10
-BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,377685082112,3.52,0.0,0.0,13.200000000000001,0.0,13.57,10.43,3.05,0,2.17,20.9,28.4,1.24,,10
-BHP,BHP Group Limited,Basic Materials,Other Industrial Metals & Mining,other-industrial-metals-mining,173449592832,3.38,1.46,1.062,-8.200000000000001,82.21000000000001,19.07,15.45,3.66,0,3.26,-34.0,17.59,0.59,19.51,10
-NVS,Novartis AG,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,282331054080,5.01,0.881,0.583,9.0,76.25,20.13,15.94,1.08,0,2.71,28.7,25.53,0.31,27.11,10
-XOM,Exxon Mobil Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,575410470912,1.76,1.137,0.759,-5.1,31.22,19.62,19.5,1.85,0,3.05,-8.3,9.180000000000001,1.11,12.77,10
-SHEL,Shell plc,Energy,Oil & Gas Integrated,oil-gas-integrated,208848175104,0.78,1.352,0.874,-4.1000000000000005,25.44,15.05,11.49,0.81,0,3.88,32.4,5.4399999999999995,0.75,9.03,10
-PG,The Procter & Gamble Company,Consumer Defensive,Household & Personal Products,household-personal-products,351423856640,4.12,0.724,0.466,1.5,51.190000000000005,22.21,20.51,1.98,0,2.82,-5.4,19.3,0.8,31.18,10
-JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,810471915520,4.82,0.0,0.0,2.5,0.0,14.88,12.95,4.7,0,2.02,-3.6999999999999997,33.910000000000004,0.86,,10
-HSBC,HSBC Holdings plc,Financial Services,Banks - Diversified,banks-diversified,288181714944,4.97,0.0,0.0,4.8,0.0,17.67,10.06,4.73,0,2.38,-16.6,30.520000000000003,0.0,12.96,10
-CRM,"Salesforce, Inc.",Technology,Software - Application,software-application,217103597568,5.38,0.984,0.785,8.6,77.73,30.49,17.39,1.1,0,0.73,38.6,17.91,1.8399999999999999,10.13,10
-HD,"The Home Depot, Inc.",Consumer Cyclical,Home Improvement Retail,home-improvement-retail,382047420416,2.3,1.051,0.246,2.8000000000000003,33.36,26.18,25.51,1.49,0,2.4,-1.4000000000000001,8.77,1.1400000000000001,222.98,10
-CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,294712115200,5.11,0.927,0.718,7.5,64.85,28.8,16.67,1.66,0,2.2,6.0,17.9,1.54,21.73,10
-MCD,McDonald's Corporation,Consumer Cyclical,Restaurants,restaurants,220682158080,8.4,1.0,0.821,3.0,57.42,26.39,23.34,3.47,0,2.41,1.6,32.04,1.17,-216.62,8
-KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,313651265536,6.58,1.211,0.877,5.1,61.629999999999995,24.13,22.63,2.4,0,2.8,30.099999999999998,27.339999999999996,0.84,42.77,8
-NGG,National Grid plc,Utilities,Utilities - Regulated Electric,utilities-regulated-electric,80989200384,4.63,0.972,0.751,-11.3,100.0,20.22,13.73,5.16,0,3.83,-12.4,16.43,0.16,7.68,8
-AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,3665126490112,8.81,0.893,0.771,7.9,46.9,33.2,27.11,4.31,0,0.42,91.2,26.919999999999998,0.76,151.91,8
-CVX,Chevron Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,335911190528,1.78,1.152,0.72,-1.4000000000000001,40.6,23.48,23.5,1.81,0,4.1,-26.6,6.77,0.8999999999999999,11.59,8
-COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,discount-stores,436521402368,1.56,1.038,0.488,8.3,12.879999999999999,52.64,44.26,1.24,0,0.53,11.4,2.96,1.68,27.77,8
-GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,3971928031232,10.3,1.747,1.563,15.9,59.17,32.37,29.17,3.54,0,0.26,35.3,32.23,1.4200000000000002,30.8,8
-GOOG,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,3964752101376,10.29,1.747,1.563,15.9,59.17,32.45,29.2,3.53,0,0.26,35.3,32.23,0.0,30.8,8
-WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,938643816448,1.34,0.803,0.196,5.800000000000001,24.91,41.16,39.63,0.94,0,0.8,35.199999999999996,3.26,0.69,21.36,8
-ORCL,Oracle Corporation,Technology,Software - Infrastructure,software-infrastructure,509003726848,8.34,0.909,0.773,14.2,68.54,33.36,22.31,2.25,0,1.13,90.9,25.28,1.58,60.84,8
-MSFT,Microsoft Corporation,Technology,Software - Infrastructure,software-infrastructure,3463484014592,11.79,1.401,1.254,18.4,68.76,33.12,24.91,3.0,0,0.78,12.7,35.709999999999994,0.7100000000000001,29.65,8
-ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,387516727296,6.5,0.725,0.468,9.1,71.46000000000001,166.11,15.42,1.69,0,3.03,-88.7,4.0,1.1199999999999999,128.66,6
-AVGO,Broadcom Inc.,Technology,Semiconductors,semiconductors,1517444530176,23.75,1.705,1.53,16.400000000000002,77.33,67.1,22.51,4.5,0,0.81,188.1,36.199999999999996,1.32,28.45,6
-ASML,ASML Holding N.V.,Technology,Semiconductor Equipment & Materials,semiconductor-equipment-materials,539152678912,16.74,1.308,0.604,0.7000000000000001,52.71,48.77,43.3,7.86,0,0.53,3.8,29.38,0.33,40.98,6
-NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,4569201377280,24.42,4.468,3.605,62.5,70.05,46.57,24.49,2.74,0,0.02,66.7,53.010000000000005,1.0999999999999999,91.87,6
-TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1493492301824,15.62,2.066,1.486,11.600000000000001,17.01,311.85,206.66,11.46,0,0.0,-37.1,5.3100000000000005,2.33,9.78,2
+LLY,Eli Lilly and Company,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,930638659584,14.28,0.0,0.0,42.6,83.04,45.25,24.86,1.39,0,0.61,51.4,31.669999999999998,0.88,,16
+UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,257760886784,0.58,0.788,0.445,12.3,18.529999999999998,14.83,14.21,0.41,0,3.17,-99.8,2.69,1.5599999999999998,15.55,14
+TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,1908633763840,0.5,2.618,2.298,20.5,59.89,35.01,20.45,0.16,0,0.9,40.6,45.1,0.38,27.29,14
+META,"Meta Platforms, Inc.",Communication Services,Internet Content & Information,internet-content-information,1643730436096,8.18,2.599,2.423,23.799999999999997,82.0,27.69,18.22,1.12,0,0.31,10.7,30.080000000000002,1.48,27.83,14
+ADBE,Adobe Inc.,Technology,Software - Application,software-application,109882499072,4.62,0.996,0.877,10.5,89.27000000000001,15.73,9.95,0.44,0,0.0,17.2,30.0,2.91,61.34,14
+AMZN,"Amazon.com, Inc.",Consumer Cyclical,Internet Retail,internet-retail,2142690213888,2.99,1.051,0.844,13.600000000000001,50.29,27.88,21.49,1.28,0,0.0,5.0,10.83,0.74,18.89,12
+MRK,"Merck & Co., Inc.",Healthcare,Drug Manufacturers - General,drug-manufacturers-general,297948086272,4.58,0.0,0.0,5.0,77.08,16.39,12.23,1.0,0,2.85,-19.3,28.08,1.29,,12
+ORCL,Oracle Corporation,Technology,Software - Infrastructure,software-infrastructure,449823965184,7.37,0.909,0.773,14.2,68.54,29.36,19.8,1.99,0,1.27,90.9,25.28,2.03,60.84,12
+V,Visa Inc.,Financial Services,Credit Services,credit-services,625012637696,15.1,1.111,0.725,14.6,97.78,30.5,22.31,0.29,0,0.81,17.4,50.23,1.54,53.97,12
+TM,Toyota Motor Corporation,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,316883533824,0.01,1.26,1.035,8.6,17.599999999999998,13.17,15.34,0.0,0,2.36,-42.3,7.32,0.08,,12
+MA,Mastercard Incorporated,Financial Services,Credit Services,credit-services,471190110208,14.37,1.035,0.681,17.599999999999998,100.0,31.96,23.34,0.0,0,0.65,24.2,45.65,0.76,198.52,12
+NVS,Novartis AG,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,311688265728,5.5,1.117,0.82,2.1999999999999997,75.97,22.55,16.08,1.29,0,2.98,-11.600000000000001,24.67,0.27,30.31,10
+PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,228619272192,2.43,0.853,0.642,5.6000000000000005,54.459999999999994,27.87,18.31,1.05,0,3.36,67.5,8.77,1.73,40.38,10
+CRM,"Salesforce, Inc.",Technology,Software - Application,software-application,176615047168,4.38,0.984,0.785,8.6,77.73,24.77,14.14,0.89,0,0.9,38.6,17.91,1.94,10.13,10
+BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,378916962304,0.37,1.456,0.841,4.8,41.17,20.99,17.94,0.21,0,0.64,-51.800000000000004,12.19,2.04,12.88,10
+BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,383490555904,3.57,0.0,0.0,13.200000000000001,0.0,13.78,10.59,3.1,0,2.04,20.9,28.4,1.25,,10
+JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,823620403200,4.9,0.0,0.0,2.5,0.0,15.11,13.09,4.77,0,1.93,-3.6999999999999997,33.910000000000004,0.7000000000000001,,10
+SHEL,Shell plc,Energy,Oil & Gas Integrated,oil-gas-integrated,220944105472,0.81,1.3,0.908,-3.3000000000000003,27.27,13.04,11.01,0.83,0,3.71,370.40000000000003,6.52,0.63,,10
+JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,589265371136,6.26,0.0,0.0,9.1,68.07,22.17,19.5,1.82,0,2.16,48.6,28.46,0.8099999999999999,19.68,10
+NVO,Novo Nordisk A/S,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,217622315008,0.7,0.8,0.539,-7.6,82.41000000000001,13.34,13.95,0.76,0,3.81,-4.7,33.14,0.9400000000000001,52.79,10
+HSBC,HSBC Holdings plc,Financial Services,Banks - Diversified,banks-diversified,298034954240,5.14,0.0,0.0,4.8,0.0,18.28,10.27,4.89,0,2.24,-16.6,30.520000000000003,0.0,12.96,10
+HD,"The Home Depot, Inc.",Consumer Cyclical,Home Improvement Retail,home-improvement-retail,388319182848,2.34,1.051,0.246,2.8000000000000003,33.36,26.63,25.93,1.51,0,2.35,-1.4000000000000001,8.77,1.2,222.98,10
+CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,296332099584,5.14,0.927,0.718,7.5,64.85,28.96,16.66,1.67,0,1.92,6.0,17.9,1.3299999999999998,21.73,10
+AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,3846888226816,8.83,0.974,0.845,15.7,47.32,33.09,28.17,3.92,0,0.38,18.3,27.04,0.8,151.91,8
+BHP,BHP Group Limited,Basic Materials,Other Industrial Metals & Mining,other-industrial-metals-mining,186936115200,3.65,1.46,1.062,-8.200000000000001,82.21000000000001,20.5,14.91,3.95,0,2.93,-34.0,17.59,0.7100000000000001,19.51,8
+MCD,McDonald's Corporation,Consumer Cyclical,Restaurants,restaurants,236945211392,9.02,1.0,0.821,3.0,57.42,28.31,23.13,3.73,0,2.3,1.6,32.04,1.13,-216.62,8
+PG,The Procter & Gamble Company,Consumer Defensive,Household & Personal Products,household-personal-products,377309659136,4.43,0.724,0.466,1.5,51.190000000000005,23.88,21.99,2.13,0,2.64,-5.4,19.3,1.01,31.18,8
+NGG,National Grid plc,Utilities,Utilities - Regulated Electric,utilities-regulated-electric,90641555456,5.18,0.972,0.751,-11.3,100.0,22.4,15.14,5.77,0,3.44,-12.4,16.43,0.2,7.68,8
+KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,339741081600,7.09,1.459,0.885,2.4,61.629999999999995,25.98,22.77,2.65,0,2.6,3.5999999999999996,27.339999999999996,0.79,,8
+CVX,Chevron Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,364612124672,1.96,0.0,0.0,-6.0,41.83,27.51,19.9,2.08,0,3.83,-23.799999999999997,6.61,1.0699999999999998,,8
+COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,discount-stores,443451572224,1.58,1.038,0.488,8.3,12.879999999999999,53.47,44.88,1.26,0,0.53,11.4,2.96,1.6099999999999999,27.77,8
+GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,3737973161984,9.28,2.005,1.847,18.0,59.650000000000006,28.56,23.15,3.07,0,0.27,31.1,32.81,1.31,31.83,8
+GOOG,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,3742449008640,9.29,2.005,1.847,18.0,59.650000000000006,28.65,23.17,3.07,0,0.27,31.1,32.81,0.0,31.83,8
+XOM,Exxon Mobil Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,632237457408,1.95,1.153,0.764,-1.3,30.020000000000003,22.38,17.94,1.98,0,2.65,-11.0,8.9,1.37,12.77,8
+WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,1065491824640,1.52,0.803,0.196,5.800000000000001,24.91,46.73,45.1,1.07,0,0.73,35.199999999999996,3.26,1.2,21.36,8
+MSFT,Microsoft Corporation,Technology,Software - Infrastructure,software-infrastructure,2986626777088,9.78,1.386,1.239,16.7,68.58999999999999,25.16,21.32,2.56,0,0.9,59.8,39.04,0.79,29.65,8
+ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,402265571328,6.58,0.0,0.0,10.0,71.64,96.44,14.24,1.68,0,3.01,0.0,6.909999999999999,1.11,,6
+AVGO,Broadcom Inc.,Technology,Semiconductors,semiconductors,1570167586816,24.58,1.705,1.53,16.400000000000002,77.33,69.57,22.96,4.66,0,0.76,188.1,36.199999999999996,1.3,28.45,6
+ASML,ASML Holding N.V.,Technology,Semiconductor Equipment & Materials,semiconductor-equipment-materials,546073313280,16.72,1.262,0.721,4.9,52.83,47.8,31.87,7.5,0,0.61,7.199999999999999,29.42,0.35000000000000003,49.0,6
+NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,4551428538368,24.32,4.468,3.605,62.5,70.05,46.16,24.21,2.73,0,0.02,66.7,53.010000000000005,1.0999999999999999,91.87,6
+TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1565026811904,16.5,2.164,1.538,-3.1,18.029999999999998,389.79,148.72,17.02,0,0.0,-60.6,4.0,1.9300000000000002,4.62,2
