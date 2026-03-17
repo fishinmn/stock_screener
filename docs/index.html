@@ -895,6 +895,8 @@
                 case 'marketCap': return parseFloat(stock.marketCap ?? stock.marketCapRaw ?? stock.market_cap ?? stock['marketCap'] ?? stock.MarketCap ?? NaN);
                 case 'ps': return parseFloat(stock.priceToSalesTrailing12Months ?? stock['priceToSalesTrailing12Months'] ?? stock.ps ?? stock.PS ?? NaN);
                 case 'ps_adj': return parseFloat(stock.PS_adj ?? stock.PS_Adjusted ?? stock['PS(adj)'] ?? stock.ps_adj ?? stock.PSadj ?? NaN);
+                case 'ps_adj_prior_run': return parseFloat(stock.PS_adj_prior_run ?? stock['PS_adj_prior_run'] ?? NaN);
+                case 'change_in_PS_adj': return parseFloat(stock.change_in_PS_adj ?? stock['change_in_PS_adj'] ?? NaN);
                 case 'ps_ratio': return parseFloat(stock.PS_ratio ?? stock.ps_ratio ?? stock.PSRatio ?? stock.psRatio ?? NaN);
                 case 'revenueGrowth': return parseFloat(stock.revenueGrowth ?? stock['Revenue Growth'] ?? stock.Revenue ?? NaN);
                 case 'trailingPE': return parseFloat(stock.trailingPE ?? stock['PE (TTM)'] ?? stock.pe ?? stock.PE ?? NaN);
@@ -1003,6 +1005,8 @@
                         <th class="metric-col" onclick="sortBy('marketCap')">Market Cap ${sortKey==='marketCap' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps')">P/S ${sortKey==='ps' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps_adj')">PS_adj ${sortKey==='ps_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
+                        <th class="metric-col" onclick="sortBy('ps_adj_prior_run')">PS_adj Prior ${sortKey==='ps_adj_prior_run' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
+                        <th class="metric-col" onclick="sortBy('change_in_PS_adj')">Change in PS_adj ${sortKey==='change_in_PS_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps_ratio')">PS_Ratio ${sortKey==='ps_ratio' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('revenueGrowth')">Revenue Growth ${sortKey==='revenueGrowth' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('trailingPE')">Trailing PE ${sortKey==='trailingPE' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
@@ -1036,6 +1040,8 @@
                     const marketCap = getField(stock, 'marketCap');
                     const ps = getField(stock, 'ps');
                     const ps_adj = getField(stock, 'ps_adj');
+                    const ps_adj_prior = getField(stock, 'ps_adj_prior_run');
+                    const change_ps = getField(stock, 'change_in_PS_adj');
                     const ps_ratio = getField(stock, 'ps_ratio');
                     const revenue = getField(stock, 'revenueGrowth');
                     const trailing = getField(stock, 'trailingPE');
@@ -1050,6 +1056,8 @@
                                 <td class="marketcap-cell">${formatMarketCap(marketCap)}</td>
                                 <td class="pe-cell">${formatNumber(ps,2)}</td>
                                 <td class="pe-cell">${Number.isFinite(ps_adj) ? ps_adj : ''}</td>
+                                <td class="pe-cell">${Number.isFinite(ps_adj_prior) ? ps_adj_prior : ''}</td>
+                                <td class="pe-cell">${Number.isFinite(change_ps) ? change_ps : ''}</td>
                                 <td class="pe-cell">${formatNumber(ps_ratio,2)}</td>
                                 <td class="pe-cell">${formatPercent(revenue,2)}</td>
                                 <td class="green-metric">${Number.isFinite(trailing) ? trailing : ''}</td>
@@ -1059,7 +1067,7 @@
                             </tr>
                     `;
                 }).join('');
-                tbody.innerHTML = rows || `<tr><td colspan="11" class="loading">No matching stocks</td></tr>`;
+                tbody.innerHTML = rows || `<tr><td colspan="13" class="loading">No matching stocks</td></tr>`;
                 return;
             }
 

@@ -1,48 +1,36 @@
 import json
+import pandas as pd
 from pathlib import Path
 
 # Paths
 base_path = Path(__file__).parent
-new_json_path = base_path / "data" / "holds_json_data_all.json"
 old_json_path = base_path / "docs" / "holds_json_data_all.json"
-output_path = base_path / "data" / "top_ps_adj_decreases.json"
-
-# Load new data
-with open(new_json_path, 'r') as f:
-    new_data = json.load(f)
+csv_path = base_path / "data" / "algo10_data_all.csv"
 
 # Load old data
 with open(old_json_path, 'r') as f:
     old_data = json.load(f)
 
-# Create dicts keyed by Symbol
-new_dict = {item['Symbol']: item for item in new_data}
+# Create dict keyed by Symbol
 old_dict = {item['Symbol']: item for item in old_data}
 
-# Collect decreases
-decreases = []
-for symbol, new_item in new_dict.items():
+# Load CSV
+df = pd.read_csv(csv_path)
+
+# Add new columns
+df['PS_adj_prior_run'] = None
+df['change_in_PS_adj'] = None
+
+for idx, row in df.iterrows():
+    symbol = row['Symbol']
     if symbol in old_dict:
-        new_ps = new_item.get('PS_adj')
         old_ps = old_dict[symbol].get('PS_adj')
-        if new_ps is not None and old_ps is not None and new_ps < 1:
-            decrease = old_ps - new_ps
-            if decrease > 0:
-                decreases.append({
-                    'Symbol': symbol,
-                    'old_PS_adj': old_ps,
-                    'new_PS_adj': new_ps,
-                    'decrease': decrease
-                })
+        new_ps = row['PS_adj']
+        if old_ps is not None and new_ps is not None:
+            df.at[idx, 'PS_adj_prior_run'] = old_ps
+            df.at[idx, 'change_in_PS_adj'] = new_ps - old_ps
 
-# Sort by decrease descending
-decreases.sort(key=lambda x: x['decrease'], reverse=True)
+# Save updated CSV
+df.to_csv(csv_path, index=False)
 
-# Take top 20
-top_20 = decreases[:20]
-
-# Save to JSON
-with open(output_path, 'w') as f:
-    json.dump(top_20, f, indent=4)
-
-print(f"Top 20 PS_adj decreases saved to {output_path}")
+print(f"Updated {csv_path} with PS_adj_prior_run and change_in_PS_adj columns")
