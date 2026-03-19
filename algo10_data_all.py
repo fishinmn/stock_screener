@@ -37,7 +37,7 @@ df = data[columns]
 print(df.shape)
 
 def margin_exp(PS_adj, PS=None, revenueGrowth=None):
-    if pd.isna(PS_adj) or PS is None or revenueGrowth is None:
+    if pd.isna(PS_adj) or pd.isna(PS) or pd.isna(revenueGrowth):
         return ''
     if PS_adj < 0.5 and PS_adj != 0.0 and (PS_adj <= PS) and (revenueGrowth > 0):
         return '🚀🚀🚀'
@@ -63,17 +63,23 @@ def earnings(trailingPE, forwardPE):
 
 for idx, row in df.iterrows():
     print(row['Symbol'])
-    df.at[idx, 'margin exp.'] = margin_exp(row['PS_adj'], row.get('priceToSalesTrailing12Months'), row.get('revenueGrowth'))
+    df.at[idx, 'margin exp.'] = margin_exp(row['PS_adj'], row['priceToSalesTrailing12Months'], row['revenueGrowth'])
     print(row['Symbol'])
-    df.at[idx, 'earnings'] = earnings(row.get('trailingPE'), row.get('forwardPE'))
+    df.at[idx, 'earnings'] = earnings(row['trailingPE'], row['forwardPE'])
 
 
 df['company'] = df['longName']
 #df['summary'] = df['Symbol'].apply(lambda x: get_summary(x))
+
 df['ask_grok'] = df.apply(
-    lambda row: f"https://www.google.com/search?q=For%20${row['Symbol']}%20({row['company']})%20show%20the%20revenue%20YoY%20and%20the%20PS%20ratio%20and%20GM%20percentage%20then%20multiply%20PS%20x%201%20minus%20RevYoYPct%20x%201%20minus%20GM_percent%20and%20call%20it%20PS_adj.",
+    lambda row: f"https://www.google.com/search?q=For%20${row['Symbol']}%20({row['longName']})%20show%20the%20revenue%20YoY%20and%20the%20PS%20ratio%20and%20GM%20percentage%20then%20multiply%20PS%20x%201%20minus%20RevYoYPct%20x%201%20minus%20GM_percent%20and%20call%20it%20PS_adj.%20Also%20calculate%20and%20compare%20Price%20to%20Sales%20ratio%20to%20EV%20to%20sales%20ratio%20and%20show%20red%20flag%20if%20too%20much%20debt.%20Also%20check%20technical%20levels%20using%20RSI%20and%20if%20price%20is%20down%20for%20good%20buying%20opportunity.%20Also%20verify%20revenue%20growth%20is%20solid%20trend%20over%20past%20quarters%20and%20years.%20I%20want%20it%20to%20format%20the%20output%20with%204%20basic%20checks.%201)%20Green%20check%20mark%20if%20PS_adj%20({row['PS_adj']})%20is%20valid%202)%20verify%20EV/Sales%20does%20show%20issue%203)%20Verify%20good%20time%20to%20buy%20based%20on%20technical%20indicators%204)%20consistent%20revenue%20growth%20QoQ%20and%20YoY",
     axis=1
 )
+
+# df['ask_grok'] = df.apply(
+#     lambda row: f"https://www.google.com/search?q=For%20${row['Symbol']}%20({row['longName']})%20show%20the%20revenue%20YoY%20and%20the%20PS%20ratio%20and%20GM%20percentage%20then%20multiply%20PS%20x%201%20minus%20RevYoYPct%20x%201%20minus%20GM_percent%20and%20call%20it%20PS_adj.%20Also%20calculate%20and%20compare%20Price%20to%20Sales%20ratio%20to%20EV%20to%20sales%20ratio%20and%20show%20red%20flag%20if%20too%20much%20debt.%20Also%20check%20technical%20levels%20using%20RSI%20and%20if%20price%20is%20down%20for%20good%20buying%20opportunity.%20Also%20verify%20revenue%20growth%20is%20solid%20trend%20over%20past%20quarters%20and%20years.",
+#     axis=1
+# )
 df['stock_analysis_link'] = df.apply(
     lambda row: f"https://stockanalysis.com/stocks/{row['Symbol']}/revenue",
     axis=1
@@ -106,7 +112,6 @@ output_columns = columns + ['PS_ratio','company', 'view_x', 'share_x', 'margin e
 
 #remove rows where "company" == asdfsdfsdfsdf   
 df = df[df['company'] != 'asdfsdfsdfsdf']
-
 
 df['PS_ratio'] = df['priceToSalesTrailing12Months'] / df['PS_adj']
 
