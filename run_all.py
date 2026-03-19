@@ -5,7 +5,7 @@ from pathlib import Path
 scripts = [
 #    "fundamentals_screener_all_caps.py",
 #    "merge_fundamentals_only.py",
-#    "algo10_data_all.py",
+    "algo10_data_all.py",
     "compare_ps_adj_decreases.py",
     "publish_json_holds_all.py"
 ]
