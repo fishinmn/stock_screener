@@ -712,6 +712,12 @@
                                 <div class="etf-name">Pure Growth, no PE • Rev &gt; 3%</div>
                             </div>
                         </div>
+                        <div class="etf-item" id="sp500Menu" onclick="selectSP500()">
+                            <div class="etf-info">
+                                <div class="etf-ticker">SP500</div>
+                                <div class="etf-name">S&P 500 Companies</div>
+                            </div>
+                        </div>
                     </div>
                 `;
             industries.forEach(ind => {
@@ -737,7 +743,7 @@
             // Find the correct sidebar item and set it active
             const items = Array.from(document.querySelectorAll('.etf-item'));
             const idx = uniqueIndustries.indexOf(industry);
-            if (idx >= 0) items[idx + 2].classList.add('active'); // +2 for Show All and Pure Growth
+            if (idx >= 0) items[idx + 4].classList.add('active'); // +4 for Show All, GARP, Pure Growth, SP500
             // Filter by industryKey (case-insensitive)
             filteredData = stockData.filter(s => (s.industryKey || '').toUpperCase() === industry);
             // Sort filteredData by rating_sortable (descending)
@@ -856,6 +862,24 @@
             
             // Default sort for pure growth view: revenue growth (descending)
             sortKey = 'revenueGrowth';
+            sortDir = 'desc';
+            renderTable();
+            closeSidebar();
+        }
+
+        function selectSP500() {
+            rowsToShow = 500;
+            currentSection = 'SP500';
+            document.getElementById('sectionTitle').textContent = 'S&P 500 Companies';
+            document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
+            const sp500 = document.getElementById('sp500Menu');
+            if (sp500) sp500.classList.add('active');
+
+            // Filter for SP500 companies
+            filteredData = stockData.filter(s => s.SP500 === 'Yes');
+            
+            // Default sort for SP500 view: market cap (descending)
+            sortKey = 'marketCap';
             sortDir = 'desc';
             renderTable();
             closeSidebar();
@@ -997,7 +1021,7 @@
             // Build/replace the table header dynamically depending on current view
             const table = document.getElementById('stockTable');
             let theadHtml = '';
-            if (currentSection === '🚀🚀🚀') {
+            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500') {
                 theadHtml = `
                     <tr>
                         <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
@@ -1026,8 +1050,8 @@
             }
             if (table && table.querySelector('thead')) table.querySelector('thead').innerHTML = theadHtml;
 
-            // If the current view is the triple-rocket view, render a flat list with extra columns
-            if (currentSection === '🚀🚀🚀') {
+            // If the current view is the triple-rocket view or SP500 view, render a flat list with extra columns
+            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500') {
                 const flatList = rowsToDisplay.slice(0, rowsToShow);
                 if (showMoreBtn) showMoreBtn.style.display = 'none';
 

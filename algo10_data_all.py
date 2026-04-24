@@ -36,6 +36,14 @@ df = data[columns]
 
 print(df.shape)
 
+# Load SP500 data
+sp500_filepath = os.path.join(dir_path, 'data', 'sp500.csv')
+sp500_df = pd.read_csv(sp500_filepath)
+sp500_tickers = set(sp500_df['Ticker'].str.strip('"'))
+
+# Add SP500 column
+df['SP500'] = df['Symbol'].apply(lambda x: 'Yes' if x in sp500_tickers else 'No')
+
 def margin_exp(PS_adj, PS=None, revenueGrowth=None):
     if pd.isna(PS_adj) or pd.isna(PS) or pd.isna(revenueGrowth):
         return ''
@@ -105,7 +113,7 @@ except Exception as error:
 print (df['rating'])
 df = df.drop_duplicates(subset=['Symbol'])
 # Combine all columns from the original 'columns' list and the newly created columns
-output_columns = columns + ['PS_ratio','company', 'view_x', 'share_x', 'margin exp.', 'earnings', 'rating', 'rating_sortable', 'ask_grok', 'stock_analysis_link']
+output_columns = columns + ['PS_ratio','company', 'SP500', 'view_x', 'share_x', 'margin exp.', 'earnings', 'rating', 'rating_sortable', 'ask_grok', 'stock_analysis_link']
 
 #remove rows where "company" == asdfsdfsdfsdf   
 df = df[df['company'] != 'asdfsdfsdfsdf']
