@@ -1021,7 +1021,7 @@
             // Build/replace the table header dynamically depending on current view
             const table = document.getElementById('stockTable');
             let theadHtml = '';
-            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500') {
+            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500' || currentSection === 'Pure Growth, no PE') {
                 theadHtml = `
                     <tr>
                         <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
@@ -1050,8 +1050,8 @@
             }
             if (table && table.querySelector('thead')) table.querySelector('thead').innerHTML = theadHtml;
 
-            // If the current view is the triple-rocket view or SP500 view, render a flat list with extra columns
-            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500') {
+            // If the current view is the triple-rocket view, SP500 view, or Pure Growth view, render a flat list with extra columns
+            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500' || currentSection === 'Pure Growth, no PE') {
                 const flatList = rowsToDisplay.slice(0, rowsToShow);
                 if (showMoreBtn) showMoreBtn.style.display = 'none';
 
