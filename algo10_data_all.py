@@ -85,6 +85,7 @@ df['ask_grok'] = df.apply(
         f"For ${row['Symbol']} ({row['longName']}) I want it to format the output with 6 basic checks. "
         f"1) Verify PS_adj ({row['PS_adj']}) is correct by checking Revenue Growth ({row['revenueGrowth']}%), "
         f"Gross Margin % ({row['grossMargins']}%), and Price to Sales ({row['priceToSalesTrailing12Months']}). "
+        f"Note that PS_adj = PS * (1 - GM%) * (1 - YoYRev%growth). "
         f"2) Check sequential Quarter over Quarter growth to see if there is any slippage occurring in the near term. "
         f"3) Check the Rule of 40: Revenue Growth + Operating Margin should be above 40. "
         f"4) Check P/FCF (Price to Free Cash Flow) and compare to others in its peer group in the {row['industryKey']} industry. "
@@ -93,7 +94,6 @@ df['ask_grok'] = df.apply(
     ),
     axis=1
 )
-
 df['stock_analysis_link'] = df.apply(
     lambda row: f"https://stockanalysis.com/stocks/{row['Symbol']}/revenue",
     axis=1
