@@ -588,19 +588,6 @@
             white-space: nowrap;
         }
         .upload-toast.show { opacity: 1; }
-        .share-link-btn {
-            width: 100%;
-            background: #faf5ff;
-            color: #6b46c1;
-            border: 1px solid #e9d8fd;
-            border-radius: 7px;
-            padding: 9px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .share-link-btn:hover { background: #e9d8fd; }
         #showMoreContainer { text-align: center; margin: 20px 0 8px; }
         #showMoreBtn {
             display: none;
@@ -768,7 +755,6 @@
     </div>
     <div class="basket-footer">
         <button class="download-json-btn" onclick="downloadBasketJSON()">⬇ Download as JSON</button>
-        <button class="share-link-btn" onclick="copyShareLink()">🔗 Copy Shareable Link</button>
         <button class="upload-csv-btn" onclick="document.getElementById('csvUploadInput').click()">⬆ Import from Portfolio CSV</button>
         <input type="file" id="csvUploadInput" accept=".csv" style="display:none;" onchange="handleCSVUpload(event)">
         <button class="clear-basket-btn" onclick="clearBasket()">Clear Basket</button>
@@ -1462,38 +1448,10 @@ function onModalOverlayClick(e) {
     if (e.target === document.getElementById('customModal')) closeModal();
 }
 
-function copyShareLink() {
-    if (basket.length === 0) { showToast('⚠️ Basket is empty — nothing to share'); return; }
-    const url = new URL(window.location.href);
-    url.searchParams.set('basket', basket.join(','));
-    navigator.clipboard.writeText(url.toString())
-        .then(() => showToast('🔗 Link copied — paste it on any device!'))
-        .catch(() => {
-            // Fallback: prompt so user can copy manually
-            window.prompt('Copy this link:', url.toString());
-        });
-}
-
-function loadBasketFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    const raw = params.get('basket');
-    if (!raw) return;
-    const tickerRe = /^[A-Z]{1,5}$/;
-    const tickers = raw.split(',').map(t => t.trim().toUpperCase()).filter(t => tickerRe.test(t));
-    if (!tickers.length) return;
-    let added = 0;
-    tickers.forEach(t => { if (!basket.includes(t)) { basket.push(t); added++; } });
-    if (added > 0) {
-        saveBasket();
-        showToast(`🔗 Loaded ${added} ticker${added !== 1 ? 's' : ''} from shared link`);
-    }
-}
-
 // ═══════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════
 loadBasket();
-loadBasketFromURL();
 renderBasket();
 updateBasketCount();
 

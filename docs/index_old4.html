@@ -557,50 +557,7 @@
         .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
         .footer a { color: #2d5a2d; text-decoration: underline; font-weight: 600; }
 
-        .upload-csv-btn {
-            width: 100%;
-            background: #ebf4ff;
-            color: #2b6cb0;
-            border: 1px solid #bee3f8;
-            border-radius: 7px;
-            padding: 9px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .upload-csv-btn:hover { background: #bee3f8; }
-        .upload-toast {
-            position: fixed;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #2d5a2d;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            z-index: 3000;
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none;
-            white-space: nowrap;
-        }
-        .upload-toast.show { opacity: 1; }
-        .share-link-btn {
-            width: 100%;
-            background: #faf5ff;
-            color: #6b46c1;
-            border: 1px solid #e9d8fd;
-            border-radius: 7px;
-            padding: 9px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .share-link-btn:hover { background: #e9d8fd; }
+        /* ── SHOW MORE ── */
         #showMoreContainer { text-align: center; margin: 20px 0 8px; }
         #showMoreBtn {
             display: none;
@@ -768,9 +725,6 @@
     </div>
     <div class="basket-footer">
         <button class="download-json-btn" onclick="downloadBasketJSON()">⬇ Download as JSON</button>
-        <button class="share-link-btn" onclick="copyShareLink()">🔗 Copy Shareable Link</button>
-        <button class="upload-csv-btn" onclick="document.getElementById('csvUploadInput').click()">⬆ Import from Portfolio CSV</button>
-        <input type="file" id="csvUploadInput" accept=".csv" style="display:none;" onchange="handleCSVUpload(event)">
         <button class="clear-basket-btn" onclick="clearBasket()">Clear Basket</button>
     </div>
 </div>
@@ -816,89 +770,7 @@
     </div>
 </footer>
 
-<!-- TOAST -->
-<div class="upload-toast" id="uploadToast"></div>
-
 <script>
-function showToast(msg) {
-    const t = document.getElementById('uploadToast');
-    t.textContent = msg;
-    t.classList.add('show');
-    setTimeout(() => t.classList.remove('show'), 3000);
-}
-
-function handleCSVUpload(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-    // Reset input so the same file can be re-uploaded
-    event.target.value = '';
-
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        const text = e.target.result.replace(/^\uFEFF/, ''); // strip BOM
-        const lines = text.split(/\r?\n/);
-
-        // Find header row — the one that contains "Symbol" as a column
-        let headerIdx = -1;
-        let symbolCol = -1;
-        for (let i = 0; i < Math.min(lines.length, 10); i++) {
-            const cols = parseCSVLine(lines[i]);
-            const idx = cols.findIndex(c => c.trim().toLowerCase() === 'symbol');
-            if (idx !== -1) { headerIdx = i; symbolCol = idx; break; }
-        }
-
-        if (headerIdx === -1 || symbolCol === -1) {
-            showToast('⚠️ Could not find "Symbol" column');
-            return;
-        }
-
-        // Valid ticker: 1–5 uppercase letters only (no numbers, no dashes, no spaces)
-        const tickerRe = /^[A-Z]{1,5}$/;
-        const imported = new Set();
-
-        for (let i = headerIdx + 1; i < lines.length; i++) {
-            const line = lines[i].trim();
-            if (!line) continue;
-            // Stop at disclaimer text lines
-            if (line.startsWith('"The data') || line.startsWith('"Brokerage') || line.startsWith('"Fidelity') || line.startsWith('"Date')) break;
-
-            const cols = parseCSVLine(line);
-            const raw = (cols[symbolCol] || '').trim().replace(/^"|"$/g, '');
-            if (tickerRe.test(raw)) imported.add(raw);
-        }
-
-        if (imported.size === 0) {
-            showToast('⚠️ No valid tickers found in CSV');
-            return;
-        }
-
-        // Merge with existing basket (no duplicates)
-        let added = 0;
-        imported.forEach(t => {
-            if (!basket.includes(t)) { basket.push(t); added++; }
-        });
-        saveBasket();
-        // Refresh card states
-        render();
-        showToast(`✓ Imported ${added} new ticker${added !== 1 ? 's' : ''} (${imported.size} in file)`);
-    };
-    reader.readAsText(file);
-}
-
-function parseCSVLine(line) {
-    // Handles quoted fields with commas inside
-    const result = [];
-    let cur = '', inQuote = false;
-    for (let i = 0; i < line.length; i++) {
-        const ch = line[i];
-        if (ch === '"') { inQuote = !inQuote; }
-        else if (ch === ',' && !inQuote) { result.push(cur); cur = ''; }
-        else { cur += ch; }
-    }
-    result.push(cur);
-    return result;
-}
-
 // ═══════════════════════════════════════
 // BASKET — sessionStorage backed
 // ═══════════════════════════════════════
@@ -1462,38 +1334,10 @@ function onModalOverlayClick(e) {
     if (e.target === document.getElementById('customModal')) closeModal();
 }
 
-function copyShareLink() {
-    if (basket.length === 0) { showToast('⚠️ Basket is empty — nothing to share'); return; }
-    const url = new URL(window.location.href);
-    url.searchParams.set('basket', basket.join(','));
-    navigator.clipboard.writeText(url.toString())
-        .then(() => showToast('🔗 Link copied — paste it on any device!'))
-        .catch(() => {
-            // Fallback: prompt so user can copy manually
-            window.prompt('Copy this link:', url.toString());
-        });
-}
-
-function loadBasketFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    const raw = params.get('basket');
-    if (!raw) return;
-    const tickerRe = /^[A-Z]{1,5}$/;
-    const tickers = raw.split(',').map(t => t.trim().toUpperCase()).filter(t => tickerRe.test(t));
-    if (!tickers.length) return;
-    let added = 0;
-    tickers.forEach(t => { if (!basket.includes(t)) { basket.push(t); added++; } });
-    if (added > 0) {
-        saveBasket();
-        showToast(`🔗 Loaded ${added} ticker${added !== 1 ? 's' : ''} from shared link`);
-    }
-}
-
 // ═══════════════════════════════════════
 // INIT
 // ═══════════════════════════════════════
 loadBasket();
-loadBasketFromURL();
 renderBasket();
 updateBasketCount();
 
