@@ -566,67 +566,6 @@
         }
         #showMoreBtn:hover { background: #255025; }
 
-        /* ── SORT CONTROLS ── */
-        .sort-controls {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
-        .sort-label {
-            font-size: 0.72rem;
-            color: #718096;
-            font-weight: 600;
-            white-space: nowrap;
-        }
-        .sort-pill {
-            background: #edf2f7;
-            color: #4a5568;
-            border: 1px solid #e2e8f0;
-            border-radius: 20px;
-            padding: 3px 11px;
-            font-size: 0.72rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.15s;
-            white-space: nowrap;
-        }
-        .sort-pill:hover { background: #e2e8f0; }
-        .sort-pill.active {
-            background: #2d5a2d;
-            color: white;
-            border-color: #2d5a2d;
-        }
-
-        /* ── QUICK-ADD BUTTON ON CARD ── */
-        .card-quick-add {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            width: 22px;
-            height: 22px;
-            border-radius: 50%;
-            border: 1.5px solid #c6e6c6;
-            background: white;
-            color: #2d5a2d;
-            font-size: 0.9rem;
-            font-weight: 700;
-            line-height: 1;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background 0.15s, border-color 0.15s;
-            z-index: 2;
-        }
-        .card-quick-add:hover { background: #f0fff4; border-color: #48bb78; }
-        .stock-card.in-basket .card-quick-add {
-            background: #2d5a2d;
-            color: white;
-            border-color: #2d5a2d;
-            font-size: 0.75rem;
-        }
-
         /* ── GROUP LABEL ── */
         .group-label {
             grid-column: 1 / -1;
@@ -727,15 +666,7 @@
 <div class="main">
     <div class="section-header">
         <span class="section-title" id="sectionTitle">All Stocks</span>
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
-            <span class="stock-count" id="stockCount"></span>
-            <div class="sort-controls">
-                <span class="sort-label">Sort:</span>
-                <button class="sort-pill active" id="sortPsAdj" onclick="setSortKey('ps_adj','asc')">PS_adj ▲</button>
-                <button class="sort-pill" id="sortMcap" onclick="setSortKey('marketCap','desc')">Mkt Cap</button>
-                <button class="sort-pill" id="sortRev" onclick="setSortKey('revenueGrowth','desc')">Rev YoY%</button>
-            </div>
-        </div>
+        <span class="stock-count" id="stockCount"></span>
     </div>
     <div class="cards-grid" id="cardsGrid">
         <div class="loading-msg">Loading stock data…</div>
@@ -891,7 +822,7 @@ let filteredData = [];
 let currentSection = 'All Stocks';
 let uniqueIndustries = [];
 let rowsToShow = 3000;
-let sortKey = 'ps_adj';
+let sortKey = null;
 let sortDir = 'asc';
 
 const fetchWithTimeout = (url, timeout = 15000) => Promise.race([
@@ -976,8 +907,7 @@ function selectVeryHighRevGrowth() {
         if (trlInv && fwdOk) return true;
         return false;
     });
-    sortKey = 'ps_adj'; sortDir = 'asc';
-    updateSortPills();
+    sortKey = 'marketCap'; sortDir = 'desc';
     render(); closeSidebar();
 }
 
@@ -990,8 +920,7 @@ function selectPureGrowthNoPE() {
         const trailing = pf(s.trailingPE ?? s.pe ?? s.PE ?? NaN);
         return !isF(trailing) || trailing < 0;
     });
-    sortKey = 'ps_adj'; sortDir = 'asc';
-    updateSortPills();
+    sortKey = 'revenueGrowth'; sortDir = 'desc';
     render(); closeSidebar();
 }
 
@@ -999,8 +928,7 @@ function selectSP500() {
     rowsToShow = 500; currentSection = 'SP500';
     setActiveSidebarItem('sp500Menu');
     filteredData = stockData.filter(s => s.SP500 === 'Yes');
-    sortKey = 'ps_adj'; sortDir = 'asc';
-    updateSortPills();
+    sortKey = 'marketCap'; sortDir = 'desc';
     render(); closeSidebar();
 }
 
@@ -1012,37 +940,13 @@ function selectIndustry(industry) {
     render(); closeSidebar();
 }
 
-function setSortKey(key, defaultDir) {
-    if (sortKey === key) {
-        sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-    } else {
-        sortKey = key;
-        sortDir = defaultDir || 'asc';
-    }
-    updateSortPills();
-    render();
-}
-
-function updateSortPills() {
-    const pills = { ps_adj: 'sortPsAdj', marketCap: 'sortMcap', revenueGrowth: 'sortRev' };
-    const labels = { ps_adj: 'PS_adj', marketCap: 'Mkt Cap', revenueGrowth: 'Rev YoY%' };
-    Object.entries(pills).forEach(([k, id]) => {
-        const el = document.getElementById(id);
-        if (!el) return;
-        if (k === sortKey) {
-            el.classList.add('active');
-            el.textContent = labels[k] + (sortDir === 'asc' ? ' ▲' : ' ▼');
-        } else {
-            el.classList.remove('active');
-            el.textContent = labels[k];
-        }
-    });
-}
-
 function sortByRating() {
-    sortKey = 'ps_adj';
-    sortDir = 'asc';
-    updateSortPills();
+    filteredData.sort((a, b) => {
+        const ra = parseFloat(a.ratings_sortable ?? -Infinity);
+        const rb = parseFloat(b.ratings_sortable ?? -Infinity);
+        return rb - ra;
+    });
+    sortKey = null;
 }
 
 // ═══════════════════════════════════════
@@ -1146,7 +1050,6 @@ function makeCard(s) {
 
     return `
     <div class="stock-card${inBasket ? ' in-basket' : ''}" data-ticker="${ticker}" onclick="showDetails('${ticker}')">
-        <button class="card-quick-add" onclick="quickAdd(event,'${ticker}')" title="${inBasket ? 'Remove from basket' : 'Add to basket'}">${inBasket ? '✓' : '+'}</button>
         <div class="card-ticker">${ticker}</div>
         <div class="card-company" title="${company}">${company}</div>
         <div class="card-metrics">
@@ -1180,20 +1083,6 @@ function showMore() {
     render();
 }
 
-function quickAdd(e, ticker) {
-    e.stopPropagation();
-    toggleBasketItem(ticker);
-    // update this card
-    document.querySelectorAll(`.stock-card[data-ticker="${ticker}"]`).forEach(card => {
-        const inB = basket.includes(ticker);
-        card.classList.toggle('in-basket', inB);
-        const btn = card.querySelector('.card-quick-add');
-        if (btn) { btn.textContent = inB ? '✓' : '+'; btn.title = inB ? 'Remove from basket' : 'Add to basket'; }
-    });
-    // update modal if open
-    setModalBasketBtn(ticker);
-}
-
 // ═══════════════════════════════════════
 // DETAIL MODAL
 // ═══════════════════════════════════════
@@ -1224,19 +1113,8 @@ function showDetails(ticker) {
     const inBasket = basket.includes(ticker);
 
     document.getElementById('modalBody').innerHTML = `
-        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:4px;">
-            <div>
-                <div class="modal-ticker-name">${ticker}</div>
-                <div class="modal-company-name">${name}</div>
-            </div>
-            <button class="add-to-basket-btn${inBasket ? ' in-basket' : ''}"
-                id="modalBasketBtn"
-                data-ticker="${ticker}"
-                onclick="handleModalBasket('${ticker}')"
-                style="flex-shrink:0;padding:10px 20px;font-size:0.88rem;">
-                ${inBasket ? '✓ In Basket' : '🧺 Add to Basket'}
-            </button>
-        </div>
+        <div class="modal-ticker-name">${ticker}</div>
+        <div class="modal-company-name">${name}</div>
 
         <div style="margin-bottom:16px;">
             <iframe frameBorder='0' scrolling='no' width='100%' height='280'
@@ -1294,6 +1172,15 @@ function showDetails(ticker) {
             ${ask_grok_url ? `<a href="${ask_grok_url}" target="_blank"><button class="btn">Google AI</button></a>` : ''}
             ${share_x_url ? `<a href="${share_x_url}" target="_blank"><button class="btn">Share on X</button></a>` : ''}
         </div>
+
+        <div class="add-to-basket-wrap">
+            <button class="add-to-basket-btn${inBasket ? ' in-basket' : ''}"
+                id="modalBasketBtn"
+                data-ticker="${ticker}"
+                onclick="handleModalBasket('${ticker}')">
+                ${inBasket ? '✓ In Basket — Remove' : '🧺 Add to Basket'}
+            </button>
+        </div>
     `;
     document.getElementById('customModal').style.display = 'flex';
 }
@@ -1316,7 +1203,7 @@ function setModalBasketBtn(ticker) {
     const btn = document.getElementById('modalBasketBtn');
     if (!btn || btn.dataset.ticker !== ticker) return;
     const inBasket = basket.includes(ticker);
-    btn.textContent = inBasket ? '✓ In Basket' : '🧺 Add to Basket';
+    btn.textContent = inBasket ? '✓ In Basket — Remove' : '🧺 Add to Basket';
     if (inBasket) btn.classList.add('in-basket');
     else btn.classList.remove('in-basket');
 }
@@ -1336,9 +1223,6 @@ renderBasket();
 updateBasketCount();
 
 document.getElementById('showMoreBtn').style.display = 'none';
-
-// Set initial sort pill state after DOM ready
-document.addEventListener('DOMContentLoaded', updateSortPills);
 </script>
 </body>
 </html>
