@@ -313,19 +313,13 @@
         .modal-content {
             background: #fff;
             border-radius: 12px;
-            padding: 16px 16px 14px;
+            padding: 28px 24px 20px;
             width: 100%;
-            max-width: 560px;
-            max-height: 72vh;
+            max-width: 620px;
+            max-height: 88vh;
             overflow-y: auto;
             position: relative;
             box-shadow: 0 8px 40px rgba(0,0,0,0.2);
-        }
-        @media (max-width: 600px) {
-            .modal-content {
-                max-height: 60vh;
-                padding: 12px 12px 10px;
-            }
         }
         .modal-close {
             position: absolute;
@@ -340,38 +334,38 @@
         .modal-close:hover { color: #2d5a2d; }
 
         .modal-ticker-name {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: #2d3748;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
         .modal-company-name {
             color: #718096;
-            font-size: 0.8rem;
-            margin-bottom: 0;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
         }
 
         .modal-metrics-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 6px;
-            margin-bottom: 10px;
+            gap: 10px;
+            margin-bottom: 16px;
         }
         .modal-metric-item {
             background: #f7fafc;
-            border-radius: 6px;
-            padding: 6px 9px;
+            border-radius: 8px;
+            padding: 10px 12px;
         }
         .modal-metric-label {
-            font-size: 0.66rem;
+            font-size: 0.72rem;
             color: #718096;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.4px;
-            margin-bottom: 1px;
+            margin-bottom: 3px;
         }
         .modal-metric-value {
-            font-size: 0.9rem;
+            font-size: 1.05rem;
             font-weight: 700;
             color: #2d3748;
         }
@@ -379,10 +373,10 @@
 
         .modal-actions {
             display: flex;
-            gap: 7px;
+            gap: 10px;
             flex-wrap: wrap;
-            margin-top: 6px;
-            margin-bottom: 0;
+            margin-top: 8px;
+            margin-bottom: 16px;
         }
         .modal-actions a { text-decoration: none; }
         .btn {
@@ -1230,7 +1224,7 @@ function showDetails(ticker) {
     const inBasket = basket.includes(ticker);
 
     document.getElementById('modalBody').innerHTML = `
-        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px;">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:4px;">
             <div>
                 <div class="modal-ticker-name">${ticker}</div>
                 <div class="modal-company-name">${name}</div>
@@ -1239,14 +1233,14 @@ function showDetails(ticker) {
                 id="modalBasketBtn"
                 data-ticker="${ticker}"
                 onclick="handleModalBasket('${ticker}')"
-                style="flex-shrink:0;padding:8px 14px;font-size:0.8rem;">
+                style="flex-shrink:0;padding:10px 20px;font-size:0.88rem;">
                 ${inBasket ? '✓ In Basket' : '🧺 Add to Basket'}
             </button>
         </div>
 
-        <div style="margin-bottom:8px;">
-            <iframe frameBorder='0' scrolling='no' width='100%' height='200'
-                src='https://api.stockdio.com/visualization/financial/charts/v1/HistoricalPrices?app-key=E8090066449749C88783EB38FA00D789&symbol=${chartSymbol}&days=365&width=580&height=200'>
+        <div style="margin-bottom:16px;">
+            <iframe frameBorder='0' scrolling='no' width='100%' height='280'
+                src='https://api.stockdio.com/visualization/financial/charts/v1/HistoricalPrices?app-key=E8090066449749C88783EB38FA00D789&symbol=${chartSymbol}&days=365&width=580&height=280'>
             </iframe>
         </div>
 
