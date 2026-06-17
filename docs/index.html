@@ -6,66 +6,51 @@
     <title>Algo10 Stock Screener</title>
     <link rel="icon" type="image/x-icon" href="/favicon2.ico">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #f8f9fa;
+            background: #f0f4f0;
             min-height: 100vh;
-            padding: 12px;
             font-size: 14px;
         }
 
+        /* ── DISCLAIMER BANNER ── */
+        .disclaimer {
+            background: #aace9f;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 8px;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+
+        /* ── HEADER ── */
         .header {
             background: white;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 12px 16px;
-            margin-bottom: 16px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 10px 16px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 500;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.08);
         }
 
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 12px;
+        .header-left { display: flex; align-items: center; gap: 12px; }
+        .header-right { display: flex; align-items: center; gap: 10px; }
+
+        .app-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d5a2d;
+            letter-spacing: 0.5px;
         }
 
-        .logo-center-inner {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .logo-img {
-            height: 38px;
-            vertical-align: middle;
-        }
-
-        .tagline {
-            font-size: 18px;
-            color: #355e3b;
-            font-family: 'Playfair Display', Georgia, serif;
-            font-weight: 600;
-            letter-spacing: 1px;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .current-etf {
-            color: #718096;
-            font-size: 0.85rem;
-            font-weight: 500;
-        }
-
+        /* ── HAMBURGER (left) ── */
         .hamburger {
             background: none;
             border: none;
@@ -73,1143 +58,1171 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            height: 38px;
-            margin-right: 10px;
+            width: 36px;
+            height: 36px;
+            padding: 4px;
+            border-radius: 6px;
+            transition: background 0.2s;
         }
+        .hamburger:hover { background: #f0fff4; }
         .hamburger span {
             display: block;
-            width: 26px;
-            height: 3px;
+            width: 22px;
+            height: 2.5px;
             background: #2d5a2d;
-            margin: 3px 0;
+            margin: 2.5px 0;
             border-radius: 2px;
-            transition: all 0.3s;
         }
 
+        /* ── FILTER PILL (active filter label) ── */
+        .active-filter-pill {
+            background: #e6f4ea;
+            color: #2d5a2d;
+            border: 1px solid #c6e6c6;
+            border-radius: 20px;
+            padding: 3px 12px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        /* ── BASKET BUTTON ── */
+        .basket-btn {
+            position: relative;
+            background: none;
+            border: 1.5px solid #2d5a2d;
+            border-radius: 8px;
+            cursor: pointer;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #2d5a2d;
+            transition: background 0.2s;
+        }
+        .basket-btn:hover { background: #f0fff4; }
+        .basket-icon { font-size: 1.2rem; }
+        .basket-count {
+            background: #2d5a2d;
+            color: white;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .basket-count.hidden { display: none; }
+
+        /* ── SIDEBAR (left) ── */
         .sidebar {
             position: fixed;
             top: 0;
-            right: -300px; /* Start hidden off the right */
-            left: auto;
+            left: -300px;
             width: 300px;
             height: 100vh;
             background: white;
-            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
-            transition: right 0.3s ease;
+            box-shadow: 2px 0 12px rgba(0,0,0,0.12);
+            transition: left 0.3s ease;
             z-index: 1000;
             overflow-y: auto;
         }
-
-        .sidebar.active {
-            right: 0; /* Slide in from the right */
-        }
+        .sidebar.active { left: 0; }
 
         .sidebar-header {
-            padding: 20px;
-            border-bottom: 1px solid #e2e8f0;
+            padding: 18px 20px;
             background: #2d5a2d;
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-
-        .sidebar-header h3 {
-            font-size: 1.1rem;
-            margin-bottom: 4px;
-        }
-
-        .sidebar-subtitle {
-            font-size: 0.85rem;
-            opacity: 0.9;
-        }
-
-        .etf-list {
-            padding: 16px 0;
-        }
-
-        .etf-category {
-            margin-bottom: 24px;
+        .sidebar-header h3 { font-size: 1rem; }
+        .sidebar-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.4rem;
+            cursor: pointer;
+            line-height: 1;
         }
 
         .category-header {
             padding: 8px 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
+            font-size: 0.7rem;
+            font-weight: 700;
             color: #718096;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border-bottom: 1px solid #f1f5f9;
+            letter-spacing: 0.8px;
+            background: #f7fafc;
+            border-bottom: 1px solid #e2e8f0;
         }
 
         .etf-item {
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: 12px 20px;
+            padding: 11px 20px;
             cursor: pointer;
-            transition: background 0.2s ease;
             border-left: 3px solid transparent;
+            transition: background 0.15s;
+        }
+        .etf-item:hover { background: #f7fafc; }
+        .etf-item.active { background: #f0fff4; border-left-color: #48bb78; }
+
+        .etf-ticker { font-weight: 600; color: #2d3748; font-size: 0.88rem; }
+        .etf-name { font-size: 0.72rem; color: #718096; margin-top: 2px; }
+
+        /* ── OVERLAY ── */
+        .overlay {
+            position: fixed; top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.45);
+            z-index: 999;
+            opacity: 0; visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .overlay.active { opacity: 1; visibility: visible; }
+
+        /* ── MAIN CONTENT ── */
+        .main {
+            padding: 16px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        .etf-item:hover {
-            background: #f7fafc;
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d5a2d;
+        }
+        .stock-count {
+            font-size: 0.8rem;
+            color: #718096;
         }
 
-        .etf-item.active {
-            background: #f0fff4;
-            border-left-color: #48bb78;
+        /* ── CARD GRID ── */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            gap: 12px;
         }
 
-        .etf-info {
-            flex: 1;
+        /* ── STOCK CARD ── */
+        .stock-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 14px 12px 12px;
+            cursor: pointer;
+            transition: box-shadow 0.18s, transform 0.15s, border-color 0.18s;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            position: relative;
+        }
+        .stock-card:hover {
+            box-shadow: 0 4px 16px rgba(45,90,45,0.12);
+            border-color: #9fcf9f;
+            transform: translateY(-2px);
+        }
+        .stock-card.in-basket {
+            border-color: #48bb78;
+            background: #f6fff8;
         }
 
-        .etf-ticker {
-            font-weight: 600;
+        .card-ticker {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #2d5a2d;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 0.5px;
+        }
+        .card-company {
+            font-size: 0.7rem;
+            color: #718096;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 4px;
+        }
+        .card-metrics {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            font-size: 0.72rem;
+        }
+        .card-metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-metric-label {
+            color: #718096;
+            font-weight: 500;
+        }
+        .card-metric-value {
+            font-weight: 700;
             color: #2d3748;
+        }
+        .card-metric-value.highlight { color: #2d5a2d; }
+        .card-metric-value.red { color: #e53e3e; }
+
+        .card-badge-row {
+            margin-top: 2px;
+        }
+        .in-basket-badge {
+            display: none;
+            font-size: 0.65rem;
+            color: #2d5a2d;
+            font-weight: 600;
+            background: #c6e6c6;
+            border-radius: 10px;
+            padding: 1px 7px;
+        }
+        .stock-card.in-basket .in-basket-badge { display: inline-block; }
+
+        /* ── LOADING ── */
+        .loading-msg {
+            text-align: center;
+            padding: 60px 20px;
+            color: #718096;
+            font-size: 1rem;
+            grid-column: 1 / -1;
+        }
+
+        /* ── MODAL ── */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        .modal-content {
+            background: #fff;
+            border-radius: 12px;
+            padding: 28px 24px 20px;
+            width: 100%;
+            max-width: 620px;
+            max-height: 88vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+        }
+        .modal-close {
+            position: absolute;
+            top: 10px; right: 16px;
+            font-size: 1.8rem;
+            color: #aaa;
+            cursor: pointer;
+            line-height: 1;
+            background: none;
+            border: none;
+        }
+        .modal-close:hover { color: #2d5a2d; }
+
+        .modal-ticker-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 4px;
+        }
+        .modal-company-name {
+            color: #718096;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+
+        .modal-metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+        .modal-metric-item {
+            background: #f7fafc;
+            border-radius: 8px;
+            padding: 10px 12px;
+        }
+        .modal-metric-label {
+            font-size: 0.72rem;
+            color: #718096;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            margin-bottom: 3px;
+        }
+        .modal-metric-value {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #2d3748;
+        }
+        .modal-metric-value.green { color: #2d5a2d; }
+
+        .modal-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+        .modal-actions a { text-decoration: none; }
+        .btn {
+            background: #edf2f7;
+            color: #2d3748;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 14px;
+            cursor: pointer;
+            font-size: 0.83rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: #e2e8f0; }
+        .btn-primary {
+            background: #2d5a2d;
+            color: white;
+        }
+        .btn-primary:hover { background: #255025; }
+        .btn-danger {
+            background: #fff5f5;
+            color: #e53e3e;
+            border: 1px solid #fed7d7;
+        }
+        .btn-danger:hover { background: #fed7d7; }
+
+        .add-to-basket-wrap {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .add-to-basket-btn {
+            background: #2d5a2d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 13px 36px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.1s;
+            letter-spacing: 0.3px;
+        }
+        .add-to-basket-btn:hover { background: #255025; transform: translateY(-1px); }
+        .add-to-basket-btn.in-basket {
+            background: #c6e6c6;
+            color: #2d5a2d;
+        }
+        .add-to-basket-btn.in-basket:hover { background: #b2d9b2; }
+
+        /* ── BASKET PANEL ── */
+        .basket-panel {
+            position: fixed;
+            top: 0;
+            right: -340px;
+            width: 320px;
+            height: 100vh;
+            background: white;
+            box-shadow: -2px 0 12px rgba(0,0,0,0.12);
+            transition: right 0.3s ease;
+            z-index: 1000;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .basket-panel.active { right: 0; }
+
+        .basket-panel-header {
+            padding: 18px 20px;
+            background: #2d5a2d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-shrink: 0;
+        }
+        .basket-panel-header h3 { font-size: 1rem; }
+        .basket-panel-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+
+        .basket-tickers {
+            flex: 1;
+            padding: 16px;
+            overflow-y: auto;
+        }
+        .basket-empty {
+            text-align: center;
+            color: #a0aec0;
+            padding: 40px 20px;
             font-size: 0.9rem;
         }
 
-        .etf-name {
-            font-size: 0.75rem;
-            color: #718096;
-            margin-top: 2px;
-        }
-
-        .etf-badge {
-            background: #e2e8f0;
-            color: #4a5568;
-            padding: 2px 6px;
-            border-radius: 12px;
-            font-size: 0.7rem;
-            font-weight: 500;
-        }
-
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 999;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .table-container {
-            background: white;
+        .basket-ticker-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 10px;
+            background: #f7fafc;
+            border-radius: 6px;
+            margin-bottom: 6px;
             border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            max-height: calc(100vh - 150px);
-            overflow-y: auto;
         }
-
-        .table-container::-webkit-scrollbar {
-            width: 4px;
-        }
-
-        .table-container::-webkit-scrollbar-track {
-            background: rgba(0, 0, 0, 0.05);
-        }
-
-        .table-container::-webkit-scrollbar-thumb {
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 2px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
-        }
-
-        th {
-            background: #2d5a2d;
-            color: white;
-            font-weight: 600;
-            padding: 12px 8px;
-            text-align: left;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            cursor: pointer;
-            user-select: none;
-            transition: all 0.2s ease;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        th:hover {
-            background: #1e3e1e;
-        }
-
-        .ticker-col { width: 10%; }
-        .company-col { width: 18%; }
-    .pe-col { width: 15%; }
-    /* Small, equal-width metric columns for rocket view */
-    .metric-col { width: 5.5%; }
-        .roe-col { width: 15%; }
-        .trailing-col { width: 15%; }
-
-        td {
-            padding: 12px 8px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            vertical-align: middle;
-        }
-
-        tr:hover {
-            background-color: #f7fafc;
-        }
-
-        .rank-cell {
-            text-align: center;
+        .basket-ticker-symbol {
             font-weight: 700;
-            color: #2d3748;
-        }
-
-        .rank-badge {
-            background: #48bb78;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 11px;
-            font-weight: 600;
-            display: inline-block;
-            min-width: 24px;
-            text-align: center;
-        }
-
-        .ticker-cell {
-            font-weight: 700;
-            font-size: 14px;
             color: #2d5a2d;
             font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
         }
-
-        .company-cell {
-            color: #4a5568;
-            font-size: 12px;
-            line-height: 1.3;
-            max-width: 150px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+        .basket-ticker-remove {
+            background: none;
+            border: none;
+            color: #a0aec0;
+            cursor: pointer;
+            font-size: 1.1rem;
+            line-height: 1;
+            padding: 2px 4px;
+            border-radius: 4px;
+            transition: color 0.15s;
         }
+        .basket-ticker-remove:hover { color: #e53e3e; }
 
-        .pe-cell {
-            font-weight: 600;
+        .basket-footer {
+            padding: 14px 16px;
+            border-top: 1px solid #e2e8f0;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .download-json-btn {
+            width: 100%;
+            background: #2d5a2d;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            padding: 11px;
+            font-size: 0.88rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .download-json-btn:hover { background: #255025; }
+        .clear-basket-btn {
+            width: 100%;
+            background: #fff5f5;
             color: #e53e3e;
-            text-align: center;
-        }
-
-        /* Market cap should be black text */
-        .marketcap-cell {
-            font-weight: 600;
-            color: #000000;
-            text-align: center;
-        }
-
-        /* Positive/attractive metrics shown in green */
-        .green-metric {
-            font-weight: 600;
-            color: #2f855a; /* green */
-            text-align: center;
-        }
-
-        .roe-cell {
-            font-weight: 600;
-            color: #3182ce;
-            text-align: center;
-        }
-
-        .trailing-cell {
-            font-weight: 600;
-            color: #3182ce;
-            text-align: center;
-        }
-
-        .stats-row {
-            background: #f7fafc;
-            font-weight: 600;
-            font-size: 12px;
-            border-top: 2px solid #e2e8f0;
-        }
-
-        .stats-row td {
+            border: 1px solid #fed7d7;
+            border-radius: 7px;
             padding: 8px;
-            text-align: center;
-            color: #2d3748;
+            font-size: 0.82rem;
+            font-weight: 600;
+            cursor: pointer;
         }
+        .clear-basket-btn:hover { background: #fed7d7; }
 
-        .mobile-note {
-            background: white;
-            border: 1px solid #e2e8f0;
-            padding: 8px 12px;
-            margin-top: 12px;
-            border-radius: 6px;
-            font-size: 11px;
-            color: #718096;
-            text-align: center;
-        }
-
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #718096;
-        }
-
-        @media (max-width: 480px) {
-            body {
-                padding: 8px;
-                font-size: 13px;
-            }
-
-            .sidebar {
-                width: 280px;
-                right: -280px;
-            }
-
-            table {
-                font-size: 12px;
-            }
-
-            th, td {
-                padding: 10px 6px;
-            }
-
-            th {
-                font-size: 11px;
-            }
-
-            .ticker-cell {
-                font-size: 13px;
-            }
-
-            .company-cell {
-                font-size: 11px;
-                max-width: 120px;
-            }
-
-            .header {
-                padding: 12px;
-            }
-        }
-
-        @media (max-width: 380px) {
-            .company-col {
-                width: 30%;
-            }
-            
-            .ticker-col {
-                width: 18%;
-            }
-            
-            .pe-col, .trailing-col {
-                width: 13%;
-            }
-            
-            .rank-col {
-                width: 13%;
-            }
-
-            .company-cell {
-                max-width: 100px;
-            }
-
-            .sidebar {
-                width: 260px;
-                right: -260px;
-            }
-        }
-
-        /* Footer styles */
+        /* ── FOOTER ── */
         .footer {
             background: #fff;
             border-top: 2px solid #67914b;
             color: #575757;
             text-align: center;
-            padding: 32px 10px 16px 10px;
-            font-size: 14px;
+            padding: 24px 16px 16px;
+            font-size: 0.88rem;
             margin-top: 32px;
         }
-        .footer a {
-            color: #67914b;
-            text-decoration: underline;
-        }
-        .footer-icons {
-            margin-top: 16px;
-            margin-bottom: 8px;
-        }
-        .footer-icons a {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        .footer-icons img {
-            height: 24px;
-            width: 24px;
-            object-fit: contain;
-            vertical-align: middle;
-        }
-        .footer-icons a[title="Email"] img {
-            height: 24px;
-            width: 24px;
-            transform: scale(1.5);
-        }
+        .footer-links { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+        .footer a { color: #2d5a2d; text-decoration: underline; font-weight: 600; }
 
-        /* Modal styles */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-            z-index: 2000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .modal-content {
-            background: #fff;
-            border-radius: 10px;
-            padding: 32px 24px 24px 24px;
-            min-width: 320px;
-            max-width: 90vw;
-            max-height: 80vh;
-            overflow-y: auto;
-            position: relative;
-            box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 8px;
-            right: 18px;
-            font-size: 2rem;
-            color: #888;
-            cursor: pointer;
-        }
-
-        .modal-close:hover {
-            color: #2d5a2d;
-        }
-
-        .modal-header {
-            font-size: 1.25rem;
+        /* ── SHOW MORE ── */
+        #showMoreContainer { text-align: center; margin: 20px 0 8px; }
+        #showMoreBtn {
+            display: none;
+            padding: 9px 24px;
+            font-size: 0.88rem;
             font-weight: 600;
-            margin-bottom: 16px;
-            color: #2d3748;
-        }
-
-        .modal-body {
-            font-size: 14px;
-            color: #4a5568;
-            line-height: 1.6;
-        }
-
-        .modal-footer {
-            margin-top: 24px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 12px;
-        }
-
-        .modal-footer button {
+            border-radius: 7px;
             background: #2d5a2d;
             color: white;
             border: none;
-            border-radius: 4px;
-            padding: 10px 16px;
             cursor: pointer;
-            font-size: 14px;
-            transition: background 0.3s;
+        }
+        #showMoreBtn:hover { background: #255025; }
+
+        /* ── GROUP LABEL ── */
+        .group-label {
+            grid-column: 1 / -1;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #2d5a2d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 10px 4px 4px;
+            border-bottom: 1px solid #c6e6c6;
+            margin-bottom: 2px;
         }
 
-        .modal-footer button:hover {
-            background: #255f25;
+        @media (max-width: 480px) {
+            .cards-grid { grid-template-columns: repeat(auto-fill, minmax(145px, 1fr)); gap: 9px; }
+            .card-ticker { font-size: 1rem; }
         }
     </style>
 </head>
 <body>
-    <div style="background: #aace9f; color: #fff; font-weight: bold; text-align: center; padding: 14px 8px; font-size: 1.1rem; letter-spacing: 0.5px; border-radius: 0 0 8px 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 18px;">
-        This app is intended for educational purposes only. Invest at your own risk.
+
+<div class="disclaimer">This app is intended for educational purposes only. Invest at your own risk.</div>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="header-left">
+        <button class="hamburger" id="hamburger" onclick="toggleSidebar()" aria-label="Open filters">
+            <span></span><span></span><span></span>
+        </button>
+        <span class="app-title">ALGO10 SCREENER</span>
+        <span class="active-filter-pill" id="filterPill">All Stocks</span>
     </div>
-    <div class="header">
-        <div class="logo-section">
-            <a>STOCK SCREENER</a>
-        </div>
-        <button class="hamburger" id="hamburger" onclick="toggleSidebar()">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="header-right">
+        <button class="basket-btn" id="basketBtn" onclick="toggleBasket()" aria-label="Open basket">
+            <span class="basket-icon">🧺</span>
+            <span>Basket</span>
+            <span class="basket-count hidden" id="basketCount">0</span>
         </button>
     </div>
+</div>
 
-    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
-    <div class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <h3>Show All</h3>
-        </div>
-        <div class="etf-list">
-            <div class="etf-category">
-                <div class="etf-item active" id="showAllMenu" onclick="selectShowAll()">
-                    <div class="etf-info">
-                        <div class="etf-ticker">ALL</div>
-                        <div class="etf-name">Show All Stocks</div>
-                    </div>
-                    <div class="etf-badge">Active</div>
-                </div>
+<!-- OVERLAY -->
+<div class="overlay" id="overlay" onclick="closeAll()"></div>
+
+<!-- SIDEBAR (filter menu) -->
+<div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <h3>Filters</h3>
+        <button class="sidebar-close" onclick="closeSidebar()">✕</button>
+    </div>
+    <div id="sidebarContent">
+        <div class="category-header">View</div>
+        <div class="etf-item active" id="showAllMenu" onclick="selectShowAll()">
+            <div>
+                <div class="etf-ticker">ALL</div>
+                <div class="etf-name">Show All Stocks</div>
             </div>
         </div>
+        <div class="etf-item" id="garpMenu" onclick="selectVeryHighRevGrowth()">
+            <div>
+                <div class="etf-ticker">GARP</div>
+                <div class="etf-name">Growth At Reasonable Price</div>
+            </div>
+        </div>
+        <div class="etf-item" id="pureGrowthMenu" onclick="selectPureGrowthNoPE()">
+            <div>
+                <div class="etf-ticker">Pure Growth</div>
+                <div class="etf-name">No PE required • Rev &gt; 3%</div>
+            </div>
+        </div>
+        <div class="etf-item" id="sp500Menu" onclick="selectSP500()">
+            <div>
+                <div class="etf-ticker">SP500</div>
+                <div class="etf-name">S&amp;P 500 Companies</div>
+            </div>
+        </div>
+        <div class="category-header" style="margin-top:8px;">Sectors</div>
+        <div id="industryList"></div>
     </div>
+</div>
 
-    <div id="sectionTitle" style="font-size:1.2rem;font-weight:600;color:#2d5a2d;margin:18px 0 0 4px;">All Stocks</div>
-    <p>
-    <a href="backtest.html">See backtest results</a>
-    <a href="top50_quarter_table.html">See historical quarterly picks</a>
-    </p>
-    <div class="mobile-note">
-        1. Use menu on top right, select industry • 2. Click a row/ticker for more detail • 3. Create a diversified or thematic basket using your brokerage account
-        <br>
-        <strong>Ratings:</strong> 🚀 = future margin expansion potential
-        <br>
-        🚀 = Algo10's measure of future margin expansion potential is based on a mathematical formula of revenue growth, gross margin, and TTM price to sales ratio. It is also shown in the details as "PS(adj)"
-        <br><br>
-        💵 = current earnings
-        <br>
-    <div class="table-container">
-        <table id="stockTable">
-            <thead>
-                <tr>
-                    <th class="ticker-col">Ticker</th>
-                    <th class="company-col">Company</th>
-                    <th class="pe-col">Rating</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-                <tr>
-                    <td colspan="4" class="loading">Loading stock data...</td>
-                </tr>
-            </tbody>
-        </table>
+<!-- BASKET PANEL -->
+<div class="basket-panel" id="basketPanel">
+    <div class="basket-panel-header">
+        <h3>🧺 My Basket</h3>
+        <button class="basket-panel-close" onclick="closeBasket()">✕</button>
     </div>
-
-    <div id="showMoreContainer" style="text-align:center; margin: 16px 0;">
-        <button id="showMoreBtn" style="display:none; padding:8px 18px; font-size:15px; border-radius:6px; background:#2d5a2d; color:white; border:none; cursor:pointer;">
-            Show More
-        </button>
+    <div class="basket-tickers" id="basketTickers">
+        <div class="basket-empty">Your basket is empty.<br>Click a stock card, then "Add to Basket".</div>
     </div>
+    <div class="basket-footer">
+        <button class="download-json-btn" onclick="downloadBasketJSON()">⬇ Download as JSON</button>
+        <button class="clear-basket-btn" onclick="clearBasket()">Clear Basket</button>
+    </div>
+</div>
 
-    <div id="customModal" class="modal-overlay" style="display:none;">
-      <div class="modal-content">
-        <span class="modal-close" id="modalCloseBtn">&times;</span>
+<!-- MAIN -->
+<div class="main">
+    <div class="section-header">
+        <span class="section-title" id="sectionTitle">All Stocks</span>
+        <span class="stock-count" id="stockCount"></span>
+    </div>
+    <div class="cards-grid" id="cardsGrid">
+        <div class="loading-msg">Loading stock data…</div>
+    </div>
+    <div id="showMoreContainer">
+        <button id="showMoreBtn" onclick="showMore()">Show More</button>
+    </div>
+</div>
+
+<!-- DETAIL MODAL -->
+<div class="modal-overlay" id="customModal" style="display:none;" onclick="onModalOverlayClick(event)">
+    <div class="modal-content">
+        <button class="modal-close" id="modalCloseBtn" onclick="closeModal()">✕</button>
         <div id="modalBody"></div>
-      </div>
     </div>
+</div>
 
-    <script>
-        // Load data from remote JSON
-        let stockData = [];
-        let filteredData = [];
-        let currentSection = 'All Stocks';
-        let uniqueIndustries = [];
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="backtest.html">See Backtest Results</a>
+        <a href="top50_quarter_table.html">See Historical Quarterly Picks</a>
+    </div>
+    <div style="margin-top:12px; color:#a0aec0; font-size:0.78rem;">
+        PS_adj is Algo10's measure of future margin expansion potential based on revenue growth, gross margin, and TTM price-to-sales ratio.
+    </div>
+</footer>
 
-        // Fetch with timeout
-        const fetchWithTimeout = (url, timeout = 10000) => {
-            return Promise.race([
-                fetch(url),
-                new Promise((_, reject) => 
-                    setTimeout(() => reject(new Error('Request timeout')), timeout)
-                )
-            ]);
-        };
+<script>
+// ═══════════════════════════════════════
+// BASKET — sessionStorage backed
+// ═══════════════════════════════════════
+let basket = [];
 
-        console.log('Starting to fetch data...');
-        fetchWithTimeout('./holds_json_data_all.json', 15000)
-            .then(response => {
-                console.log('Response received:', response.status);
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.text();
-            })
-            .then(text => {
-                console.log('Text received, length:', text.length);
-                // Replace Infinity and NaN with null to make valid JSON
-                const cleanedText = text
-                    .replace(/:\s*Infinity\s*([,}\]])/g, ': null$1')
-                    .replace(/:\s*NaN\s*([,}\]])/g, ': null$1')
-                    .replace(/:\s*-Infinity\s*([,}\]])/g, ': null$1');
-                return JSON.parse(cleanedText);
-            })
-            .then(jsonData => {
-                console.log('JSON parsed, data type:', typeof jsonData, 'is array:', Array.isArray(jsonData));
-                stockData = Array.isArray(jsonData) ? jsonData : (jsonData.data || []);
-                console.log('Stock data loaded, count:', stockData.length);
-                if (stockData.length === 0) {
-                    throw new Error('No stock data received');
-                }
-                // Get unique industryKey values (case-insensitive, but display as UPPER CASE)
-                uniqueIndustries = Array.from(
-                    new Set(stockData.map(s => (s.industryKey || '').toUpperCase()).filter(Boolean))
-                ).sort();
-                console.log('Unique industries:', uniqueIndustries.length);
-                populateSidebar(uniqueIndustries);
-                // Sort by rating_sortable only (descending)
-                stockData.sort((a, b) => {
-                    const ratingA = parseFloat(a.ratings_sortable ?? Infinity);
-                    const ratingB = parseFloat(b.ratings_sortable ?? Infinity);
-                    return ratingB - ratingA;
-                });
-                console.log('About to call selectShowAll()');
-                // Default to All Stocks view on first load
-                // call the selector to filter and render
-                selectShowAll();
-                console.log('selectShowAll() completed');
-            })
-            .catch(error => {
-                console.error('Error loading stock data:', error);
-                const tbody = document.getElementById('tableBody');
-                if (tbody) {
-                    tbody.innerHTML = `
-                        <tr>
-                            <td colspan="4" class="loading" style="color: #e53e3e;">
-                                Error loading data: ${error.message}<br>
-                                <small>Please check your internet connection or try refreshing the page.</small>
-                            </td>
-                        </tr>
-                    `;
-                }
-            });
+function loadBasket() {
+    try {
+        const raw = sessionStorage.getItem('algo10_basket');
+        basket = raw ? JSON.parse(raw) : [];
+    } catch(e) { basket = []; }
+}
 
-        function populateSidebar(industries) {
-            const sidebar = document.getElementById('sidebar');
-            const etfList = sidebar.querySelector('.etf-list');
-                etfList.innerHTML = `
-                    <div class="etf-category">
-                        <div class="etf-item active" id="showAllMenu" onclick="selectShowAll()">
-                            <div class="etf-info">
-                                <div class="etf-ticker">ALL</div>
-                                <div class="etf-name">Show All Stocks</div>
-                            </div>
-                            <div class="etf-badge">Default</div>
-                        </div>
-                        <div class="etf-item" id="veryHighRevGrowthMenu" onclick="selectVeryHighRevGrowth()">
-                            <div class="etf-info">
-                                <div class="etf-ticker">GARP - Growth At Reasonable Price</div>
-                                <div class="etf-name">Rev 3–200% • GM 1–97% • PS_adj &lt; 5 • FwdPE &lt; TrailingPE</div>
-                            </div>
-                        </div>
-                        <div class="etf-item" id="pureGrowthMenu" onclick="selectPureGrowthNoPE()">
-                            <div class="etf-info">
-                                <div class="etf-ticker">📈</div>
-                                <div class="etf-name">Pure Growth, no PE • Rev &gt; 3%</div>
-                            </div>
-                        </div>
-                        <div class="etf-item" id="sp500Menu" onclick="selectSP500()">
-                            <div class="etf-info">
-                                <div class="etf-ticker">SP500</div>
-                                <div class="etf-name">S&P 500 Companies</div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            industries.forEach(ind => {
-                if (!ind) return;
-                const item = document.createElement('div');
-                item.className = 'etf-item';
-                item.onclick = function() { selectIndustry(ind); };
-                item.innerHTML = `
-                    <div class="etf-info">
-                        <div class="etf-ticker">${ind}</div>
-                    </div>
-                `;
-                etfList.appendChild(item);
-            });
-            // industries were appended after the default items (ALL and Very High Rev Growth)
-        }
-
-        function selectIndustry(industry) {
-            rowsToShow = 500; // Reset on section change
-            currentSection = industry;
-            document.getElementById('sectionTitle').textContent = currentSection;
-            document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
-            // Find the correct sidebar item and set it active
-            const items = Array.from(document.querySelectorAll('.etf-item'));
-            const idx = uniqueIndustries.indexOf(industry);
-            if (idx >= 0) items[idx + 4].classList.add('active'); // +4 for Show All, GARP, Pure Growth, SP500
-            // Filter by industryKey (case-insensitive)
-            filteredData = stockData.filter(s => (s.industryKey || '').toUpperCase() === industry);
-            // Sort filteredData by rating_sortable (descending)
-            filteredData.sort((a, b) => {
-                const ratingA = parseFloat(a.ratings_sortable ?? Infinity);
-                const ratingB = parseFloat(b.ratings_sortable ?? Infinity);
-                return ratingB - ratingA;
-            });
-            renderTable();
-            closeSidebar();
-        }
-
-        function selectShowAll() {
-            rowsToShow = 3000; // Reset on section change
-            currentSection = 'All Stocks';
-            document.getElementById('sectionTitle').textContent = currentSection;
-            document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
-            document.getElementById('showAllMenu').classList.add('active');
-            filteredData = stockData.slice();
-            // Sort filteredData by rating_sortable (descending)
-            filteredData.sort((a, b) => {
-                const ratingA = parseFloat(a.ratings_sortable ?? Infinity);
-                const ratingB = parseFloat(b.ratings_sortable ?? Infinity);
-                return ratingB - ratingA;
-            });
-            renderTable();
-            closeSidebar();
-        }
-
-        function selectVeryHighRevGrowth() {
-            rowsToShow = 500;
-            currentSection = '🚀🚀🚀';
-            document.getElementById('sectionTitle').textContent = 'Very High Rev Growth';
-            // clear active state on sidebar items and set this menu as active
-            document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
-            const vh = document.getElementById('veryHighRevGrowthMenu');
-            if (vh) vh.classList.add('active');
-
-            // New filter rules:
-            // - revenue growth between 3% and 200% (inclusive)
-            // - gross margin between 1% and 97% (inclusive)
-            // - PS_adj < 5 (must be present and < 5)
-            // - Forward PE must be positive and either:
-            //     * if trailingPE === 0 then forwardPE > 0 (any positive forward allowed)
-            //     * otherwise forwardPE < trailingPE
-            filteredData = stockData.filter(s => {
-                const revGrowth = parseFloat(s.revenueGrowth ?? s['Revenue Growth'] ?? s.RevenueGrowth ?? NaN);
-                if (!Number.isFinite(revGrowth)) return false;
-                if (!(revGrowth >= 3 && revGrowth <= 200)) return false;
-
-                const gross = parseFloat(s.grossMargins ?? s['grossMargins'] ?? s.GrossMargin ?? NaN);
-                if (!Number.isFinite(gross)) return false;
-                if (!(gross >= 1 && gross <= 97)) return false;
-
-                const psAdjRaw = s.PS_adj ?? s.PS_Adjusted ?? s['PS(adj)'] ?? s.ps_adj ?? s.PSadj;
-                const psAdj = parseFloat(psAdjRaw ?? NaN);
-                // Exclude missing, zero, or non-finite PS_adj. Require 0 < PS_adj < 5
-                if (!Number.isFinite(psAdj)) return false;
-                if (!(psAdj > -99 && psAdj < 5)) return false;
-
-                const trailingRaw = s.trailingPE ?? s['PE (TTM)'] ?? s.pe ?? s.PE ?? NaN;
-                const trailing = parseFloat(trailingRaw ?? NaN);
-
-                const forwardRaw = s.forwardPE ?? s['PE (Fwd)'] ?? s['Forward PE'] ?? s.forwardPE ?? NaN;
-                const forward = parseFloat(forwardRaw ?? NaN);
-
-                // P/E Comparison Logic:
-                // 1) Pass if forward < trailing AND trailing is between 0 and 999999999
-                // 2) Pass if forward is between 0 and 999999999 AND trailing is < 0 or NaN/empty
-                
-                const isForwardValid = Number.isFinite(forward) && forward > 0 && forward <= 999999999;
-                const isTrailingValid = Number.isFinite(trailing) && trailing >= 0 && trailing <= 999999999;
-                const isTrailingInvalid = !Number.isFinite(trailing) || trailing < 0;
-                
-                // Condition 1: forward < trailing AND trailing in [0, 999999999]
-                if (isTrailingValid && isForwardValid && forward < trailing) return true;
-                
-                // Condition 2: forward in (0, 999999999] AND trailing is invalid (< 0 or NaN/empty)
-                if (isTrailingInvalid && isForwardValid) return true;
-                
-                return false;
-            });
-            // Default sort for rocket view: market cap (descending)
-            sortKey = 'marketCap';
-            sortDir = 'desc';
-            renderTable();
-            closeSidebar();
-        }
-
-        function selectPureGrowthNoPE() {
-            rowsToShow = 500;
-            currentSection = 'Pure Growth, no PE';
-            document.getElementById('sectionTitle').textContent = 'Pure Growth, no PE';
-            document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
-            const pg = document.getElementById('pureGrowthMenu');
-            if (pg) pg.classList.add('active');
-
-            // Filter rules:
-            // - Revenue growth >= 3% (no upper limit)
-            // - Trailing PE must be empty (NaN) or < 0
-            // - Ignore forward PE
-            filteredData = stockData.filter(s => {
-                // Revenue growth >= 3% (no upper limit)
-                const revGrowth = parseFloat(s.revenueGrowth ?? s['Revenue Growth'] ?? s.RevenueGrowth ?? NaN);
-                if (!Number.isFinite(revGrowth)) return false;
-                if (!(revGrowth >= 3)) return false;
-
-                // Trailing PE must be empty or < 0
-                const trailingRaw = s.trailingPE ?? s['PE (TTM)'] ?? s.pe ?? s.PE ?? NaN;
-                const trailing = parseFloat(trailingRaw ?? NaN);
-                
-                // Pass if trailing is not finite (NaN/empty) OR trailing < 0
-                const isTrailingInvalid = !Number.isFinite(trailing) || trailing < 0;
-                return isTrailingInvalid;
-            });
-            
-            // Default sort for pure growth view: revenue growth (descending)
-            sortKey = 'revenueGrowth';
-            sortDir = 'desc';
-            renderTable();
-            closeSidebar();
-        }
-
-        function selectSP500() {
-            rowsToShow = 500;
-            currentSection = 'SP500';
-            document.getElementById('sectionTitle').textContent = 'S&P 500 Companies';
-            document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
-            const sp500 = document.getElementById('sp500Menu');
-            if (sp500) sp500.classList.add('active');
-
-            // Filter for SP500 companies
-            filteredData = stockData.filter(s => s.SP500 === 'Yes');
-            
-            // Default sort for SP500 view: market cap (descending)
-            sortKey = 'marketCap';
-            sortDir = 'desc';
-            renderTable();
-            closeSidebar();
-        }
-
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            const overlay = document.getElementById('overlay');
-            const hamburger = document.getElementById('hamburger');
-            
-            sidebar.classList.toggle('active');
-            overlay.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        }
-
-        function closeSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            const overlay = document.getElementById('overlay');
-            const hamburger = document.getElementById('hamburger');
-            
-            sidebar.classList.remove('active');
-            overlay.classList.remove('active');
-            hamburger.classList.remove('active');
-        }
-
-        let rowsToShow = 3000;
-        // Sorting state for table columns
-        let sortKey = null; // data key
-        let sortDir = 'asc'; // 'asc' or 'desc'
-
-        function getField(stock, key) {
-            // Normalize common key names and variants
-            if (!stock) return NaN;
-            switch (key) {
-                case 'symbol': return stock.Symbol ?? stock.ticker ?? '';
-                case 'company': return stock.company ?? stock.Name ?? '';
-                case 'marketCap': return parseFloat(stock.marketCap ?? stock.marketCapRaw ?? stock.market_cap ?? stock['marketCap'] ?? stock.MarketCap ?? NaN);
-                case 'ps': return parseFloat(stock.priceToSalesTrailing12Months ?? stock['priceToSalesTrailing12Months'] ?? stock.ps ?? stock.PS ?? NaN);
-                case 'ps_adj': return parseFloat(stock.PS_adj ?? stock.PS_Adjusted ?? stock['PS(adj)'] ?? stock.ps_adj ?? stock.PSadj ?? NaN);
-                case 'ps_adj_prior_run': return parseFloat(stock.PS_adj_prior_run ?? stock['PS_adj_prior_run'] ?? NaN);
-                case 'change_in_PS_adj': return parseFloat(stock.change_in_PS_adj ?? stock['change_in_PS_adj'] ?? NaN);
-                case 'ps_ratio': return parseFloat(stock.PS_ratio ?? stock.ps_ratio ?? stock.PSRatio ?? stock.psRatio ?? NaN);
-                case 'revenueGrowth': return parseFloat(stock.revenueGrowth ?? stock['Revenue Growth'] ?? stock.Revenue ?? NaN);
-                case 'trailingPE': return parseFloat(stock.trailingPE ?? stock['PE (TTM)'] ?? stock.pe ?? stock.PE ?? NaN);
-                case 'forwardPE': return parseFloat(stock.forwardPE ?? stock['PE (Fwd)'] ?? stock['Forward PE'] ?? NaN);
-                case 'dividendYield': return parseFloat(stock.dividendYield ?? stock.div ?? stock['Div'] ?? NaN);
-                // shortInterest removed — dataset does not include it
-                case 'rating': return stock.rating ?? stock.Rating ?? '';
-                default: return stock[key];
-            }
-        }
-
-        function formatNumber(val, digits=0) {
-            if (!Number.isFinite(val)) return '';
-            return Number(val).toLocaleString(undefined, {maximumFractionDigits: digits, minimumFractionDigits: 0});
-        }
-
-        function formatMarketCap(val) {
-            if (!Number.isFinite(val)) return '';
-            const v = Math.abs(val);
-            if (v >= 1e12) return (val/1e12).toFixed(2) + 'T';
-            if (v >= 1e9) return (val/1e9).toFixed(2) + 'B';
-            if (v >= 1e6) return (val/1e6).toFixed(2) + 'M';
-            return formatNumber(val, 0);
-        }
-
-        function formatPercent(val, digits=1) {
-            if (!Number.isFinite(val)) return '';
-            // If fraction (0 < val <= 1) assume it's fractional and convert to percent
-            if (Math.abs(val) <= 1) return (val * 100).toFixed(digits) + '%';
-            return Number(val).toFixed(digits) + '%';
-        }
-
-        function sortBy(key) {
-            if (sortKey === key) {
-                sortDir = (sortDir === 'asc') ? 'desc' : 'asc';
-            } else {
-                sortKey = key;
-                sortDir = 'asc';
-            }
-            renderTable();
-        }
-
-        function applySort(arr) {
-            if (!sortKey) return arr;
-            const aKey = sortKey;
-            const dir = sortDir === 'asc' ? 1 : -1;
-            return arr.slice().sort((a,b) => {
-                const av = getField(a, aKey);
-                const bv = getField(b, aKey);
-                const aNum = Number.parseFloat(av);
-                const bNum = Number.parseFloat(bv);
-                const aIsNum = Number.isFinite(aNum);
-                const bIsNum = Number.isFinite(bNum);
-                if (aIsNum && bIsNum) {
-                    return (aNum - bNum) * dir;
-                }
-                // Fallback to string compare
-                const as = (av ?? '').toString().toLowerCase();
-                const bs = (bv ?? '').toString().toLowerCase();
-                if (as < bs) return -1 * dir;
-                if (as > bs) return 1 * dir;
-                return 0;
-            });
-        }
-
-        // Attach event listener after DOM is loaded
-        window.addEventListener('DOMContentLoaded', function() {
-            const showMoreBtn = document.getElementById('showMoreBtn');
-            if (showMoreBtn) {
-                showMoreBtn.onclick = function() {
-                    rowsToShow += 100;
-                    renderTable();
-                };
-            }
-        });
-
-        function renderTable() {
-            document.getElementById('sectionTitle').textContent = currentSection;
-            const tbody = document.getElementById('tableBody');
-            const data = filteredData && filteredData.length ? filteredData : stockData;
-            if (!data.length) {
-                tbody.innerHTML = `<tr><td colspan="4" class="loading">Loading stock data...</td></tr>`;
-                return;
-            }
-            let rowsToDisplay = data;
-            let showMoreBtn = document.getElementById('showMoreBtn');
-            if (currentSection === 'All Stocks' || currentSection === 'Top Picks') {
-                rowsToDisplay = data.slice(0, rowsToShow);
-                if (data.length > rowsToShow) {
-                    showMoreBtn.style.display = '';
-                } else {
-                    showMoreBtn.style.display = 'none';
-                }
-            } else {
-                showMoreBtn.style.display = 'none';
-            }
-
-            // Build/replace the table header dynamically depending on current view
-            const table = document.getElementById('stockTable');
-            let theadHtml = '';
-            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500' || currentSection === 'Pure Growth, no PE') {
-                theadHtml = `
-                    <tr>
-                        <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="company-col" onclick="sortBy('company')">Company ${sortKey==='company' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('marketCap')">Market Cap ${sortKey==='marketCap' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('ps')">P/S ${sortKey==='ps' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('ps_adj')">PS_adj ${sortKey==='ps_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('ps_adj_prior_run')">PS_adj Prior ${sortKey==='ps_adj_prior_run' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('change_in_PS_adj')">Change in PS_adj ${sortKey==='change_in_PS_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('ps_ratio')">PS_Ratio ${sortKey==='ps_ratio' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('revenueGrowth')">Revenue Growth ${sortKey==='revenueGrowth' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('trailingPE')">Trailing PE ${sortKey==='trailingPE' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('forwardPE')">Fwd PE ${sortKey==='forwardPE' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('dividendYield')">Div Yield ${sortKey==='dividendYield' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('rating')">Rating ${sortKey==='rating' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                    </tr>
-                `;
-            } else {
-                theadHtml = `
-                    <tr>
-                        <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="company-col" onclick="sortBy('company')">Company ${sortKey==='company' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="pe-col" onclick="sortBy('rating')">Rating ${sortKey==='rating' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                    </tr>
-                `;
-            }
-            if (table && table.querySelector('thead')) table.querySelector('thead').innerHTML = theadHtml;
-
-            // If the current view is the triple-rocket view, SP500 view, or Pure Growth view, render a flat list with extra columns
-            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500' || currentSection === 'Pure Growth, no PE') {
-                const flatList = rowsToDisplay.slice(0, rowsToShow);
-                if (showMoreBtn) showMoreBtn.style.display = 'none';
-
-                // Apply sorting if requested
-                const sorted = applySort(flatList);
-
-                const rows = sorted.map(stock => {
-                    const symbol = stock.Symbol || stock.ticker || '';
-                    const company = stock.company || stock.Name || '';
-                    const marketCap = getField(stock, 'marketCap');
-                    const ps = getField(stock, 'ps');
-                    const ps_adj = getField(stock, 'ps_adj');
-                    const ps_adj_prior = getField(stock, 'ps_adj_prior_run');
-                    const change_ps = getField(stock, 'change_in_PS_adj');
-                    const ps_ratio = getField(stock, 'ps_ratio');
-                    const revenue = getField(stock, 'revenueGrowth');
-                    const trailing = getField(stock, 'trailingPE');
-                    const forward = getField(stock, 'forwardPE');
-                    const divy = getField(stock, 'dividendYield');
-                    const shortInt = getField(stock, 'shortInterest');
-                    const rating = stock.rating || '';
-                    return `
-                        <tr onclick="showDetails('${symbol}')">
-                                <td class="ticker-cell">${symbol}</td>
-                                <td class="company-cell" title="${company}">${company}</td>
-                                <td class="marketcap-cell">${formatMarketCap(marketCap)}</td>
-                                <td class="pe-cell">${formatNumber(ps,2)}</td>
-                                <td class="pe-cell">${Number.isFinite(ps_adj) ? ps_adj : ''}</td>
-                                <td class="pe-cell">${Number.isFinite(ps_adj_prior) ? ps_adj_prior : ''}</td>
-                                <td class="pe-cell">${Number.isFinite(change_ps) ? change_ps : ''}</td>
-                                <td class="pe-cell">${formatNumber(ps_ratio,2)}</td>
-                                <td class="pe-cell">${formatPercent(revenue,2)}</td>
-                                <td class="green-metric">${Number.isFinite(trailing) ? trailing : ''}</td>
-                                <td class="green-metric">${Number.isFinite(forward) ? forward : ''}</td>
-                                <td class="green-metric">${formatPercent(divy,2)}</td>
-                                <td class="pe-cell">${rating}</td>
-                            </tr>
-                    `;
-                }).join('');
-                tbody.innerHTML = rows || `<tr><td colspan="13" class="loading">No matching stocks</td></tr>`;
-                return;
-            }
-
-            // Default grouped rendering for other sections
-            let grouped = {};
-            rowsToDisplay.forEach(stock => {
-                const group = (stock.industryKey || stock.sector || 'Other').toUpperCase();
-                if (!grouped[group]) grouped[group] = [];
-                grouped[group].push(stock);
-            });
-            let rows = '';
-            Object.keys(grouped).sort().forEach(group => {
-                rows += `<tr><td colspan="3" style="background:#e6f4ea;font-weight:700;color:#2d5a2d;font-size:1rem;text-align:left;padding:10px 8px;">${group}</td></tr>`;
-                rows += grouped[group].map((stock, idx) => `
-                    <tr onclick="showDetails('${stock.Symbol || stock.ticker}')">
-                        <td class="ticker-cell">${stock.Symbol || stock.ticker}</td>
-                        <td class="company-cell" title="${stock.company}">${stock.company}</td>
-                        <td class="pe-cell">${stock.rating || ''}</td>
-                    </tr>
-                `).join('');
-            });
-            tbody.innerHTML = rows;
-        }
-
-        function showDetails(ticker) {
-            const stock = stockData.find(s => (s.ticker || s.Symbol) === ticker);
-            if (!stock) return;
-
-            // Safely extract values, fallback to 0 or empty string if missing
-            const name = stock.company || stock.Name || '';
-            const pe_ttm = stock.trailingPE ?? stock['PE (TTM)'] ?? stock.pe ?? stock.PE ?? 0;
-            const pe_fwd = stock.forwardPE ?? stock['PE (Fwd)'] ?? stock.forwardPE ?? stock['Forward PE'] ?? 0;
-            const div = (stock.dividendYield ?? stock.div ?? stock['Div'] ?? 0) / 100;
-            const earnings_growth = stock.earningsGrowth ?? stock['Earnings Growth'] ?? 0;
-            const revenue_growth = stock.revenueGrowth ?? stock['Revenue Growth'] ?? 0;
-            const ps = stock.priceToSalesTrailing12Months ?? stock['priceToSalesTrailing12Months'] ?? 0;
-            const gross_margin = stock.grossMargins ?? stock['grossMargins'] ?? 0;
-            const ps_adj = stock.PS_adj ?? stock.PS_Adjusted ?? stock['PS(adj)'] ?? 0;
-            const ask_grok_url = stock.ask_grok || stock.askGrok || '';
-            const share_x_url = stock.share_x || '';
-            const research_url = stock.stock_analysis_link || stock.stockAnalysisLink || '';
-            const chartSymbol = encodeURIComponent(stock.Symbol || stock.ticker || '');
-
-            const html = `
-                <h2 style="margin-bottom:8px;">${ticker} - ${name}</h2>
-
-                <div style="margin-bottom:18px;">
-                    <iframe frameBorder='0' scrolling='no' width='100%' height='320'
-                        src='https://api.stockdio.com/visualization/financial/charts/v1/HistoricalPrices?app-key=E8090066449749C88783EB38FA00D789&symbol=${chartSymbol}&days=365&width=800&height=320'>
-                    </iframe>
-                </div>
-
-                <div style="margin-bottom:12px;">
-                    <strong>PE (TTM):</strong> ${pe_ttm} &nbsp;|&nbsp;
-                    <strong>PE (Fwd):</strong> ${pe_fwd} &nbsp;|&nbsp;
-                    <strong>Div:</strong> ${div}%
-                </div>
-                <div style="margin-bottom:12px;">
-                    <strong>Earnings Growth:</strong> ${earnings_growth}% &nbsp;|&nbsp;
-                    <strong>Revenue Growth:</strong> ${revenue_growth}%
-                </div>
-                <div style="margin-bottom:12px;">
-                    <strong>PS:</strong> ${ps} &nbsp;|&nbsp;
-                    <strong>Gross Margin:</strong> ${gross_margin}% &nbsp;|&nbsp;
-                    <strong>PS(adj):</strong> ${ps_adj}
-                </div>
-                <div class="modal-footer">
-                    <a href="${research_url}" target="_blank" style="text-decoration:none;margin-right:auto;">
-                        <button>Research</button>
-                    </a>
-                    <a href="${ask_grok_url}" target="_blank" style="text-decoration:none;">
-                        <button>Google AI</button>
-                    </a>
-                    <a href="${share_x_url}" target="_blank" style="text-decoration:none;">
-                        <button>Share on X</button>
-                    </a>
-                </div>
-            `;
-            showModal(html);
-        }
-
-        // Show modal with content
-        function showModal(contentHtml) {
-            document.getElementById('modalBody').innerHTML = contentHtml;
-            document.getElementById('customModal').style.display = 'flex';
-        }
-        // Hide modal
-        document.getElementById('modalCloseBtn').onclick = function() {
-            document.getElementById('customModal').style.display = 'none';
-        };
-        // Optional: hide modal when clicking outside content
-        document.getElementById('customModal').onclick = function(e) {
-            if (e.target === this) this.style.display = 'none';
-        };
-
-        // Initialize table
-        setTimeout(() => {
-            renderTable();
-            // Set initial sort indicator
-            document.querySelector('th').classList.add('sort-asc');
-        }, 100);
-    </script>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    [document.getElementById('ps-info-icon'), document.getElementById('roe-info-icon')].forEach(function(infoIcon) {
-        if (!infoIcon) return;
-        const tooltip = infoIcon.querySelector('.ps-tooltip');
-        infoIcon.addEventListener('mouseenter', () => {
-            tooltip.style.display = 'block';
-        });
-        infoIcon.addEventListener('mouseleave', () => {
-            tooltip.style.display = 'none';
-        });
+function saveBasket() {
+    sessionStorage.setItem('algo10_basket', JSON.stringify(basket));
+    renderBasket();
+    updateBasketCount();
+    // refresh card states
+    document.querySelectorAll('.stock-card').forEach(card => {
+        const t = card.dataset.ticker;
+        if (basket.includes(t)) card.classList.add('in-basket');
+        else card.classList.remove('in-basket');
     });
-});
+}
+
+function toggleBasketItem(ticker) {
+    if (basket.includes(ticker)) {
+        basket = basket.filter(t => t !== ticker);
+    } else {
+        basket.push(ticker);
+    }
+    saveBasket();
+}
+
+function clearBasket() {
+    basket = [];
+    saveBasket();
+}
+
+function updateBasketCount() {
+    const cnt = document.getElementById('basketCount');
+    if (basket.length > 0) {
+        cnt.textContent = basket.length;
+        cnt.classList.remove('hidden');
+    } else {
+        cnt.classList.add('hidden');
+    }
+}
+
+function renderBasket() {
+    const el = document.getElementById('basketTickers');
+    if (basket.length === 0) {
+        el.innerHTML = `<div class="basket-empty">Your basket is empty.<br>Click a stock card, then "Add to Basket".</div>`;
+        return;
+    }
+    el.innerHTML = basket.map(t => `
+        <div class="basket-ticker-item">
+            <span class="basket-ticker-symbol">${t}</span>
+            <button class="basket-ticker-remove" onclick="removeFromBasket('${t}')" title="Remove">✕</button>
+        </div>
+    `).join('');
+}
+
+function removeFromBasket(ticker) {
+    basket = basket.filter(t => t !== ticker);
+    saveBasket();
+    // update open modal button if same ticker
+    const btn = document.getElementById('modalBasketBtn');
+    if (btn && btn.dataset.ticker === ticker) setModalBasketBtn(ticker);
+}
+
+function downloadBasketJSON() {
+    if (basket.length === 0) { alert('Your basket is empty.'); return; }
+    const payload = {
+        exported: new Date().toISOString(),
+        tickers: basket
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'algo10_basket.json';
+    a.click();
+}
+
+// ═══════════════════════════════════════
+// PANEL TOGGLES
+// ═══════════════════════════════════════
+function toggleSidebar() {
+    const s = document.getElementById('sidebar');
+    const o = document.getElementById('overlay');
+    const bp = document.getElementById('basketPanel');
+    bp.classList.remove('active');
+    s.classList.toggle('active');
+    o.classList.toggle('active');
+}
+
+function closeSidebar() {
+    document.getElementById('sidebar').classList.remove('active');
+    document.getElementById('overlay').classList.remove('active');
+}
+
+function toggleBasket() {
+    const bp = document.getElementById('basketPanel');
+    const o = document.getElementById('overlay');
+    document.getElementById('sidebar').classList.remove('active');
+    bp.classList.toggle('active');
+    o.classList.toggle('active');
+}
+
+function closeBasket() {
+    document.getElementById('basketPanel').classList.remove('active');
+    document.getElementById('overlay').classList.remove('active');
+}
+
+function closeAll() {
+    closeSidebar();
+    closeBasket();
+}
+
+// ═══════════════════════════════════════
+// DATA LAYER
+// ═══════════════════════════════════════
+let stockData = [];
+let filteredData = [];
+let currentSection = 'All Stocks';
+let uniqueIndustries = [];
+let rowsToShow = 3000;
+let sortKey = null;
+let sortDir = 'asc';
+
+const fetchWithTimeout = (url, timeout = 15000) => Promise.race([
+    fetch(url),
+    new Promise((_, reject) => setTimeout(() => reject(new Error('Request timeout')), timeout))
+]);
+
+fetchWithTimeout('./holds_json_data_all.json', 15000)
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.text(); })
+    .then(text => {
+        const cleaned = text
+            .replace(/:\s*Infinity\s*([,}\]])/g, ': null$1')
+            .replace(/:\s*NaN\s*([,}\]])/g, ': null$1')
+            .replace(/:\s*-Infinity\s*([,}\]])/g, ': null$1');
+        return JSON.parse(cleaned);
+    })
+    .then(json => {
+        stockData = Array.isArray(json) ? json : (json.data || []);
+        if (!stockData.length) throw new Error('No stock data');
+        uniqueIndustries = Array.from(
+            new Set(stockData.map(s => (s.industryKey || '').toUpperCase()).filter(Boolean))
+        ).sort();
+        populateSidebar();
+        stockData.sort((a, b) => {
+            const ra = parseFloat(a.ratings_sortable ?? -Infinity);
+            const rb = parseFloat(b.ratings_sortable ?? -Infinity);
+            return rb - ra;
+        });
+        selectShowAll();
+    })
+    .catch(err => {
+        document.getElementById('cardsGrid').innerHTML =
+            `<div class="loading-msg" style="color:#e53e3e;">Error loading data: ${err.message}<br><small>Check connection or refresh.</small></div>`;
+    });
+
+// ═══════════════════════════════════════
+// SIDEBAR POPULATION
+// ═══════════════════════════════════════
+function populateSidebar() {
+    const list = document.getElementById('industryList');
+    list.innerHTML = uniqueIndustries.map(ind => `
+        <div class="etf-item" onclick="selectIndustry('${ind}')">
+            <div>
+                <div class="etf-ticker">${ind}</div>
+            </div>
+        </div>
+    `).join('');
+}
+
+function setActiveSidebarItem(id) {
+    document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
+    if (id) { const el = document.getElementById(id); if (el) el.classList.add('active'); }
+}
+
+// ═══════════════════════════════════════
+// FILTER SELECTORS
+// ═══════════════════════════════════════
+function selectShowAll() {
+    rowsToShow = 3000; currentSection = 'All Stocks';
+    setActiveSidebarItem('showAllMenu');
+    filteredData = stockData.slice();
+    sortByRating();
+    render(); closeSidebar();
+}
+
+function selectVeryHighRevGrowth() {
+    rowsToShow = 500; currentSection = 'GARP';
+    setActiveSidebarItem('garpMenu');
+    filteredData = stockData.filter(s => {
+        const rev = pf(s.revenueGrowth ?? s['Revenue Growth'] ?? NaN);
+        if (!isF(rev) || !(rev >= 3 && rev <= 200)) return false;
+        const gm = pf(s.grossMargins ?? NaN);
+        if (!isF(gm) || !(gm >= 1 && gm <= 97)) return false;
+        const psa = pf(s.PS_adj ?? s.PS_Adjusted ?? s['PS(adj)'] ?? s.ps_adj ?? NaN);
+        if (!isF(psa) || !(psa > -99 && psa < 5)) return false;
+        const trailing = pf(s.trailingPE ?? s.pe ?? s.PE ?? NaN);
+        const forward = pf(s.forwardPE ?? s['Forward PE'] ?? NaN);
+        const fwdOk = isF(forward) && forward > 0 && forward <= 999999999;
+        const trlOk = isF(trailing) && trailing >= 0 && trailing <= 999999999;
+        const trlInv = !isF(trailing) || trailing < 0;
+        if (trlOk && fwdOk && forward < trailing) return true;
+        if (trlInv && fwdOk) return true;
+        return false;
+    });
+    sortKey = 'marketCap'; sortDir = 'desc';
+    render(); closeSidebar();
+}
+
+function selectPureGrowthNoPE() {
+    rowsToShow = 500; currentSection = 'Pure Growth';
+    setActiveSidebarItem('pureGrowthMenu');
+    filteredData = stockData.filter(s => {
+        const rev = pf(s.revenueGrowth ?? s['Revenue Growth'] ?? NaN);
+        if (!isF(rev) || rev < 3) return false;
+        const trailing = pf(s.trailingPE ?? s.pe ?? s.PE ?? NaN);
+        return !isF(trailing) || trailing < 0;
+    });
+    sortKey = 'revenueGrowth'; sortDir = 'desc';
+    render(); closeSidebar();
+}
+
+function selectSP500() {
+    rowsToShow = 500; currentSection = 'SP500';
+    setActiveSidebarItem('sp500Menu');
+    filteredData = stockData.filter(s => s.SP500 === 'Yes');
+    sortKey = 'marketCap'; sortDir = 'desc';
+    render(); closeSidebar();
+}
+
+function selectIndustry(industry) {
+    rowsToShow = 500; currentSection = industry;
+    document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
+    filteredData = stockData.filter(s => (s.industryKey || '').toUpperCase() === industry);
+    sortByRating();
+    render(); closeSidebar();
+}
+
+function sortByRating() {
+    filteredData.sort((a, b) => {
+        const ra = parseFloat(a.ratings_sortable ?? -Infinity);
+        const rb = parseFloat(b.ratings_sortable ?? -Infinity);
+        return rb - ra;
+    });
+    sortKey = null;
+}
+
+// ═══════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════
+const pf = v => parseFloat(v);
+const isF = v => Number.isFinite(v);
+
+function getField(s, key) {
+    if (!s) return NaN;
+    switch(key) {
+        case 'ps_adj':      return pf(s.PS_adj ?? s.PS_Adjusted ?? s['PS(adj)'] ?? s.ps_adj ?? NaN);
+        case 'ps':          return pf(s.priceToSalesTrailing12Months ?? s.ps ?? s.PS ?? NaN);
+        case 'revenueGrowth': return pf(s.revenueGrowth ?? s['Revenue Growth'] ?? NaN);
+        case 'grossMargins':  return pf(s.grossMargins ?? NaN);
+        case 'trailingPE':  return pf(s.trailingPE ?? s.pe ?? s.PE ?? NaN);
+        case 'forwardPE':   return pf(s.forwardPE ?? s['Forward PE'] ?? NaN);
+        case 'marketCap':   return pf(s.marketCap ?? s.marketCapRaw ?? NaN);
+        case 'dividendYield': return pf(s.dividendYield ?? s.div ?? NaN);
+        case 'earningsGrowth': return pf(s.earningsGrowth ?? NaN);
+        case 'ps_ratio':    return pf(s.PS_ratio ?? s.ps_ratio ?? NaN);
+        default:            return s[key];
+    }
+}
+
+function fmtNum(v, d=2) { return isF(v) ? Number(v).toLocaleString(undefined,{maximumFractionDigits:d,minimumFractionDigits:0}) : '—'; }
+function fmtPct(v, d=1) {
+    if (!isF(v)) return '—';
+    const n = Math.abs(v) <= 1 ? v * 100 : v;
+    return n.toFixed(d) + '%';
+}
+function fmtMcap(v) {
+    if (!isF(v)) return '—';
+    if (Math.abs(v) >= 1e12) return (v/1e12).toFixed(2)+'T';
+    if (Math.abs(v) >= 1e9)  return (v/1e9).toFixed(2)+'B';
+    if (Math.abs(v) >= 1e6)  return (v/1e6).toFixed(2)+'M';
+    return fmtNum(v, 0);
+}
+
+function applySort(arr) {
+    if (!sortKey) return arr;
+    const dir = sortDir === 'asc' ? 1 : -1;
+    return arr.slice().sort((a, b) => {
+        const av = getField(a, sortKey), bv = getField(b, sortKey);
+        const an = parseFloat(av), bn = parseFloat(bv);
+        if (isF(an) && isF(bn)) return (an - bn) * dir;
+        const as = (av??'').toString().toLowerCase(), bs = (bv??'').toString().toLowerCase();
+        return as < bs ? -dir : as > bs ? dir : 0;
+    });
+}
+
+// ═══════════════════════════════════════
+// RENDER CARDS
+// ═══════════════════════════════════════
+function render() {
+    document.getElementById('sectionTitle').textContent = currentSection;
+    document.getElementById('filterPill').textContent = currentSection;
+
+    const data = filteredData.length ? filteredData : stockData;
+    const sorted = applySort(data);
+    const slice = sorted.slice(0, rowsToShow);
+
+    const showMoreBtn = document.getElementById('showMoreBtn');
+    showMoreBtn.style.display = data.length > rowsToShow ? '' : 'none';
+    document.getElementById('stockCount').textContent = `${data.length.toLocaleString()} stocks`;
+
+    // For non-flat sections, group by industry
+    const isFlat = ['GARP', 'SP500', 'Pure Growth'].includes(currentSection) || uniqueIndustries.includes(currentSection);
+    
+    if (isFlat) {
+        document.getElementById('cardsGrid').innerHTML = slice.map(s => makeCard(s)).join('');
+    } else {
+        // Group by sector
+        const groups = {};
+        slice.forEach(s => {
+            const g = (s.industryKey || s.sector || 'OTHER').toUpperCase();
+            if (!groups[g]) groups[g] = [];
+            groups[g].push(s);
+        });
+        let html = '';
+        Object.keys(groups).sort().forEach(g => {
+            html += `<div class="group-label">${g}</div>`;
+            html += groups[g].map(s => makeCard(s)).join('');
+        });
+        document.getElementById('cardsGrid').innerHTML = html;
+    }
+}
+
+function makeCard(s) {
+    const ticker = s.Symbol || s.ticker || '';
+    const company = s.company || s.Name || '';
+    const ps_adj = getField(s, 'ps_adj');
+    const ps = getField(s, 'ps');
+    const rev = getField(s, 'revenueGrowth');
+    const gm = getField(s, 'grossMargins');
+    const ttmPE = getField(s, 'trailingPE');
+    const fwdPE = getField(s, 'forwardPE');
+    const inBasket = basket.includes(ticker);
+
+    const ttmFwd = [isF(ttmPE) ? fmtNum(ttmPE,1) : '—', isF(fwdPE) ? fmtNum(fwdPE,1) : '—'].join(' / ');
+
+    return `
+    <div class="stock-card${inBasket ? ' in-basket' : ''}" data-ticker="${ticker}" onclick="showDetails('${ticker}')">
+        <div class="card-ticker">${ticker}</div>
+        <div class="card-company" title="${company}">${company}</div>
+        <div class="card-metrics">
+            <div class="card-metric-row">
+                <span class="card-metric-label">PS_adj</span>
+                <span class="card-metric-value highlight">${isF(ps_adj) ? fmtNum(ps_adj,2) : '—'}</span>
+            </div>
+            <div class="card-metric-row">
+                <span class="card-metric-label">PS</span>
+                <span class="card-metric-value">${isF(ps) ? fmtNum(ps,2) : '—'}</span>
+            </div>
+            <div class="card-metric-row">
+                <span class="card-metric-label">Rev YoY%</span>
+                <span class="card-metric-value">${fmtPct(rev)}</span>
+            </div>
+            <div class="card-metric-row">
+                <span class="card-metric-label">GM%</span>
+                <span class="card-metric-value">${fmtPct(gm)}</span>
+            </div>
+            <div class="card-metric-row">
+                <span class="card-metric-label">TTM/Fwd PE</span>
+                <span class="card-metric-value">${ttmFwd}</span>
+            </div>
+        </div>
+        <div class="card-badge-row"><span class="in-basket-badge">In Basket</span></div>
+    </div>`;
+}
+
+function showMore() {
+    rowsToShow += 100;
+    render();
+}
+
+// ═══════════════════════════════════════
+// DETAIL MODAL
+// ═══════════════════════════════════════
+function showDetails(ticker) {
+    const s = stockData.find(s => (s.ticker || s.Symbol) === ticker);
+    if (!s) return;
+
+    const name = s.company || s.Name || '';
+    const ps_adj = getField(s, 'ps_adj');
+    const ps = getField(s, 'ps');
+    const rev = getField(s, 'revenueGrowth');
+    const gm = getField(s, 'grossMargins');
+    const ttmPE = getField(s, 'trailingPE');
+    const fwdPE = getField(s, 'forwardPE');
+    const div = pf(s.dividendYield ?? s.div ?? NaN);
+    const earnings = getField(s, 'earningsGrowth');
+    const mcap = getField(s, 'marketCap');
+    const ps_ratio = getField(s, 'ps_ratio');
+    const ps_adj_prior = pf(s.PS_adj_prior_run ?? NaN);
+    const change_ps = pf(s.change_in_PS_adj ?? NaN);
+    const ask_grok_url = s.ask_grok || s.askGrok || '';
+    const share_x_url = s.share_x || '';
+    const research_url = s.stock_analysis_link || s.stockAnalysisLink || '';
+    const chartSymbol = encodeURIComponent(s.Symbol || s.ticker || '');
+
+    const ttmFwd = [isF(ttmPE) ? fmtNum(ttmPE,1) : '—', isF(fwdPE) ? fmtNum(fwdPE,1) : '—'].join(' / ');
+
+    const inBasket = basket.includes(ticker);
+
+    document.getElementById('modalBody').innerHTML = `
+        <div class="modal-ticker-name">${ticker}</div>
+        <div class="modal-company-name">${name}</div>
+
+        <div style="margin-bottom:16px;">
+            <iframe frameBorder='0' scrolling='no' width='100%' height='280'
+                src='https://api.stockdio.com/visualization/financial/charts/v1/HistoricalPrices?app-key=E8090066449749C88783EB38FA00D789&symbol=${chartSymbol}&days=365&width=580&height=280'>
+            </iframe>
+        </div>
+
+        <div class="modal-metrics-grid">
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">PS_adj</div>
+                <div class="modal-metric-value green">${isF(ps_adj) ? fmtNum(ps_adj,2) : '—'}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">PS</div>
+                <div class="modal-metric-value">${isF(ps) ? fmtNum(ps,2) : '—'}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">TTM / Fwd PE</div>
+                <div class="modal-metric-value">${ttmFwd}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Rev YoY%</div>
+                <div class="modal-metric-value">${fmtPct(rev)}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Gross Margin</div>
+                <div class="modal-metric-value">${fmtPct(gm)}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Earnings Growth</div>
+                <div class="modal-metric-value">${fmtPct(earnings)}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Market Cap</div>
+                <div class="modal-metric-value">${fmtMcap(mcap)}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Dividend Yield</div>
+                <div class="modal-metric-value">${fmtPct(div)}</div>
+            </div>
+            ${isF(ps_adj_prior) ? `
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">PS_adj Prior</div>
+                <div class="modal-metric-value">${fmtNum(ps_adj_prior,2)}</div>
+            </div>` : ''}
+            ${isF(change_ps) ? `
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Change in PS_adj</div>
+                <div class="modal-metric-value">${fmtNum(change_ps,2)}</div>
+            </div>` : ''}
+        </div>
+
+        <div class="modal-actions">
+            ${research_url ? `<a href="${research_url}" target="_blank"><button class="btn">Research</button></a>` : ''}
+            ${ask_grok_url ? `<a href="${ask_grok_url}" target="_blank"><button class="btn">Google AI</button></a>` : ''}
+            ${share_x_url ? `<a href="${share_x_url}" target="_blank"><button class="btn">Share on X</button></a>` : ''}
+        </div>
+
+        <div class="add-to-basket-wrap">
+            <button class="add-to-basket-btn${inBasket ? ' in-basket' : ''}"
+                id="modalBasketBtn"
+                data-ticker="${ticker}"
+                onclick="handleModalBasket('${ticker}')">
+                ${inBasket ? '✓ In Basket — Remove' : '🧺 Add to Basket'}
+            </button>
+        </div>
+    `;
+    document.getElementById('customModal').style.display = 'flex';
+}
+
+function handleModalBasket(ticker) {
+    toggleBasketItem(ticker);
+    setModalBasketBtn(ticker);
+    // update the card in grid
+    document.querySelectorAll('.stock-card').forEach(card => {
+        if (card.dataset.ticker === ticker) {
+            if (basket.includes(ticker)) card.classList.add('in-basket');
+            else card.classList.remove('in-basket');
+            const badge = card.querySelector('.in-basket-badge');
+            // badge visibility controlled by CSS .in-basket class
+        }
+    });
+}
+
+function setModalBasketBtn(ticker) {
+    const btn = document.getElementById('modalBasketBtn');
+    if (!btn || btn.dataset.ticker !== ticker) return;
+    const inBasket = basket.includes(ticker);
+    btn.textContent = inBasket ? '✓ In Basket — Remove' : '🧺 Add to Basket';
+    if (inBasket) btn.classList.add('in-basket');
+    else btn.classList.remove('in-basket');
+}
+
+function closeModal() {
+    document.getElementById('customModal').style.display = 'none';
+}
+function onModalOverlayClick(e) {
+    if (e.target === document.getElementById('customModal')) closeModal();
+}
+
+// ═══════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════
+loadBasket();
+renderBasket();
+updateBasketCount();
+
+document.getElementById('showMoreBtn').style.display = 'none';
 </script>
 </body>
 </html>
