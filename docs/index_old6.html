@@ -302,62 +302,137 @@
 
         /* ── MODAL ── */
         .modal-overlay {
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.4);
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.45);
             z-index: 2000;
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 16px;
         }
         .modal-content {
             background: #fff;
-            border-radius: 10px;
-            padding: 32px 24px 24px 24px;
-            min-width: 320px;
-            max-width: 90vw;
-            max-height: 80vh;
+            border-radius: 12px;
+            padding: 16px 16px 14px;
+            width: 100%;
+            max-width: 560px;
+            max-height: 72vh;
             overflow-y: auto;
             position: relative;
-            box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.2);
         }
         @media (max-width: 600px) {
-            .modal-content { max-height: 60vh; padding: 24px 16px 16px; }
+            .modal-content {
+                max-height: 60vh;
+                padding: 12px 12px 10px;
+            }
         }
         .modal-close {
             position: absolute;
-            top: 8px; right: 18px;
-            font-size: 2rem;
-            color: #888;
+            top: 10px; right: 16px;
+            font-size: 1.8rem;
+            color: #aaa;
             cursor: pointer;
+            line-height: 1;
             background: none;
             border: none;
-            line-height: 1;
         }
         .modal-close:hover { color: #2d5a2d; }
-        .modal-footer {
-            margin-top: 24px;
-            display: flex;
-            justify-content: flex-end;
-            gap: 12px;
-            flex-wrap: wrap;
+
+        .modal-ticker-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 2px;
         }
-        .modal-footer button {
+        .modal-company-name {
+            color: #718096;
+            font-size: 0.8rem;
+            margin-bottom: 0;
+        }
+
+        .modal-metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+        .modal-metric-item {
+            background: #f7fafc;
+            border-radius: 6px;
+            padding: 6px 9px;
+        }
+        .modal-metric-label {
+            font-size: 0.66rem;
+            color: #718096;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            margin-bottom: 1px;
+        }
+        .modal-metric-value {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #2d3748;
+        }
+        .modal-metric-value.green { color: #2d5a2d; }
+
+        .modal-actions {
+            display: flex;
+            gap: 7px;
+            flex-wrap: wrap;
+            margin-top: 6px;
+            margin-bottom: 0;
+        }
+        .modal-actions a { text-decoration: none; }
+        .btn {
+            background: #edf2f7;
+            color: #2d3748;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 14px;
+            cursor: pointer;
+            font-size: 0.83rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: #e2e8f0; }
+        .btn-primary {
+            background: #2d5a2d;
+            color: white;
+        }
+        .btn-primary:hover { background: #255025; }
+        .btn-danger {
+            background: #fff5f5;
+            color: #e53e3e;
+            border: 1px solid #fed7d7;
+        }
+        .btn-danger:hover { background: #fed7d7; }
+
+        .add-to-basket-wrap {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid #e2e8f0;
+        }
+        .add-to-basket-btn {
             background: #2d5a2d;
             color: white;
             border: none;
-            border-radius: 4px;
-            padding: 10px 16px;
+            border-radius: 8px;
+            padding: 13px 36px;
+            font-size: 1rem;
+            font-weight: 700;
             cursor: pointer;
-            font-size: 14px;
-            transition: background 0.3s;
+            transition: background 0.2s, transform 0.1s;
+            letter-spacing: 0.3px;
         }
-        .modal-footer button:hover { background: #255f25; }
-        .modal-footer button.in-basket {
+        .add-to-basket-btn:hover { background: #255025; transform: translateY(-1px); }
+        .add-to-basket-btn.in-basket {
             background: #c6e6c6;
             color: #2d5a2d;
         }
-        .modal-footer button.in-basket:hover { background: #b2d9b2; }
+        .add-to-basket-btn.in-basket:hover { background: #b2d9b2; }
 
         /* ── BASKET PANEL ── */
         .basket-panel {
@@ -513,19 +588,6 @@
             white-space: nowrap;
         }
         .upload-toast.show { opacity: 1; }
-        .import-json-btn {
-            width: 100%;
-            background: #e6fffa;
-            color: #00736e;
-            border: 1px solid #b2f5ea;
-            border-radius: 7px;
-            padding: 9px;
-            font-size: 0.82rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .import-json-btn:hover { background: #b2f5ea; }
         .share-link-btn {
             width: 100%;
             background: #faf5ff;
@@ -707,8 +769,6 @@
     <div class="basket-footer">
         <button class="download-json-btn" onclick="downloadBasketJSON()">⬇ Download as JSON</button>
         <button class="share-link-btn" onclick="copyShareLink()">🔗 Copy Shareable Link</button>
-        <button class="import-json-btn" onclick="document.getElementById('jsonImportInput').click()">⬆ Import from JSON</button>
-        <input type="file" id="jsonImportInput" accept=".json" style="display:none;" onchange="handleJSONImport(event)">
         <button class="upload-csv-btn" onclick="document.getElementById('csvUploadInput').click()">⬆ Import from Portfolio CSV</button>
         <input type="file" id="csvUploadInput" accept=".csv" style="display:none;" onchange="handleCSVUpload(event)">
         <button class="clear-basket-btn" onclick="clearBasket()">Clear Basket</button>
@@ -765,31 +825,6 @@ function showToast(msg) {
     t.textContent = msg;
     t.classList.add('show');
     setTimeout(() => t.classList.remove('show'), 3000);
-}
-
-function handleJSONImport(event) {
-    const file = event.target.files[0];
-    if (!file) return;
-    event.target.value = '';
-    const reader = new FileReader();
-    reader.onload = function(e) {
-        try {
-            const data = JSON.parse(e.target.result);
-            const tickerRe = /^[A-Z]{1,5}$/;
-            // Accept either {tickers: [...]} or a bare array
-            const raw = Array.isArray(data) ? data : (Array.isArray(data.tickers) ? data.tickers : []);
-            const tickers = raw.map(t => String(t).trim().toUpperCase()).filter(t => tickerRe.test(t));
-            if (!tickers.length) { showToast('⚠️ No valid tickers found in JSON'); return; }
-            let added = 0;
-            tickers.forEach(t => { if (!basket.includes(t)) { basket.push(t); added++; } });
-            saveBasket();
-            render();
-            showToast(`✓ Imported ${added} new ticker${added !== 1 ? 's' : ''} from JSON`);
-        } catch(err) {
-            showToast('⚠️ Could not parse JSON file');
-        }
-    };
-    reader.readAsText(file);
 }
 
 function handleCSVUpload(event) {
@@ -1301,50 +1336,97 @@ function showDetails(ticker) {
     if (!s) return;
 
     const name = s.company || s.Name || '';
-    const pe_ttm = s.trailingPE ?? s['PE (TTM)'] ?? s.pe ?? s.PE ?? 0;
-    const pe_fwd = s.forwardPE ?? s['PE (Fwd)'] ?? s['Forward PE'] ?? 0;
-    const div = (s.dividendYield ?? s.div ?? s['Div'] ?? 0);
-    const earnings_growth = s.earningsGrowth ?? s['Earnings Growth'] ?? 0;
-    const revenue_growth = s.revenueGrowth ?? s['Revenue Growth'] ?? 0;
-    const ps = s.priceToSalesTrailing12Months ?? s.ps ?? 0;
-    const gross_margin = s.grossMargins ?? 0;
-    const ps_adj = s.PS_adj ?? s.PS_Adjusted ?? s['PS(adj)'] ?? 0;
+    const ps_adj = getField(s, 'ps_adj');
+    const ps = getField(s, 'ps');
+    const rev = getField(s, 'revenueGrowth');
+    const gm = getField(s, 'grossMargins');
+    const ttmPE = getField(s, 'trailingPE');
+    const fwdPE = getField(s, 'forwardPE');
+    const div = pf(s.dividendYield ?? s.div ?? NaN);
+    const earnings = getField(s, 'earningsGrowth');
+    const mcap = getField(s, 'marketCap');
+    const ps_ratio = getField(s, 'ps_ratio');
+    const ps_adj_prior = pf(s.PS_adj_prior_run ?? NaN);
+    const change_ps = pf(s.change_in_PS_adj ?? NaN);
     const ask_grok_url = s.ask_grok || s.askGrok || '';
+    const share_x_url = s.share_x || '';
     const research_url = s.stock_analysis_link || s.stockAnalysisLink || '';
     const chartSymbol = encodeURIComponent(s.Symbol || s.ticker || '');
+
+    const ttmFwd = [isF(ttmPE) ? fmtNum(ttmPE,1) : '—', isF(fwdPE) ? fmtNum(fwdPE,1) : '—'].join(' / ');
+
     const inBasket = basket.includes(ticker);
 
     document.getElementById('modalBody').innerHTML = `
-        <h2 style="margin-bottom:8px;">${ticker} - ${name}</h2>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px;">
+            <div>
+                <div class="modal-ticker-name">${ticker}</div>
+                <div class="modal-company-name">${name}</div>
+            </div>
+            <button class="add-to-basket-btn${inBasket ? ' in-basket' : ''}"
+                id="modalBasketBtn"
+                data-ticker="${ticker}"
+                onclick="handleModalBasket('${ticker}')"
+                style="flex-shrink:0;padding:8px 14px;font-size:0.8rem;">
+                ${inBasket ? '✓ In Basket' : '🧺 Add to Basket'}
+            </button>
+        </div>
 
-        <div style="margin-bottom:18px;">
-            <iframe frameBorder='0' scrolling='no' width='100%' height='320'
-                src='https://api.stockdio.com/visualization/financial/charts/v1/HistoricalPrices?app-key=E8090066449749C88783EB38FA00D789&symbol=${chartSymbol}&days=365&width=800&height=320'>
+        <div style="margin-bottom:8px;">
+            <iframe frameBorder='0' scrolling='no' width='100%' height='200'
+                src='https://api.stockdio.com/visualization/financial/charts/v1/HistoricalPrices?app-key=E8090066449749C88783EB38FA00D789&symbol=${chartSymbol}&days=365&width=580&height=200'>
             </iframe>
         </div>
 
-        <div style="margin-bottom:12px;">
-            <strong>PE (TTM):</strong> ${pe_ttm} &nbsp;|&nbsp;
-            <strong>PE (Fwd):</strong> ${pe_fwd} &nbsp;|&nbsp;
-            <strong>Div:</strong> ${div}%
+        <div class="modal-metrics-grid">
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">PS_adj</div>
+                <div class="modal-metric-value green">${isF(ps_adj) ? fmtNum(ps_adj,2) : '—'}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">PS</div>
+                <div class="modal-metric-value">${isF(ps) ? fmtNum(ps,2) : '—'}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">TTM / Fwd PE</div>
+                <div class="modal-metric-value">${ttmFwd}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Rev YoY%</div>
+                <div class="modal-metric-value">${fmtPct(rev)}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Gross Margin</div>
+                <div class="modal-metric-value">${fmtPct(gm)}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Earnings Growth</div>
+                <div class="modal-metric-value">${fmtPct(earnings)}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Market Cap</div>
+                <div class="modal-metric-value">${fmtMcap(mcap)}</div>
+            </div>
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Dividend Yield</div>
+                <div class="modal-metric-value">${fmtPct(div)}</div>
+            </div>
+            ${isF(ps_adj_prior) ? `
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">PS_adj Prior</div>
+                <div class="modal-metric-value">${fmtNum(ps_adj_prior,2)}</div>
+            </div>` : ''}
+            ${isF(change_ps) ? `
+            <div class="modal-metric-item">
+                <div class="modal-metric-label">Change in PS_adj</div>
+                <div class="modal-metric-value">${fmtNum(change_ps,2)}</div>
+            </div>` : ''}
         </div>
-        <div style="margin-bottom:12px;">
-            <strong>Earnings Growth:</strong> ${earnings_growth}% &nbsp;|&nbsp;
-            <strong>Revenue Growth:</strong> ${revenue_growth}%
-        </div>
-        <div style="margin-bottom:12px;">
-            <strong>PS:</strong> ${ps} &nbsp;|&nbsp;
-            <strong>Gross Margin:</strong> ${gross_margin}% &nbsp;|&nbsp;
-            <strong>PS(adj):</strong> ${ps_adj}
-        </div>
-        <div class="modal-footer">
-            ${research_url ? `<a href="${research_url}" target="_blank" style="text-decoration:none;margin-right:auto;"><button>Research</button></a>` : ''}
-            ${ask_grok_url ? `<a href="${ask_grok_url}" target="_blank" style="text-decoration:none;"><button>Google AI</button></a>` : ''}
-            <button id="modalBasketBtn" data-ticker="${ticker}"
-                class="${inBasket ? 'in-basket' : ''}"
-                onclick="handleModalBasket('${ticker}')">
-                ${inBasket ? '✓ In Basket' : '🧺 Add to Basket'}
-            </button>
+
+        <div class="modal-actions">
+            ${research_url ? `<a href="${research_url}" target="_blank"><button class="btn">Research</button></a>` : ''}
+            ${ask_grok_url ? `<a href="${ask_grok_url}" target="_blank"><button class="btn">Google AI</button></a>` : ''}
+            ${share_x_url ? `<a href="${share_x_url}" target="_blank"><button class="btn">Share on X</button></a>` : ''}
         </div>
     `;
     document.getElementById('customModal').style.display = 'flex';
@@ -1352,20 +1434,25 @@ function showDetails(ticker) {
 
 function handleModalBasket(ticker) {
     toggleBasketItem(ticker);
-    // update button in modal
-    const btn = document.getElementById('modalBasketBtn');
-    if (btn && btn.dataset.ticker === ticker) {
-        const inBasket = basket.includes(ticker);
-        btn.textContent = inBasket ? '✓ In Basket' : '🧺 Add to Basket';
-        if (inBasket) btn.classList.add('in-basket'); else btn.classList.remove('in-basket');
-    }
-    // update card in grid
-    document.querySelectorAll(`.stock-card[data-ticker="${ticker}"]`).forEach(card => {
-        const inB = basket.includes(ticker);
-        card.classList.toggle('in-basket', inB);
-        const qbtn = card.querySelector('.card-quick-add');
-        if (qbtn) { qbtn.textContent = inB ? '✓' : '+'; }
+    setModalBasketBtn(ticker);
+    // update the card in grid
+    document.querySelectorAll('.stock-card').forEach(card => {
+        if (card.dataset.ticker === ticker) {
+            if (basket.includes(ticker)) card.classList.add('in-basket');
+            else card.classList.remove('in-basket');
+            const badge = card.querySelector('.in-basket-badge');
+            // badge visibility controlled by CSS .in-basket class
+        }
     });
+}
+
+function setModalBasketBtn(ticker) {
+    const btn = document.getElementById('modalBasketBtn');
+    if (!btn || btn.dataset.ticker !== ticker) return;
+    const inBasket = basket.includes(ticker);
+    btn.textContent = inBasket ? '✓ In Basket' : '🧺 Add to Basket';
+    if (inBasket) btn.classList.add('in-basket');
+    else btn.classList.remove('in-basket');
 }
 
 function closeModal() {
