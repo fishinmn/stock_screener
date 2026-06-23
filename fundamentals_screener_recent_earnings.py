@@ -1,0 +1,28 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Sep 16 08:36:15 2016
+
+@author: efischer
+"""
+import pandas as pd
+import numpy as np
+import os
+import json
+import time
+import logging
+import yfinance as yf
+import traceback
+from investing_functions import *
+
+pd.set_option("display.max_colwidth", 10000)
+dir_path = os.path.dirname(os.path.realpath(__file__))
+filepath = os.path.join(dir_path, 'data', 'recent_earnings.csv')#.csv
+df = pd.read_csv(filepath, encoding='iso-8859-1')
+
+df_with_score = df_filter_fundamentals_with_earnings(df)
+
+
+df_with_score = df_with_score[['date','symbol','epsActual','epsEstimated','revenueActual','revenueEstimated', 'Symbol',  'longName', 'sector', 'industry', 'industryKey', 'marketCap', 'priceToSalesTrailing12Months', 'currentRatio', 'quickRatio', 'revenueGrowth', 'grossMargins', 'trailingPE', 'forwardPE', 'PS_adj', 'pegRatio', 'dividendYield', 'earningsGrowth', 'profitMargins',  'shortPercentOfFloat', 'pegRatio', 'score']]
+
+filepath = os.path.join(dir_path, 'data', 'fundamentals_screener_recent_earnings.csv')
+df_with_score.sort_values(by='score', ascending=False).to_csv(filepath, index = False)

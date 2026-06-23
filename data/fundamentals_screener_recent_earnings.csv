@@ -1,0 +1,2 @@
+date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
+2026-06-11,ADBE,5.96,5.82,6618000000,6453986000,ADBE,Adobe Inc.,Technology,Software - Application,software-application,77472751616,3.07,0.751,0.631,12.7,89.4,11.15,7.08,0.28,0,0,7.9,28.689999999999998,5.16,0,14

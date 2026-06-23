@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+import os
 import requests
 import pandas as pd
 import pickle
@@ -68,3 +69,7 @@ if __name__ == "__main__":
     if not earnings_df.empty:
         print(f"\n--- Successfully Retrieved {len(earnings_df)} Earnings Reports ---")
         print(earnings_df.head(15).to_string(index=False))
+
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        output_filepath = os.path.join(dir_path, 'data', "recent_earnings.csv")
+        earnings_df.to_csv(output_filepath, index=False)
