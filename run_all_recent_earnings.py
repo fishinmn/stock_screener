@@ -6,7 +6,8 @@ scripts = [
     "fundamentals_screener_recent_earnings.py",
     "prep_recent_earnings_data.py",
     "compare_ps_adj_recent_earnings.py",
-    "publish_json_recent_earnings.py"
+    "publish_json_recent_earnings.py",
+    "git_push_script.py"
 ]
 
 base_path = Path(__file__).parent

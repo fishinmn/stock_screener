@@ -1,0 +1,1 @@
+"C:\Users\fish_\AppData\Local\Programs\Python\Python310\python" "C:\git\stock_screener\run_all_recent_earnings.py"
