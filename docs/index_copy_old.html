@@ -579,6 +579,15 @@
     <p>   
     <a href="top50_quarter_table.html">See historical quarterly picks</a>
     </p>
+    <div class="mobile-note">
+        1. Use menu on top right, select industry • 2. Click a row/ticker for more detail • 3. Create a diversified or thematic basket using your brokerage account
+        <br>
+        <strong>Ratings:</strong> 🚀 = future margin expansion potential
+        <br>
+        🚀 = Algo10's measure of future margin expansion potential is based on a mathematical formula of revenue growth, gross margin, and TTM price to sales ratio. It is also shown in the details as "PS(adj)"
+        <br><br>
+        💵 = current earnings
+        <br>
     <div class="table-container">
         <table id="stockTable">
             <thead>
@@ -1100,14 +1109,7 @@
                         <th class="metric-col" onclick="sortBy('trailingPE')">Trailing PE ${sortKey==='trailingPE' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('forwardPE')">Fwd PE ${sortKey==='forwardPE' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('dividendYield')">Div Yield ${sortKey==='dividendYield' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                    </tr>
-                `;
-            } else if (currentSection === 'All Stocks') {
-                theadHtml = `
-                    <tr>
-                        <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="company-col" onclick="sortBy('company')">Company ${sortKey==='company' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="pe-col" onclick="sortBy('ps_adj')">PS_adj / RevYoY / GM ${sortKey==='ps_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
+                        <th class="metric-col" onclick="sortBy('rating')">Rating ${sortKey==='rating' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                     </tr>
                 `;
             } else {
@@ -1115,6 +1117,7 @@
                     <tr>
                         <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="company-col" onclick="sortBy('company')">Company ${sortKey==='company' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
+                        <th class="pe-col" onclick="sortBy('rating')">Rating ${sortKey==='rating' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                     </tr>
                 `;
             }
@@ -1178,6 +1181,7 @@
                     const forward = getField(stock, 'forwardPE');
                     const divy = getField(stock, 'dividendYield');
                     const shortInt = getField(stock, 'shortInterest');
+                    const rating = stock.rating || '';
                     return `
                         <tr onclick="showDetails('${symbol}')">
                                 <td class="ticker-cell">${symbol}</td>
@@ -1192,10 +1196,11 @@
                                 <td class="green-metric">${Number.isFinite(trailing) ? trailing : ''}</td>
                                 <td class="green-metric">${Number.isFinite(forward) ? forward : ''}</td>
                                 <td class="green-metric">${formatPercent(divy,2)}</td>
+                                <td class="pe-cell">${rating}</td>
                             </tr>
                     `;
                 }).join('');
-                tbody.innerHTML = rows || `<tr><td colspan="12" class="loading">No matching stocks</td></tr>`;
+                tbody.innerHTML = rows || `<tr><td colspan="13" class="loading">No matching stocks</td></tr>`;
                 return;
             }
 
@@ -1208,32 +1213,14 @@
             });
             let rows = '';
             Object.keys(grouped).sort().forEach(group => {
-                const colCount = currentSection === 'All Stocks' ? 3 : 2;
-                rows += `<tr><td colspan="${colCount}" style="background:#e6f4ea;font-weight:700;color:#2d5a2d;font-size:1rem;text-align:left;padding:10px 8px;">${group}</td></tr>`;
-                rows += grouped[group].map((stock, idx) => {
-                    if (currentSection === 'All Stocks') {
-                        const ps_adj = getField(stock, 'ps_adj');
-                        const revenue = getField(stock, 'revenueGrowth');
-                        const gross = parseFloat(stock.grossMargins ?? stock['grossMargins'] ?? stock.GrossMargin ?? NaN);
-                        const ps_adj_str = Number.isFinite(ps_adj) ? formatNumber(ps_adj, 2) : '';
-                        const rev_str = formatPercent(revenue, 0);
-                        const gm_str = formatPercent(gross, 0);
-                        const metricCell = `${ps_adj_str} / ${rev_str} / ${gm_str}`;
-                        return `
+                rows += `<tr><td colspan="3" style="background:#e6f4ea;font-weight:700;color:#2d5a2d;font-size:1rem;text-align:left;padding:10px 8px;">${group}</td></tr>`;
+                rows += grouped[group].map((stock, idx) => `
                     <tr onclick="showDetails('${stock.Symbol || stock.ticker}')">
                         <td class="ticker-cell">${stock.Symbol || stock.ticker}</td>
                         <td class="company-cell" title="${stock.company}">${stock.company}</td>
-                        <td class="pe-cell">${metricCell}</td>
+                        <td class="pe-cell">${stock.rating || ''}</td>
                     </tr>
-                `;
-                    }
-                    return `
-                    <tr onclick="showDetails('${stock.Symbol || stock.ticker}')">
-                        <td class="ticker-cell">${stock.Symbol || stock.ticker}</td>
-                        <td class="company-cell" title="${stock.company}">${stock.company}</td>
-                    </tr>
-                `;
-                }).join('');
+                `).join('');
             });
             tbody.innerHTML = rows;
         }
