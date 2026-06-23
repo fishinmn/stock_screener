@@ -1,8 +1,19 @@
 from datetime import datetime, timedelta
 import requests
 import pandas as pd
+import pickle
 
-def get_recent_earnings(api_key: str, days_back: int = 14) -> pd.DataFrame:
+def get_secrets():
+    with open('C:/git/secret_stock_analysis_app.pickle', 'rb') as handle:
+        response = pickle.load(handle)
+    # print(response['SPOTGAMMA_USERNAME'])
+    # print(response['SPOTGAMMA_PWD'])
+    # print(response['ALPACA_PAPER_GMAIL_KEY'])
+    # print(response['ALPACA_PAPER_GMAIL_SECRET_KEY'])
+    return response
+
+
+def get_recent_earnings(days_back: int = 14) -> pd.DataFrame:
     """Fetches stock earnings results from the updated FMP stable API."""
     
     # 1. Dynamically calculate the historical date range (last 1-2 weeks)
@@ -16,7 +27,7 @@ def get_recent_earnings(api_key: str, days_back: int = 14) -> pd.DataFrame:
     params = {
         "from": start_date_str,
         "to": end_date_str,
-        "apikey": api_key
+        "apikey": get_secrets()['FINANCIALMODELINGPREP_API_KEY']
     }
     
     try:
@@ -25,7 +36,6 @@ def get_recent_earnings(api_key: str, days_back: int = 14) -> pd.DataFrame:
         response.raise_for_status() 
         
         data = response.json()
-        
         if not data:
             print(f"No earnings data found between {start_date_str} and {end_date_str}.")
             return pd.DataFrame()
@@ -38,7 +48,7 @@ def get_recent_earnings(api_key: str, days_back: int = 14) -> pd.DataFrame:
             df = df[df['eps'].notna()]
             
         # 7. Reorganize columns for clear data mapping
-        columns_to_keep = ['date', 'symbol', 'eps', 'epsEstimated', 'revenue', 'revenueEstimated']
+        columns_to_keep = ['date', 'symbol', 'epsActual', 'epsEstimated', 'revenueActual', 'revenueEstimated']
         available_cols = [col for col in columns_to_keep if col in df.columns]
         
         df_cleaned = df[available_cols].copy()
@@ -52,11 +62,8 @@ def get_recent_earnings(api_key: str, days_back: int = 14) -> pd.DataFrame:
 
 # --- Execution Example ---
 if __name__ == "__main__":
-    # Replace with your actual free FMP API key
-    MY_FMP_KEY = "your_free_api_key_here" 
-    
     # Fetch earnings from the last 14 days
-    earnings_df = get_recent_earnings(api_key=MY_FMP_KEY, days_back=14)
+    earnings_df = get_recent_earnings(days_back=14)
     
     if not earnings_df.empty:
         print(f"\n--- Successfully Retrieved {len(earnings_df)} Earnings Reports ---")
