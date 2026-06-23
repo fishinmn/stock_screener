@@ -621,7 +621,6 @@
     <script>
         // Load data from remote JSON
         let stockData = [];
-        let earningsData = [];
         let filteredData = [];
         let currentSection = 'All Stocks';
         let uniqueIndustries = [];
@@ -636,30 +635,27 @@
             ]);
         };
 
-        // Generic helper: fetch a JSON file (tolerating Infinity/NaN/-Infinity literals) and return the parsed array
-        const fetchJsonData = (url, timeout = 15000) => {
-            return fetchWithTimeout(url, timeout)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    // Replace Infinity and NaN with null to make valid JSON
-                    const cleanedText = text
-                        .replace(/:\s*Infinity\s*([,}\]])/g, ': null$1')
-                        .replace(/:\s*NaN\s*([,}\]])/g, ': null$1')
-                        .replace(/:\s*-Infinity\s*([,}\]])/g, ': null$1');
-                    const jsonData = JSON.parse(cleanedText);
-                    return Array.isArray(jsonData) ? jsonData : (jsonData.data || []);
-                });
-        };
-
         console.log('Starting to fetch data...');
-        fetchJsonData('./holds_json_data_all.json', 15000)
-            .then(data => {
-                stockData = data;
+        fetchWithTimeout('./holds_json_data_all.json', 15000)
+            .then(response => {
+                console.log('Response received:', response.status);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.text();
+            })
+            .then(text => {
+                console.log('Text received, length:', text.length);
+                // Replace Infinity and NaN with null to make valid JSON
+                const cleanedText = text
+                    .replace(/:\s*Infinity\s*([,}\]])/g, ': null$1')
+                    .replace(/:\s*NaN\s*([,}\]])/g, ': null$1')
+                    .replace(/:\s*-Infinity\s*([,}\]])/g, ': null$1');
+                return JSON.parse(cleanedText);
+            })
+            .then(jsonData => {
+                console.log('JSON parsed, data type:', typeof jsonData, 'is array:', Array.isArray(jsonData));
+                stockData = Array.isArray(jsonData) ? jsonData : (jsonData.data || []);
                 console.log('Stock data loaded, count:', stockData.length);
                 if (stockData.length === 0) {
                     throw new Error('No stock data received');
@@ -697,23 +693,6 @@
                 }
             });
 
-        // Load the recent-earnings dataset independently (powers the "Recent Earnings" view).
-        // This fetch is separate from the main stock data load above so a failure here
-        // doesn't block or break the rest of the app.
-        console.log('Starting to fetch recent earnings data...');
-        fetchJsonData('./json_data_recent_earnings.json', 15000)
-            .then(data => {
-                earningsData = data;
-                console.log('Recent earnings data loaded, count:', earningsData.length);
-                // If the user is already on the Recent Earnings view, refresh it now that data has arrived
-                if (currentSection === 'Recent Earnings') {
-                    selectRecentEarnings();
-                }
-            })
-            .catch(error => {
-                console.error('Error loading recent earnings data:', error);
-            });
-
         function populateSidebar(industries) {
             const sidebar = document.getElementById('sidebar');
             const etfList = sidebar.querySelector('.etf-list');
@@ -744,12 +723,6 @@
                                 <div class="etf-name">S&P 500 Companies</div>
                             </div>
                         </div>
-                        <div class="etf-item" id="recentEarningsMenu" onclick="selectRecentEarnings()">
-                            <div class="etf-info">
-                                <div class="etf-ticker">Recent Earnings</div>
-                                <div class="etf-name">EPS &amp; Rev Est vs Actual • Sorted by PS_adj</div>
-                            </div>
-                        </div>
                     </div>
                 `;
             industries.forEach(ind => {
@@ -775,7 +748,7 @@
             // Find the correct sidebar item and set it active
             const items = Array.from(document.querySelectorAll('.etf-item'));
             const idx = uniqueIndustries.indexOf(industry);
-            if (idx >= 0) items[idx + 5].classList.add('active'); // +5 for Show All, GARP, Growth + Margin Expansion, SP500, Recent Earnings
+            if (idx >= 0) items[idx + 4].classList.add('active'); // +4 for Show All, GARP, Growth + Margin Expansion, SP500
             // Filter by industryKey (case-insensitive)
             filteredData = stockData.filter(s => (s.industryKey || '').toUpperCase() === industry);
             // Sort filteredData by rating_sortable (descending)
@@ -920,24 +893,6 @@
             closeSidebar();
         }
 
-        function selectRecentEarnings() {
-            rowsToShow = 500;
-            currentSection = 'Recent Earnings';
-            document.getElementById('sectionTitle').textContent = 'Recent Earnings';
-            document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
-            const re = document.getElementById('recentEarningsMenu');
-            if (re) re.classList.add('active');
-
-            // Sourced from json_data_recent_earnings.json (no additional filtering)
-            filteredData = earningsData.slice();
-
-            // Default sort for this view: PS_adj ascending
-            sortKey = 'ps_adj';
-            sortDir = 'asc';
-            renderTable();
-            closeSidebar();
-        }
-
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('overlay');
@@ -981,12 +936,6 @@
                 case 'dividendYield': return parseFloat(stock.dividendYield ?? stock.div ?? stock['Div'] ?? NaN);
                 // shortInterest removed — dataset does not include it
                 case 'rating': return stock.rating ?? stock.Rating ?? '';
-                // Fields used by the Recent Earnings view (json_data_recent_earnings.json)
-                case 'earningsDate': return stock.date ?? stock.Date ?? stock.earningsDate ?? stock['Earnings Date'] ?? stock.earnings_date ?? '';
-                case 'epsEstimated': return parseFloat(stock.epsEstimated ?? stock.eps_estimated ?? stock['EPS Estimated'] ?? stock.epsEstimate ?? stock.eps_estimate ?? NaN);
-                case 'epsActual': return parseFloat(stock.epsActual ?? stock.eps_actual ?? stock['EPS Actual'] ?? NaN);
-                case 'revEstimated': return parseFloat(stock.revenueEstimated ?? stock.revEstimated ?? stock.rev_estimated ?? stock['Revenue Estimated'] ?? stock.revenueEstimate ?? stock.revenue_estimated ?? NaN);
-                case 'revActual': return parseFloat(stock.revActual ?? stock.rev_actual ?? stock['Revenue Actual'] ?? stock.revenueActual ?? stock.revenue_actual ?? NaN);
                 default: return stock[key];
             }
         }
@@ -1080,21 +1029,7 @@
             // Build/replace the table header dynamically depending on current view
             const table = document.getElementById('stockTable');
             let theadHtml = '';
-            if (currentSection === 'Recent Earnings') {
-                theadHtml = `
-                    <tr>
-                        <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="company-col" onclick="sortBy('company')">Company ${sortKey==='company' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('earningsDate')">Earnings Date ${sortKey==='earningsDate' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('epsEstimated')">EPS Est ${sortKey==='epsEstimated' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('epsActual')">EPS Actual ${sortKey==='epsActual' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('revEstimated')">Rev Est ${sortKey==='revEstimated' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('revActual')">Rev Actual ${sortKey==='revActual' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('ps_adj')">PS_adj ${sortKey==='ps_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('ps_adj_prior_run')">PS_adj Prior ${sortKey==='ps_adj_prior_run' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                    </tr>
-                `;
-            } else if (currentSection === '🚀🚀🚀' || currentSection === 'SP500' || currentSection === 'Growth + Margin Expansion') {
+            if (currentSection === '🚀🚀🚀' || currentSection === 'SP500' || currentSection === 'Growth + Margin Expansion') {
                 theadHtml = `
                     <tr>
                         <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
@@ -1122,42 +1057,6 @@
                 `;
             }
             if (table && table.querySelector('thead')) table.querySelector('thead').innerHTML = theadHtml;
-
-            // If the current view is Recent Earnings, render its own flat list with earnings-specific columns
-            if (currentSection === 'Recent Earnings') {
-                const flatList = rowsToDisplay.slice(0, rowsToShow);
-                if (showMoreBtn) showMoreBtn.style.display = 'none';
-
-                // Apply sorting if requested
-                const sorted = applySort(flatList);
-
-                const rows = sorted.map(stock => {
-                    const symbol = stock.Symbol || stock.ticker || '';
-                    const company = stock.company || stock.Name || '';
-                    const edate = getField(stock, 'earningsDate');
-                    const epsEst = getField(stock, 'epsEstimated');
-                    const epsAct = getField(stock, 'epsActual');
-                    const revEst = getField(stock, 'revEstimated');
-                    const revAct = getField(stock, 'revActual');
-                    const ps_adj = getField(stock, 'ps_adj');
-                    const ps_adj_prior = getField(stock, 'ps_adj_prior_run');
-                    return `
-                        <tr onclick="showDetails('${symbol}')">
-                                <td class="ticker-cell">${symbol}</td>
-                                <td class="company-cell" title="${company}">${company}</td>
-                                <td class="pe-cell">${edate || ''}</td>
-                                <td class="pe-cell">${formatNumber(epsEst,2)}</td>
-                                <td class="pe-cell">${formatNumber(epsAct,2)}</td>
-                                <td class="pe-cell">${formatMarketCap(revEst)}</td>
-                                <td class="pe-cell">${formatMarketCap(revAct)}</td>
-                                <td class="pe-cell">${Number.isFinite(ps_adj) ? ps_adj : ''}</td>
-                                <td class="pe-cell">${Number.isFinite(ps_adj_prior) ? ps_adj_prior : ''}</td>
-                            </tr>
-                    `;
-                }).join('');
-                tbody.innerHTML = rows || `<tr><td colspan="9" class="loading">No matching stocks</td></tr>`;
-                return;
-            }
 
             // If the current view is the triple-rocket view, SP500 view, or Growth + Margin Expansion view, render a flat list with extra columns
             if (currentSection === '🚀🚀🚀' || currentSection === 'SP500' || currentSection === 'Growth + Margin Expansion') {
