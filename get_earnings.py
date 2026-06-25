@@ -35,6 +35,8 @@ def get_recent_earnings(days_back: int = 14) -> pd.DataFrame:
         # 4. Execute the API request
         response = requests.get(url, params=params)
         response.raise_for_status() 
+        print(url)
+        print(params)
         
         data = response.json()
         if not data:
@@ -45,8 +47,8 @@ def get_recent_earnings(days_back: int = 14) -> pd.DataFrame:
         df = pd.DataFrame(data)
         
         # 6. Filter for historical results that actually have reported metrics
-        if 'eps' in df.columns:
-            df = df[df['eps'].notna()]
+#        if 'eps' in df.columns:
+#            df = df[df['eps'].notna()]
             
         # 7. Reorganize columns for clear data mapping
         columns_to_keep = ['date', 'symbol', 'epsActual', 'epsEstimated', 'revenueActual', 'revenueEstimated']

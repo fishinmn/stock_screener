@@ -3,6 +3,7 @@ import sys
 from pathlib import Path
 
 scripts = [
+    "get_earnings.py",
     "fundamentals_screener_recent_earnings.py",
     "prep_recent_earnings_data.py",
     "compare_ps_adj_recent_earnings.py",
