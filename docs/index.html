@@ -1277,7 +1277,7 @@
             const robinhood_url = `https://robinhood.com/us/en/stocks/${encodeURIComponent(ticker)}/`;
             const google_url = `https://www.google.com/search?q=${encodeURIComponent(ticker)}+stock`;
             const gemini_prompt = `I want to chat about ${ticker} ${name}.  For context, I use a formula for valuation called PS_adj.  It is calculated by take PS (price to sales) * (1-RevYoY %) * (1-GM%).  Please tell me what the most recent PS_adj value is.  Be brief, I will have followup questions.`;
-            const gemini_url = `https://gemini.google.com/app?prompt=${encodeURIComponent(gemini_prompt)}`;
+            const gemini_url = `https://www.google.com/search?q=${encodeURIComponent(gemini_prompt)}`;
             const favicon = (domain) => `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
 
             const html = `
