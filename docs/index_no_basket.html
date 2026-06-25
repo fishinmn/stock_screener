@@ -562,49 +562,6 @@
             height: 44px;
             border-radius: 6px;
         }
-
-        .modal-footer button.icon-btn svg {
-            width: 44px;
-            height: 44px;
-            stroke: #2d5a2d;
-        }
-
-        .modal-footer button.icon-btn.in-basket {
-            background: #2d5a2d;
-            border-color: #2d5a2d;
-        }
-
-        .modal-footer button.icon-btn.in-basket svg {
-            stroke: #ffffff;
-        }
-
-        .basket-action-btn {
-            background: #2d5a2d;
-            color: #fff;
-            border: none;
-            border-radius: 6px;
-            padding: 10px 18px;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .basket-action-btn:hover {
-            background: #244a24;
-        }
-
-        .basket-remove-btn {
-            background: #fff;
-            color: #b02a2a;
-            border: 1px solid #e0b4b4;
-            border-radius: 6px;
-            padding: 4px 12px;
-            font-size: 13px;
-            cursor: pointer;
-        }
-
-        .basket-remove-btn:hover {
-            background: #fbeaea;
-        }
     </style>
 </head>
 <body>
@@ -641,12 +598,6 @@
     </div>
 
     <div id="sectionTitle" style="font-size:1.2rem;font-weight:600;color:#2d5a2d;margin:18px 0 0 4px;">All Stocks</div>
-    <div id="basketActions" style="display:none; gap:10px; flex-wrap:wrap; margin:12px 0 0 4px;">
-        <button class="basket-action-btn" onclick="downloadBasketJSON()">Download JSON</button>
-        <button class="basket-action-btn" onclick="downloadBasketCSV()">Download CSV</button>
-        <button class="basket-action-btn" onclick="shareBasketLink()">Share as Link</button>
-        <span id="basketShareMsg" style="align-self:center; color:#2d5a2d; font-size:13px;"></span>
-    </div>
     <p>
     <a href="backtest.html">See backtest results</a> 
     </p>
@@ -815,15 +766,8 @@
                                 <div class="etf-name">EPS &amp; Rev Est vs Actual • Sorted by PS_adj</div>
                             </div>
                         </div>
-                        <div class="etf-item" id="basketMenu" onclick="selectBasket()">
-                            <div class="etf-info">
-                                <div class="etf-ticker">Basket <span id="basketCount"></span></div>
-                                <div class="etf-name">Your saved tickers • Download / Share</div>
-                            </div>
-                        </div>
                     </div>
                 `;
-            updateBasketCount();
             industries.forEach(ind => {
                 if (!ind) return;
                 const item = document.createElement('div');
@@ -847,7 +791,7 @@
             // Find the correct sidebar item and set it active
             const items = Array.from(document.querySelectorAll('.etf-item'));
             const idx = uniqueIndustries.indexOf(industry);
-            if (idx >= 0) items[idx + 6].classList.add('active'); // +6 for Show All, GARP, Growth + Margin Expansion, SP500, Recent Earnings, Basket
+            if (idx >= 0) items[idx + 5].classList.add('active'); // +5 for Show All, GARP, Growth + Margin Expansion, SP500, Recent Earnings
             // Filter by industryKey (case-insensitive)
             filteredData = stockData.filter(s => (s.industryKey || '').toUpperCase() === industry);
             // Sort filteredData by rating_sortable (descending)
@@ -1008,142 +952,6 @@
             sortDir = 'asc';
             renderTable();
             closeSidebar();
-        }
-
-        // ---- Basket (localStorage-backed list of saved tickers) ----
-        const BASKET_KEY = 'stockBasket';
-
-        function getBasket() {
-            try {
-                const raw = JSON.parse(localStorage.getItem(BASKET_KEY));
-                return Array.isArray(raw) ? raw : [];
-            } catch (e) {
-                return [];
-            }
-        }
-
-        function saveBasket(arr) {
-            // dedupe while preserving order
-            const unique = [...new Set(arr)];
-            localStorage.setItem(BASKET_KEY, JSON.stringify(unique));
-            updateBasketCount();
-        }
-
-        function isInBasket(ticker) {
-            return getBasket().includes(ticker);
-        }
-
-        function addToBasket(ticker) {
-            const b = getBasket();
-            if (!b.includes(ticker)) {
-                b.push(ticker);
-                saveBasket(b);
-            }
-        }
-
-        function removeFromBasket(ticker) {
-            saveBasket(getBasket().filter(t => t !== ticker));
-        }
-
-        function updateBasketCount() {
-            const el = document.getElementById('basketCount');
-            if (!el) return;
-            const n = getBasket().length;
-            el.textContent = n ? `(${n})` : '';
-        }
-
-        // Called by the basket button inside the stock detail modal
-        function toggleBasketFromModal(ticker) {
-            if (isInBasket(ticker)) {
-                removeFromBasket(ticker);
-            } else {
-                addToBasket(ticker);
-            }
-            const inB = isInBasket(ticker);
-            const btn = document.getElementById('basketToggleBtn');
-            if (btn) {
-                btn.classList.toggle('in-basket', inB);
-                btn.title = inB ? 'Remove from basket' : 'Add to basket';
-            }
-            // If currently viewing the basket, refresh it
-            if (currentSection === 'Basket') selectBasket();
-        }
-
-        // Resolve a ticker to its company name from either dataset
-        function lookupCompany(ticker) {
-            const s = stockData.find(x => (x.Symbol || x.ticker) === ticker)
-                   || earningsData.find(x => (x.symbol || x.ticker || x.Symbol) === ticker);
-            if (!s) return '';
-            return s.company || s.Name || s.companyName || '';
-        }
-
-        function selectBasket() {
-            currentSection = 'Basket';
-            document.getElementById('sectionTitle').textContent = 'Basket';
-            document.querySelectorAll('.etf-item').forEach(e => e.classList.remove('active'));
-            const b = document.getElementById('basketMenu');
-            if (b) b.classList.add('active');
-            renderTable();
-            closeSidebar();
-        }
-
-        function downloadFile(filename, content, mime) {
-            const blob = new Blob([content], { type: mime });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = filename;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
-        }
-
-        function downloadBasketJSON() {
-            const tickers = getBasket();
-            const payload = tickers.map(t => ({ ticker: t, company: lookupCompany(t) }));
-            downloadFile('basket.json', JSON.stringify(payload, null, 2), 'application/json');
-        }
-
-        function downloadBasketCSV() {
-            const tickers = getBasket();
-            const rows = [['Ticker', 'Company']];
-            tickers.forEach(t => {
-                const company = (lookupCompany(t) || '').replace(/"/g, '""');
-                rows.push([t, `"${company}"`]);
-            });
-            const csv = rows.map(r => r.join(',')).join('\n');
-            downloadFile('basket.csv', csv, 'text/csv');
-        }
-
-        function shareBasketLink() {
-            const tickers = getBasket();
-            const url = `${location.origin}${location.pathname}?basket=${encodeURIComponent(tickers.join(','))}`;
-            const msg = document.getElementById('basketShareMsg');
-            const showMsg = (text) => {
-                if (!msg) return;
-                msg.textContent = text;
-                setTimeout(() => { msg.textContent = ''; }, 4000);
-            };
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(url)
-                    .then(() => showMsg('Link copied to clipboard!'))
-                    .catch(() => window.prompt('Copy this basket link:', url));
-            } else {
-                window.prompt('Copy this basket link:', url);
-            }
-        }
-
-        // On load, merge any tickers passed via ?basket=A,B,C into the saved basket
-        function loadBasketFromUrl() {
-            const params = new URLSearchParams(location.search);
-            const raw = params.get('basket');
-            if (!raw) return false;
-            const incoming = raw.split(',').map(t => t.trim().toUpperCase()).filter(Boolean);
-            if (!incoming.length) return false;
-            const merged = [...getBasket(), ...incoming];
-            saveBasket(merged);
-            return true;
         }
 
         function toggleSidebar() {
@@ -1310,37 +1118,6 @@
         function renderTable() {
             document.getElementById('sectionTitle').textContent = currentSection;
             const tbody = document.getElementById('tableBody');
-            const table = document.getElementById('stockTable');
-            const basketActions = document.getElementById('basketActions');
-
-            // Show the basket action buttons only on the Basket view
-            if (basketActions) basketActions.style.display = (currentSection === 'Basket') ? 'flex' : 'none';
-
-            // Basket view: render saved tickers with a remove option
-            if (currentSection === 'Basket') {
-                document.getElementById('showMoreBtn').style.display = 'none';
-                table.querySelector('thead').innerHTML = `
-                    <tr>
-                        <th class="ticker-col">Ticker</th>
-                        <th class="company-col">Company</th>
-                        <th class="pe-col">Remove</th>
-                    </tr>
-                `;
-                const tickers = getBasket();
-                if (!tickers.length) {
-                    tbody.innerHTML = `<tr><td colspan="3" class="loading">Your basket is empty. Open a stock and click the basket icon to add it.</td></tr>`;
-                    return;
-                }
-                tbody.innerHTML = tickers.map(t => `
-                    <tr>
-                        <td class="ticker-cell" style="cursor:pointer;" onclick="showDetails('${t}')">${t}</td>
-                        <td class="company-cell" title="${lookupCompany(t)}">${lookupCompany(t)}</td>
-                        <td class="pe-cell"><button class="basket-remove-btn" onclick="removeFromBasket('${t}'); selectBasket();">Remove</button></td>
-                    </tr>
-                `).join('');
-                return;
-            }
-
             const data = filteredData && filteredData.length ? filteredData : stockData;
             if (!data.length) {
                 tbody.innerHTML = `<tr><td colspan="4" class="loading">Loading stock data...</td></tr>`;
@@ -1360,6 +1137,7 @@
             }
 
             // Build/replace the table header dynamically depending on current view
+            const table = document.getElementById('stockTable');
             let theadHtml = '';
             if (currentSection === 'Recent Earnings') {
                 theadHtml = `
@@ -1571,14 +1349,6 @@
                     <strong>PS(hybrid):</strong> ${ps_adj_hybrid_str}
                 </div>
                 <div class="modal-footer">
-                    <button class="icon-btn ${isInBasket(ticker) ? 'in-basket' : ''}" id="basketToggleBtn" title="${isInBasket(ticker) ? 'Remove from basket' : 'Add to basket'}" onclick="toggleBasketFromModal('${ticker}')">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M5 11l1.5-6h11L19 11"></path>
-                            <path d="M3 11h18l-1.5 8.5a2 2 0 0 1-2 1.5H6.5a2 2 0 0 1-2-1.5L3 11z"></path>
-                            <path d="M9 15v2"></path>
-                            <path d="M15 15v2"></path>
-                        </svg>
-                    </button>
                     <a href="${research_url}" target="_blank" title="stockanalysis.com" style="text-decoration:none;">
                         <button class="icon-btn"><img src="${favicon('stockanalysis.com')}" alt="stockanalysis.com"></button>
                     </a>
@@ -1651,15 +1421,7 @@
 
         // Initialize table
         setTimeout(() => {
-            // If the page was opened from a shared basket link, merge those tickers
-            // and open the basket view directly.
-            const hasSharedBasket = loadBasketFromUrl();
-            updateBasketCount();
-            if (hasSharedBasket) {
-                selectBasket();
-            } else {
-                renderTable();
-            }
+            renderTable();
             // Set initial sort indicator
             document.querySelector('th').classList.add('sort-asc');
         }, 100);
