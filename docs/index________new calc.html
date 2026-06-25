@@ -979,38 +979,6 @@
         let sortKey = null; // data key
         let sortDir = 'asc'; // 'asc' or 'desc'
 
-        // PS_adj_hybrid: a parallel valuation metric that runs side-by-side with PS_adj.
-        // Goal: preserve deep single-digit discount scores for high-margin companies,
-        // while safely handling hyper-growth outliers (revenue growth > 100%) so they
-        // never produce broken negative numbers.
-        //
-        //   PS_adj_hybrid = Price_to_Sales * (1 / (1 + Revenue_YoY_Growth)) * (1 - Gross_Margin)
-        //
-        // Revenue_YoY_Growth and Gross_Margin must be DECIMALS here (e.g. 25% -> 0.25,
-        // 350% -> 3.50, 85% margin -> 0.85). The source data stores these as whole-number
-        // percentages, so we divide by 100 first.
-        // The division step (1 / (1 + Revenue_YoY_Growth)) is isolated so that any positive
-        // growth number, no matter how large, scales the score down toward zero while
-        // remaining strictly positive.
-        function computePsAdjHybrid(stock) {
-            if (!stock) return NaN;
-            const ps = parseFloat(stock.priceToSalesTrailing12Months ?? stock['priceToSalesTrailing12Months'] ?? stock.ps ?? stock.PS ?? NaN);
-            const revRaw = parseFloat(stock.revenueGrowth ?? stock['Revenue Growth'] ?? stock.RevenueGrowth ?? NaN);
-            const gmRaw = parseFloat(stock.grossMargins ?? stock['grossMargins'] ?? stock.GrossMargin ?? NaN);
-            if (!Number.isFinite(ps) || !Number.isFinite(revRaw) || !Number.isFinite(gmRaw)) return NaN;
-
-            // Convert stored whole-number percentages to decimals
-            const revDecimal = revRaw / 100;
-            const gmDecimal = gmRaw / 100;
-
-            // Isolated division step: stays strictly positive for any positive growth
-            const denom = 1 + revDecimal;
-            if (!(denom > 0)) return NaN; // guard against growth <= -100%
-            const growthFactor = 1 / denom;
-
-            return ps * growthFactor * (1 - gmDecimal);
-        }
-
         function getField(stock, key) {
             // Normalize common key names and variants
             if (!stock) return NaN;
@@ -1020,7 +988,6 @@
                 case 'marketCap': return parseFloat(stock.marketCap ?? stock.marketCapRaw ?? stock.market_cap ?? stock['marketCap'] ?? stock.MarketCap ?? NaN);
                 case 'ps': return parseFloat(stock.priceToSalesTrailing12Months ?? stock['priceToSalesTrailing12Months'] ?? stock.ps ?? stock.PS ?? NaN);
                 case 'ps_adj': return parseFloat(stock.PS_adj ?? stock.PS_Adjusted ?? stock['PS(adj)'] ?? stock.ps_adj ?? stock.PSadj ?? NaN);
-                case 'ps_adj_hybrid': return computePsAdjHybrid(stock);
                 case 'ps_adj_prior_run': return parseFloat(stock.PS_adj_prior_run ?? stock['PS_adj_prior_run'] ?? NaN);
                 case 'change_in_PS_adj': return parseFloat(stock.change_in_PS_adj ?? stock['change_in_PS_adj'] ?? NaN);
                 case 'ps_ratio': return parseFloat(stock.PS_ratio ?? stock.ps_ratio ?? stock.PSRatio ?? stock.psRatio ?? NaN);
@@ -1150,7 +1117,6 @@
                         <th class="metric-col" onclick="sortBy('revEstimated')">Rev Est ${sortKey==='revEstimated' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('revActual')">Rev Actual ${sortKey==='revActual' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps_adj')">PS_adj ${sortKey==='ps_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('ps_adj_hybrid')">PS_adj_hybrid ${sortKey==='ps_adj_hybrid' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps_adj_prior_run')">PS_adj Prior ${sortKey==='ps_adj_prior_run' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                     </tr>
                 `;
@@ -1162,7 +1128,6 @@
                         <th class="metric-col" onclick="sortBy('marketCap')">Market Cap ${sortKey==='marketCap' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps')">P/S ${sortKey==='ps' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps_adj')">PS_adj ${sortKey==='ps_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="metric-col" onclick="sortBy('ps_adj_hybrid')">PS_adj_hybrid ${sortKey==='ps_adj_hybrid' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps_adj_prior_run')">PS_adj Prior ${sortKey==='ps_adj_prior_run' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('change_in_PS_adj')">Change in PS_adj ${sortKey==='change_in_PS_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="metric-col" onclick="sortBy('ps_ratio')">PS_Ratio ${sortKey==='ps_ratio' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
@@ -1177,7 +1142,7 @@
                     <tr>
                         <th class="ticker-col" onclick="sortBy('symbol')">Ticker ${sortKey==='symbol' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                         <th class="company-col" onclick="sortBy('company')">Company ${sortKey==='company' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
-                        <th class="pe-col" onclick="sortBy('ps_adj')">PS_adj / Hybrid / RevYoY / GM ${sortKey==='ps_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
+                        <th class="pe-col" onclick="sortBy('ps_adj')">PS_adj / RevYoY / GM ${sortKey==='ps_adj' ? (sortDir==='asc'?'▲':'▼') : ''}</th>
                     </tr>
                 `;
             }
@@ -1200,7 +1165,6 @@
                     const revEst = getField(stock, 'revEstimated');
                     const revAct = getField(stock, 'revActual');
                     const ps_adj = getField(stock, 'ps_adj');
-                    const ps_adj_hybrid = getField(stock, 'ps_adj_hybrid');
                     const ps_adj_prior = getField(stock, 'ps_adj_prior_run');
                     return `
                         <tr onclick="showDetails('${symbol}')">
@@ -1212,12 +1176,11 @@
                                 <td class="pe-cell">${formatMarketCap(revEst)}</td>
                                 <td class="pe-cell">${formatMarketCap(revAct)}</td>
                                 <td class="pe-cell">${Number.isFinite(ps_adj) ? ps_adj : ''}</td>
-                                <td class="pe-cell">${Number.isFinite(ps_adj_hybrid) ? formatNumber(ps_adj_hybrid,2) : ''}</td>
                                 <td class="pe-cell">${Number.isFinite(ps_adj_prior) ? ps_adj_prior : ''}</td>
                             </tr>
                     `;
                 }).join('');
-                tbody.innerHTML = rows || `<tr><td colspan="10" class="loading">No matching stocks</td></tr>`;
+                tbody.innerHTML = rows || `<tr><td colspan="9" class="loading">No matching stocks</td></tr>`;
                 return;
             }
 
@@ -1235,7 +1198,6 @@
                     const marketCap = getField(stock, 'marketCap');
                     const ps = getField(stock, 'ps');
                     const ps_adj = getField(stock, 'ps_adj');
-                    const ps_adj_hybrid = getField(stock, 'ps_adj_hybrid');
                     const ps_adj_prior = getField(stock, 'ps_adj_prior_run');
                     const change_ps = getField(stock, 'change_in_PS_adj');
                     const ps_ratio = getField(stock, 'ps_ratio');
@@ -1251,7 +1213,6 @@
                                 <td class="marketcap-cell">${formatMarketCap(marketCap)}</td>
                                 <td class="pe-cell">${formatNumber(ps,2)}</td>
                                 <td class="pe-cell">${Number.isFinite(ps_adj) ? ps_adj : ''}</td>
-                                <td class="pe-cell">${Number.isFinite(ps_adj_hybrid) ? formatNumber(ps_adj_hybrid,2) : ''}</td>
                                 <td class="pe-cell">${Number.isFinite(ps_adj_prior) ? ps_adj_prior : ''}</td>
                                 <td class="pe-cell">${Number.isFinite(change_ps) ? change_ps : ''}</td>
                                 <td class="pe-cell">${formatNumber(ps_ratio,2)}</td>
@@ -1262,7 +1223,7 @@
                             </tr>
                     `;
                 }).join('');
-                tbody.innerHTML = rows || `<tr><td colspan="13" class="loading">No matching stocks</td></tr>`;
+                tbody.innerHTML = rows || `<tr><td colspan="12" class="loading">No matching stocks</td></tr>`;
                 return;
             }
 
@@ -1278,14 +1239,12 @@
                 rows += `<tr><td colspan="3" style="background:#e6f4ea;font-weight:700;color:#2d5a2d;font-size:1rem;text-align:left;padding:10px 8px;">${group}</td></tr>`;
                 rows += grouped[group].map((stock, idx) => {
                     const ps_adj = getField(stock, 'ps_adj');
-                    const ps_adj_hybrid = getField(stock, 'ps_adj_hybrid');
                     const revenue = getField(stock, 'revenueGrowth');
                     const gross = parseFloat(stock.grossMargins ?? stock['grossMargins'] ?? stock.GrossMargin ?? NaN);
                     const ps_adj_str = Number.isFinite(ps_adj) ? formatNumber(ps_adj, 2) : '';
-                    const ps_adj_hybrid_str = Number.isFinite(ps_adj_hybrid) ? formatNumber(ps_adj_hybrid, 2) : '';
                     const rev_str = formatPercent(revenue, 0);
                     const gm_str = formatPercent(gross, 0);
-                    const metricCell = `${ps_adj_str} / ${ps_adj_hybrid_str} / ${rev_str} / ${gm_str}`;
+                    const metricCell = `${ps_adj_str} / ${rev_str} / ${gm_str}`;
                     return `
                     <tr onclick="showDetails('${stock.Symbol || stock.ticker}')">
                         <td class="ticker-cell">${stock.Symbol || stock.ticker}</td>
@@ -1312,8 +1271,6 @@
             const ps = stock.priceToSalesTrailing12Months ?? stock['priceToSalesTrailing12Months'] ?? 0;
             const gross_margin = stock.grossMargins ?? stock['grossMargins'] ?? 0;
             const ps_adj = stock.PS_adj ?? stock.PS_Adjusted ?? stock['PS(adj)'] ?? 0;
-            const ps_adj_hybrid = computePsAdjHybrid(stock);
-            const ps_adj_hybrid_str = Number.isFinite(ps_adj_hybrid) ? ps_adj_hybrid.toFixed(2) : 'N/A';
             const research_url = stock.stock_analysis_link || stock.stockAnalysisLink || '';
             const tvSymbol = stock.Symbol || stock.ticker || '';
             const macrotrends_url = `https://www.macrotrends.net/stocks/charts/${encodeURIComponent(ticker)}/${macrotrendsSlug(name)}/price-sales`;
@@ -1346,15 +1303,6 @@
                     <strong>PS:</strong> ${ps} &nbsp;|&nbsp;
                     <strong>Gross Margin:</strong> ${gross_margin}% &nbsp;|&nbsp;
                     <strong>PS(adj):</strong> ${ps_adj}
-                </div>
-                <div style="margin-bottom:12px;padding:12px;background:#f0fff4;border:1px solid #c6f6d5;border-radius:6px;">
-                    <div style="font-weight:600;color:#2d5a2d;margin-bottom:4px;">PS_adj_hybrid: ${ps_adj_hybrid_str}</div>
-                    <div style="font-size:12px;color:#4a5568;line-height:1.5;">
-                        Hybrid valuation = PS &times; (1 / (1 + RevYoY)) &times; (1 - GM), using decimals for
-                        Revenue Growth and Gross Margin. It keeps deep single-digit discounts for high-margin
-                        names while safely scaling down hyper-growth outliers (RevYoY &gt; 100%) so the score
-                        stays strictly positive. Lower is cheaper / more attractive.
-                    </div>
                 </div>
                 <div class="modal-footer">
                     <a href="${research_url}" target="_blank" title="stockanalysis.com" style="text-decoration:none;">
