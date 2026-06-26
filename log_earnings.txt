@@ -1,0 +1,14 @@
+
+C:\Windows\System32>"C:\Users\fish_\AppData\Local\Programs\Python\Python310\python" "C:\git\stock_screener\run_all_recent_earnings.py" 
+https://financialmodelingprep.com/stable/earnings-calendar
+{'from': '2026-06-12', 'to': '2026-06-26', 'apikey': 'Ov6YFCLrWuk3ijRibDZioswIEXpMuDhk'}
+
+--- Successfully Retrieved 2 Earnings Reports ---
+      date symbol  epsActual  epsEstimated  revenueActual  revenueEstimated
+2026-06-23    CCL       0.41        0.3442     6663000000        6687617000
+2026-06-23    FDX       6.31        5.9100    25000000000       24040360000
+
+============================================================
+Running: get_earnings.py
+============================================================
+
