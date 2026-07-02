@@ -1,16 +1,19 @@
-name: Run run-all.py Script
+name: Run stock screener
 
 on:
   schedule:
-    # This example runs every day at 12:00 AM UTC (adjust as needed)
     - cron: '0 0 * * *'
-  workflow_dispatch: # Allows you to also trigger it manually with a button
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   run-python:
     runs-on: ubuntu-latest
-    # Extends the default timeout to ensure it doesn't close prematurely
-    timeout-minutes: 360 
+    timeout-minutes: 360
+    env:
+      FINANCIALMODELINGPREP_API_KEY: ${{ secrets.FINANCIALMODELINGPREP_API_KEY }}
 
     steps:
       - name: Checkout code
@@ -26,5 +29,17 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run Script
-        run: python run-all.py
+      - name: Run scripts
+        run: |
+          python run_all.py
+          python run_all_recent_earnings.py
+
+      - name: Upload generated outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stock-screener-output
+          path: |
+            data/
+            docs/
+          if-no-files-found: warn

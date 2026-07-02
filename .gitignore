@@ -1,3 +1,6 @@
 # Don't exclude docs or data
 !docs/
+!docs/**
+!data/
+!data/**
 !*.json
