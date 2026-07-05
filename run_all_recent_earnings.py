@@ -5,10 +5,12 @@ from pathlib import Path
 
 scripts = [
     "get_earnings.py",
+    "get_upcoming_earnings.py",
     "fundamentals_screener_recent_earnings.py",
     "prep_recent_earnings_data.py",
     "compare_ps_adj_recent_earnings.py",
     "publish_json_recent_earnings.py",
+    "publish_json_upcoming_earnings.py",
     "git_push_script.py",
 ]
 
