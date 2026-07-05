@@ -3,11 +3,15 @@
 Minimal investing_functions.py - Contains only functions used by the codebase
 Created for stock_screener project
 """
+import os
 import pandas as pd
 import numpy as np
 import time
 import yfinance as yf
 import traceback
+
+RATE_LIMIT_TIMEOUT_SECONDS = int(os.getenv("RATE_LIMIT_TIMEOUT_SECONDS", "15"))
+MAX_RETRIES = int(os.getenv("MAX_RETRIES", "2"))
 
 
 # ==================== Functions used by fundamentals_screener_*.py ====================
@@ -17,24 +21,21 @@ def get_roe(symbol):
     Calculate Return on Equity (ROE) for a given stock symbol.
     Used by: df_filter_fundamentals()
     """
-    try:
-        ticker = yf.Ticker(symbol)
-        
-        # Get financial statements
-        income_statement = ticker.income_stmt
-        balance_sheet = ticker.balance_sheet
-        
-        # Extract Net Income and Shareholder's Equity
-        net_income = income_statement.loc['Net Income', :].iloc[0]
-        shareholders_equity = balance_sheet.loc['Common Stock Equity', :].iloc[0]
-        
-        # Calculate ROE
-        roe = (net_income / shareholders_equity) * 100
-        return roe
-    except Exception as e:
-        print("oops roe:  ", e)
-        traceback.print_exc() 
-        return 0
+    for attempt in range(MAX_RETRIES):
+        try:
+            ticker = yf.Ticker(symbol)
+            income_statement = ticker.income_stmt
+            balance_sheet = ticker.balance_sheet
+            net_income = income_statement.loc['Net Income', :].iloc[0]
+            shareholders_equity = balance_sheet.loc['Common Stock Equity', :].iloc[0]
+            roe = (net_income / shareholders_equity) * 100
+            return roe
+        except Exception as e:
+            print(f"oops roe attempt {attempt + 1}: {e}")
+            if attempt < MAX_RETRIES - 1:
+                time.sleep(RATE_LIMIT_TIMEOUT_SECONDS)
+            else:
+                return 0
 
 
 def df_filter_fundamentals(df):
@@ -114,8 +115,18 @@ def df_filter_fundamentals(df):
             time.sleep(1)  # To avoid hitting API rate limits
             stock_ticker = row['Symbol']
             print(stock_ticker)
-            yf_data = yf.Ticker(stock_ticker)
-            info = yf_data.info
+            info = {}
+            for attempt in range(MAX_RETRIES):
+                try:
+                    yf_data = yf.Ticker(stock_ticker)
+                    info = yf_data.info
+                    break
+                except Exception as e:
+                    print(f"oops ticker fetch attempt {attempt + 1} for {stock_ticker}: {e}")
+                    if attempt < MAX_RETRIES - 1:
+                        time.sleep(RATE_LIMIT_TIMEOUT_SECONDS)
+                    else:
+                        info = {}
             
             # Extract all available metrics with error handling
             try:
