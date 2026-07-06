@@ -49,4 +49,4 @@ jobs:
         # This maps your GitHub Secrets/Vars to OS Environment Variables
         env:
           MY_ENV_VAR: ${{ secrets.FINANCIALMODELINGPREP_API_KEY }}  # Use 'vars.NAME' if it's a variable
-        run: python script.py
+        run: python run_all_recent_earnings.py
