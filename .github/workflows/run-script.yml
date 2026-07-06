@@ -32,7 +32,6 @@ jobs:
 
       - name: Run scripts
         run: |
-          python run_all.py
           python run_all_recent_earnings.py
 
       - name: Upload generated outputs
