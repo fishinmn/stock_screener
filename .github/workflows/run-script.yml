@@ -2,7 +2,7 @@ name: Run stock screener
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 0,12 * * *'
   workflow_dispatch:
 
 permissions:
