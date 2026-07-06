@@ -1,3 +1,4 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-06-23,FDX,6.31,5.91,25000000000,24040360000,FDX,FedEx Corporation,Industrials,Integrated Freight & Logistics,integrated-freight-logistics,76757409792,0.81,1.475,1.374,12.5,27.32,17.16,15.53,0.52,0,1.48,-4.6,4.68,2.08,0,14
-2026-06-23,CCL,0.41,0.3442,6663000000,6687617000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,43783290880,1.6,0.334,0.214,5.3,55.67999999999999,12.99,10.9,0.67,0,1.05,-6.5,11.24,3.19,0,12
+2026-06-30,NKE,0.72,0.11,10972000000,10849540000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,64181645312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-06-23,CCL,0.41,0.3442,6663000000,6687617000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,37679046656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-06-23,FDX,6.31,5.91,25000000000,22907960000,FDX,FedEx Corporation,Industrials,Integrated Freight & Logistics,integrated-freight-logistics,73951387648,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2

@@ -1,1 +1,106 @@
-[]
+[
+    {
+        "date": "2026-07-09",
+        "epsActual": NaN,
+        "epsEstimated": 1.49,
+        "revenueActual": NaN,
+        "revenueEstimated": 17472730000,
+        "symbol": "DAL"
+    },
+    {
+        "date": "2026-07-09",
+        "epsActual": NaN,
+        "epsEstimated": 2.19,
+        "revenueActual": NaN,
+        "revenueEstimated": 23955580000,
+        "symbol": "PEP"
+    },
+    {
+        "date": "2026-07-14",
+        "epsActual": NaN,
+        "epsEstimated": 1.73,
+        "revenueActual": NaN,
+        "revenueEstimated": 21832820000,
+        "symbol": "WFC"
+    },
+    {
+        "date": "2026-07-14",
+        "epsActual": NaN,
+        "epsEstimated": 2.65,
+        "revenueActual": NaN,
+        "revenueEstimated": 23473730000,
+        "symbol": "C"
+    },
+    {
+        "date": "2026-07-14",
+        "epsActual": NaN,
+        "epsEstimated": 14.01,
+        "revenueActual": NaN,
+        "revenueEstimated": 16020140000,
+        "symbol": "GS"
+    },
+    {
+        "date": "2026-07-14",
+        "epsActual": NaN,
+        "epsEstimated": 5.61,
+        "revenueActual": NaN,
+        "revenueEstimated": 49818240000,
+        "symbol": "JPM"
+    },
+    {
+        "date": "2026-07-14",
+        "epsActual": NaN,
+        "epsEstimated": 1.11,
+        "revenueActual": NaN,
+        "revenueEstimated": 30417000000,
+        "symbol": "BAC"
+    },
+    {
+        "date": "2026-07-15",
+        "epsActual": NaN,
+        "epsEstimated": 1.78,
+        "revenueActual": NaN,
+        "revenueEstimated": 17622140000,
+        "symbol": "UAL"
+    },
+    {
+        "date": "2026-07-15",
+        "epsActual": NaN,
+        "epsEstimated": 2.83,
+        "revenueActual": NaN,
+        "revenueEstimated": 25010970000,
+        "symbol": "JNJ"
+    },
+    {
+        "date": "2026-07-16",
+        "epsActual": NaN,
+        "epsEstimated": 1.86,
+        "revenueActual": NaN,
+        "revenueEstimated": 11774790000,
+        "symbol": "GE"
+    },
+    {
+        "date": "2026-07-16",
+        "epsActual": NaN,
+        "epsEstimated": 0.79,
+        "revenueActual": NaN,
+        "revenueEstimated": 12580200000,
+        "symbol": "NFLX"
+    },
+    {
+        "date": "2026-07-16",
+        "epsActual": NaN,
+        "epsEstimated": 3.77,
+        "revenueActual": NaN,
+        "revenueEstimated": 40019920000,
+        "symbol": "TSM"
+    },
+    {
+        "date": "2026-07-16",
+        "epsActual": NaN,
+        "epsEstimated": 4.84,
+        "revenueActual": NaN,
+        "revenueEstimated": 110761100000,
+        "symbol": "UNH"
+    }
+]
