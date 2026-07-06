@@ -44,3 +44,10 @@ jobs:
             data/
             docs/
           if-no-files-found: warn
+
+
+      - name: Execute Script
+        # This maps your GitHub Secrets/Vars to OS Environment Variables
+        env:
+          MY_ENV_VAR: ${{ secrets.FINANCIALMODELINGPREP_API_KEY }}  # Use 'vars.NAME' if it's a variable
+        run: python script.py
