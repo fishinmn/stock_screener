@@ -1,4 +1,4 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-07-09,DAL,,1.49,,17546620000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,57349038080,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-09,PEP,,2.19,,23946760000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,194802745344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-06-30,NKE,0.2,0.11,10972000000.0,10849540000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,63515242496,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-09,DAL,,1.49,,17546620000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,58666311680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-09,PEP,2.2,2.19,24181000000.0,23946760000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,186901823488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-06-30,NKE,0.2,0.11,10972000000.0,10849540000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,63152427008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
