@@ -2,7 +2,7 @@
     {
         "date": "2026-07-14",
         "epsActual": NaN,
-        "epsEstimated": 1.74,
+        "epsEstimated": 1.73,
         "revenueActual": NaN,
         "revenueEstimated": 21884100000,
         "symbol": "WFC"
@@ -12,7 +12,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.72,
         "revenueActual": NaN,
-        "revenueEstimated": 23664460000,
+        "revenueEstimated": 23707040000,
         "symbol": "C"
     },
     {
@@ -42,7 +42,7 @@
     {
         "date": "2026-07-15",
         "epsActual": NaN,
-        "epsEstimated": 1.87,
+        "epsEstimated": 1.89,
         "revenueActual": NaN,
         "revenueEstimated": 17620250000,
         "symbol": "UAL"
@@ -52,7 +52,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.84,
         "revenueActual": NaN,
-        "revenueEstimated": 25021970000,
+        "revenueEstimated": 25022000000,
         "symbol": "JNJ"
     },
     {
