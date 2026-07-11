@@ -12,15 +12,15 @@
         "epsActual": NaN,
         "epsEstimated": 2.72,
         "revenueActual": NaN,
-        "revenueEstimated": 23707040000,
+        "revenueEstimated": 23740620000,
         "symbol": "C"
     },
     {
         "date": "2026-07-14",
         "epsActual": NaN,
-        "epsEstimated": 14.01,
+        "epsEstimated": 14.47,
         "revenueActual": NaN,
-        "revenueEstimated": 16122850000,
+        "revenueEstimated": 16224980000,
         "symbol": "GS"
     },
     {
@@ -36,8 +36,16 @@
         "epsActual": NaN,
         "epsEstimated": 1.13,
         "revenueActual": NaN,
-        "revenueEstimated": 30670570000,
+        "revenueEstimated": 30776100000,
         "symbol": "BAC"
+    },
+    {
+        "date": "2026-07-15",
+        "epsActual": NaN,
+        "epsEstimated": 2.85,
+        "revenueActual": NaN,
+        "revenueEstimated": 25022000000,
+        "symbol": "JNJ"
     },
     {
         "date": "2026-07-15",
@@ -48,12 +56,12 @@
         "symbol": "UAL"
     },
     {
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "epsActual": NaN,
-        "epsEstimated": 2.84,
+        "epsEstimated": 3.8,
         "revenueActual": NaN,
-        "revenueEstimated": 25022000000,
-        "symbol": "JNJ"
+        "revenueEstimated": 39969620000,
+        "symbol": "TSM"
     },
     {
         "date": "2026-07-16",
@@ -66,10 +74,10 @@
     {
         "date": "2026-07-16",
         "epsActual": NaN,
-        "epsEstimated": 3.77,
+        "epsEstimated": 1.86,
         "revenueActual": NaN,
-        "revenueEstimated": 39969620000,
-        "symbol": "TSM"
+        "revenueEstimated": 11824960000,
+        "symbol": "GE"
     },
     {
         "date": "2026-07-16",
@@ -80,11 +88,11 @@
         "symbol": "UNH"
     },
     {
-        "date": "2026-07-16",
+        "date": "2026-07-21",
         "epsActual": NaN,
-        "epsEstimated": 1.86,
+        "epsEstimated": 3.18,
         "revenueActual": NaN,
-        "revenueEstimated": 11824960000,
-        "symbol": "GE"
+        "revenueEstimated": 47025020000,
+        "symbol": "GM"
     }
 ]
