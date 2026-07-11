@@ -1,6 +1,13 @@
 
 C:\Windows\System32>"C:\Users\fish_\AppData\Local\Programs\Python\Python310\python" "C:\git\stock_screener\run_all_recent_earnings.py" 
-No FMP API key found; writing an empty earnings file for this run.
+https://financialmodelingprep.com/stable/earnings-calendar
+{'from': '2026-06-26', 'to': '2026-07-10', 'apikey': '2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz'}
+
+--- Successfully Retrieved 3 Earnings Reports ---
+      date symbol  epsActual  epsEstimated  revenueActual  revenueEstimated
+2026-07-09    DAL       1.56          1.49    17666000000       17546620000
+2026-07-09    PEP       2.20          2.19    24181000000       23946760000
+2026-06-30    NKE       0.20          0.11    10972000000       10849540000
 
 ============================================================
 Running: get_earnings.py
