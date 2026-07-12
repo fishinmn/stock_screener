@@ -58,18 +58,18 @@
     {
         "date": "2026-07-16",
         "epsActual": NaN,
-        "epsEstimated": 3.8,
-        "revenueActual": NaN,
-        "revenueEstimated": 39969620000,
-        "symbol": "TSM"
-    },
-    {
-        "date": "2026-07-16",
-        "epsActual": NaN,
         "epsEstimated": 0.79,
         "revenueActual": NaN,
         "revenueEstimated": 12580020000,
         "symbol": "NFLX"
+    },
+    {
+        "date": "2026-07-16",
+        "epsActual": NaN,
+        "epsEstimated": 3.8,
+        "revenueActual": NaN,
+        "revenueEstimated": 39936740000,
+        "symbol": "TSM"
     },
     {
         "date": "2026-07-16",
@@ -94,5 +94,21 @@
         "revenueActual": NaN,
         "revenueEstimated": 47025020000,
         "symbol": "GM"
+    },
+    {
+        "date": "2026-07-22",
+        "epsActual": NaN,
+        "epsEstimated": 0.47,
+        "revenueActual": NaN,
+        "revenueEstimated": 25547760000,
+        "symbol": "TSLA"
+    },
+    {
+        "date": "2026-07-22",
+        "epsActual": NaN,
+        "epsEstimated": 0.59,
+        "revenueActual": NaN,
+        "revenueEstimated": 31805160000,
+        "symbol": "T"
     }
 ]
