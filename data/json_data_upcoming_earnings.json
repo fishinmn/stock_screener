@@ -2,10 +2,10 @@
     {
         "date": "2026-07-14",
         "epsActual": NaN,
-        "epsEstimated": 1.73,
+        "epsEstimated": 5.59,
         "revenueActual": NaN,
-        "revenueEstimated": 21861030000,
-        "symbol": "WFC"
+        "revenueEstimated": 51093590000,
+        "symbol": "JPM"
     },
     {
         "date": "2026-07-14",
@@ -18,26 +18,26 @@
     {
         "date": "2026-07-14",
         "epsActual": NaN,
-        "epsEstimated": 14.47,
-        "revenueActual": NaN,
-        "revenueEstimated": 16224980000,
-        "symbol": "GS"
-    },
-    {
-        "date": "2026-07-14",
-        "epsActual": NaN,
-        "epsEstimated": 5.59,
-        "revenueActual": NaN,
-        "revenueEstimated": 51093590000,
-        "symbol": "JPM"
-    },
-    {
-        "date": "2026-07-14",
-        "epsActual": NaN,
         "epsEstimated": 1.13,
         "revenueActual": NaN,
         "revenueEstimated": 30776100000,
         "symbol": "BAC"
+    },
+    {
+        "date": "2026-07-14",
+        "epsActual": NaN,
+        "epsEstimated": 1.73,
+        "revenueActual": NaN,
+        "revenueEstimated": 21861030000,
+        "symbol": "WFC"
+    },
+    {
+        "date": "2026-07-14",
+        "epsActual": NaN,
+        "epsEstimated": 14.47,
+        "revenueActual": NaN,
+        "revenueEstimated": 16224980000,
+        "symbol": "GS"
     },
     {
         "date": "2026-07-15",
@@ -66,10 +66,10 @@
     {
         "date": "2026-07-16",
         "epsActual": NaN,
-        "epsEstimated": 3.8,
+        "epsEstimated": 4.84,
         "revenueActual": NaN,
-        "revenueEstimated": 39936740000,
-        "symbol": "TSM"
+        "revenueEstimated": 110761100000,
+        "symbol": "UNH"
     },
     {
         "date": "2026-07-16",
@@ -82,10 +82,10 @@
     {
         "date": "2026-07-16",
         "epsActual": NaN,
-        "epsEstimated": 4.84,
+        "epsEstimated": 3.8,
         "revenueActual": NaN,
-        "revenueEstimated": 110761100000,
-        "symbol": "UNH"
+        "revenueEstimated": 39936740000,
+        "symbol": "TSM"
     },
     {
         "date": "2026-07-21",
@@ -110,5 +110,45 @@
         "revenueActual": NaN,
         "revenueEstimated": 31805160000,
         "symbol": "T"
+    },
+    {
+        "date": "2026-07-23",
+        "epsActual": NaN,
+        "epsEstimated": 0.05,
+        "revenueActual": NaN,
+        "revenueEstimated": 16700550000,
+        "symbol": "AAL"
+    },
+    {
+        "date": "2026-07-23",
+        "epsActual": NaN,
+        "epsEstimated": 0.21,
+        "revenueActual": NaN,
+        "revenueEstimated": 14326010000,
+        "symbol": "INTC"
+    },
+    {
+        "date": "2026-07-23",
+        "epsActual": NaN,
+        "epsEstimated": 7.23,
+        "revenueActual": NaN,
+        "revenueEstimated": 19367060000,
+        "symbol": "LMT"
+    },
+    {
+        "date": "2026-07-23",
+        "epsActual": NaN,
+        "epsEstimated": 0.07,
+        "revenueActual": NaN,
+        "revenueEstimated": 5595549000,
+        "symbol": "NOK"
+    },
+    {
+        "date": "2026-07-23",
+        "epsActual": NaN,
+        "epsEstimated": 2.86,
+        "revenueActual": NaN,
+        "revenueEstimated": 116535100000,
+        "symbol": "GOOGL"
     }
 ]
