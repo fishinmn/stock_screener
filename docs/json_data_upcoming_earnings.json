@@ -84,7 +84,7 @@
         "epsActual": NaN,
         "epsEstimated": 3.8,
         "revenueActual": NaN,
-        "revenueEstimated": 39936740000,
+        "revenueEstimated": 39912470000,
         "symbol": "TSM"
     },
     {
@@ -140,7 +140,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.07,
         "revenueActual": NaN,
-        "revenueEstimated": 5595549000,
+        "revenueEstimated": 5586866000,
         "symbol": "NOK"
     },
     {
@@ -148,7 +148,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.86,
         "revenueActual": NaN,
-        "revenueEstimated": 116535100000,
+        "revenueEstimated": 116532500000,
         "symbol": "GOOGL"
     }
 ]
