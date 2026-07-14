@@ -1,8 +1,8 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-07-14,WFC,,1.73,,21861030000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,268286803968,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-14,WFC,,1.73,12273000000.0,21861030000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,268286803968,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-14,C,,2.72,,23740620000,C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,239991750656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-14,GS,,14.47,,16224980000,GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,308551221248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-14,JPM,,5.59,,51093590000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,896376897536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-14,JPM,,5.59,-47810000000.0,51093590000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,896376897536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-14,BAC,,1.13,,30776100000,BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,422247170048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-09,DAL,2.45,1.49,19757000000.0,17426900000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,56680529920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-09,PEP,2.2,2.19,24181000000.0,23946760000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,189177348096,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
