@@ -10,7 +10,7 @@
     {
         "date": "2026-07-15",
         "epsActual": NaN,
-        "epsEstimated": 2.85,
+        "epsEstimated": 2.84,
         "revenueActual": NaN,
         "revenueEstimated": 25021350000,
         "symbol": "JNJ"
@@ -26,17 +26,17 @@
     {
         "date": "2026-07-16",
         "epsActual": NaN,
-        "epsEstimated": 4.84,
+        "epsEstimated": 4.87,
         "revenueActual": NaN,
-        "revenueEstimated": 110761100000,
+        "revenueEstimated": 110791200000,
         "symbol": "UNH"
     },
     {
         "date": "2026-07-16",
         "epsActual": NaN,
-        "epsEstimated": 3.82,
+        "epsEstimated": 3.87,
         "revenueActual": NaN,
-        "revenueEstimated": 39912470000,
+        "revenueEstimated": 39846900000,
         "symbol": "TSM"
     },
     {
@@ -44,7 +44,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.86,
         "revenueActual": NaN,
-        "revenueEstimated": 11863710000,
+        "revenueEstimated": 11869210000,
         "symbol": "GE"
     },
     {
@@ -76,7 +76,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.47,
         "revenueActual": NaN,
-        "revenueEstimated": 25641180000,
+        "revenueEstimated": 25704240000,
         "symbol": "TSLA"
     },
     {
@@ -92,7 +92,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.21,
         "revenueActual": NaN,
-        "revenueEstimated": 14343930000,
+        "revenueEstimated": 14406350000,
         "symbol": "INTC"
     },
     {
