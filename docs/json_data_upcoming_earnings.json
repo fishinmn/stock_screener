@@ -1,43 +1,19 @@
 [
     {
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "epsActual": NaN,
-        "epsEstimated": 1.89,
+        "epsEstimated": 3.87,
         "revenueActual": NaN,
-        "revenueEstimated": 17620250000,
-        "symbol": "UAL"
-    },
-    {
-        "date": "2026-07-15",
-        "epsActual": NaN,
-        "epsEstimated": 2.84,
-        "revenueActual": NaN,
-        "revenueEstimated": 25021350000,
-        "symbol": "JNJ"
+        "revenueEstimated": 39847640000,
+        "symbol": "TSM"
     },
     {
         "date": "2026-07-16",
         "epsActual": NaN,
         "epsEstimated": 0.79,
         "revenueActual": NaN,
-        "revenueEstimated": 12580020000,
+        "revenueEstimated": 12580080000,
         "symbol": "NFLX"
-    },
-    {
-        "date": "2026-07-16",
-        "epsActual": NaN,
-        "epsEstimated": 4.87,
-        "revenueActual": NaN,
-        "revenueEstimated": 110791200000,
-        "symbol": "UNH"
-    },
-    {
-        "date": "2026-07-16",
-        "epsActual": NaN,
-        "epsEstimated": 3.87,
-        "revenueActual": NaN,
-        "revenueEstimated": 39846900000,
-        "symbol": "TSM"
     },
     {
         "date": "2026-07-16",
@@ -46,6 +22,14 @@
         "revenueActual": NaN,
         "revenueEstimated": 11869210000,
         "symbol": "GE"
+    },
+    {
+        "date": "2026-07-16",
+        "epsActual": NaN,
+        "epsEstimated": 4.87,
+        "revenueActual": NaN,
+        "revenueEstimated": 110806600000,
+        "symbol": "UNH"
     },
     {
         "date": "2026-07-21",
@@ -66,18 +50,18 @@
     {
         "date": "2026-07-22",
         "epsActual": NaN,
-        "epsEstimated": 0.59,
+        "epsEstimated": 0.47,
         "revenueActual": NaN,
-        "revenueEstimated": 31805160000,
-        "symbol": "T"
+        "revenueEstimated": 25985660000,
+        "symbol": "TSLA"
     },
     {
         "date": "2026-07-22",
         "epsActual": NaN,
-        "epsEstimated": 0.47,
+        "epsEstimated": 0.59,
         "revenueActual": NaN,
-        "revenueEstimated": 25704240000,
-        "symbol": "TSLA"
+        "revenueEstimated": 31800330000,
+        "symbol": "T"
     },
     {
         "date": "2026-07-23",
@@ -114,9 +98,9 @@
     {
         "date": "2026-07-24",
         "epsActual": NaN,
-        "epsEstimated": 7.37,
+        "epsEstimated": 7.52,
         "revenueActual": NaN,
-        "revenueEstimated": 19466710000,
+        "revenueEstimated": 19675520000,
         "symbol": "HCA"
     },
     {
