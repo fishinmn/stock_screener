@@ -1,10 +1,10 @@
 [
     {
         "date": "2026-07-16",
-        "epsActual": NaN,
-        "epsEstimated": 3.87,
-        "revenueActual": NaN,
-        "revenueEstimated": 39847640000,
+        "epsActual": 4.23,
+        "epsEstimated": 3.82,
+        "revenueActual": 39468150000.0,
+        "revenueEstimated": 39834730000,
         "symbol": "TSM"
     },
     {
@@ -12,22 +12,22 @@
         "epsActual": NaN,
         "epsEstimated": 0.79,
         "revenueActual": NaN,
-        "revenueEstimated": 12580080000,
+        "revenueEstimated": 12581160000,
         "symbol": "NFLX"
     },
     {
         "date": "2026-07-16",
         "epsActual": NaN,
         "epsEstimated": 1.86,
-        "revenueActual": NaN,
+        "revenueActual": 13349000000.0,
         "revenueEstimated": 11869210000,
         "symbol": "GE"
     },
     {
         "date": "2026-07-16",
-        "epsActual": NaN,
+        "epsActual": 6.38,
         "epsEstimated": 4.87,
-        "revenueActual": NaN,
+        "revenueActual": 112032000000.0,
         "revenueEstimated": 110806600000,
         "symbol": "UNH"
     },
@@ -50,7 +50,7 @@
     {
         "date": "2026-07-22",
         "epsActual": NaN,
-        "epsEstimated": 0.47,
+        "epsEstimated": 0.504,
         "revenueActual": NaN,
         "revenueEstimated": 25985660000,
         "symbol": "TSLA"
@@ -82,7 +82,7 @@
     {
         "date": "2026-07-23",
         "epsActual": NaN,
-        "epsEstimated": 7.23,
+        "epsEstimated": 7.22,
         "revenueActual": NaN,
         "revenueEstimated": 19367950000,
         "symbol": "LMT"
@@ -92,7 +92,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.07,
         "revenueActual": NaN,
-        "revenueEstimated": 5582292000,
+        "revenueEstimated": 5569698000,
         "symbol": "NOK"
     },
     {
@@ -106,9 +106,9 @@
     {
         "date": "2026-07-24",
         "epsActual": NaN,
-        "epsEstimated": 1.28,
+        "epsEstimated": 1.27,
         "revenueActual": NaN,
-        "revenueEstimated": 35276270000,
+        "revenueEstimated": 35232140000,
         "symbol": "VZ"
     }
 ]
