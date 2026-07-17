@@ -1,35 +1,11 @@
 [
     {
-        "date": "2026-07-16",
-        "epsActual": 4.23,
-        "epsEstimated": 3.82,
-        "revenueActual": 39468150000.0,
-        "revenueEstimated": 39834730000,
-        "symbol": "TSM"
-    },
-    {
-        "date": "2026-07-16",
+        "date": "2026-07-21",
         "epsActual": NaN,
-        "epsEstimated": 0.79,
+        "epsEstimated": 3.19,
         "revenueActual": NaN,
-        "revenueEstimated": 12581160000,
-        "symbol": "NFLX"
-    },
-    {
-        "date": "2026-07-16",
-        "epsActual": NaN,
-        "epsEstimated": 1.86,
-        "revenueActual": 13349000000.0,
-        "revenueEstimated": 11869210000,
-        "symbol": "GE"
-    },
-    {
-        "date": "2026-07-16",
-        "epsActual": 6.38,
-        "epsEstimated": 4.87,
-        "revenueActual": 112032000000.0,
-        "revenueEstimated": 110806600000,
-        "symbol": "UNH"
+        "revenueEstimated": 47011490000,
+        "symbol": "GM"
     },
     {
         "date": "2026-07-21",
@@ -40,12 +16,12 @@
         "symbol": "GOOGL"
     },
     {
-        "date": "2026-07-21",
+        "date": "2026-07-22",
         "epsActual": NaN,
-        "epsEstimated": 3.17,
+        "epsEstimated": 0.59,
         "revenueActual": NaN,
-        "revenueEstimated": 47025020000,
-        "symbol": "GM"
+        "revenueEstimated": 31800330000,
+        "symbol": "T"
     },
     {
         "date": "2026-07-22",
@@ -56,20 +32,12 @@
         "symbol": "TSLA"
     },
     {
-        "date": "2026-07-22",
-        "epsActual": NaN,
-        "epsEstimated": 0.59,
-        "revenueActual": NaN,
-        "revenueEstimated": 31800330000,
-        "symbol": "T"
-    },
-    {
         "date": "2026-07-23",
         "epsActual": NaN,
-        "epsEstimated": 0.05,
+        "epsEstimated": 7.22,
         "revenueActual": NaN,
-        "revenueEstimated": 16700550000,
-        "symbol": "AAL"
+        "revenueEstimated": 19367950000,
+        "symbol": "LMT"
     },
     {
         "date": "2026-07-23",
@@ -82,10 +50,10 @@
     {
         "date": "2026-07-23",
         "epsActual": NaN,
-        "epsEstimated": 7.22,
+        "epsEstimated": 0.05,
         "revenueActual": NaN,
-        "revenueEstimated": 19367950000,
-        "symbol": "LMT"
+        "revenueEstimated": 16700550000,
+        "symbol": "AAL"
     },
     {
         "date": "2026-07-23",
