@@ -2,7 +2,7 @@
     {
         "date": "2026-07-21",
         "epsActual": NaN,
-        "epsEstimated": 3.19,
+        "epsEstimated": 3.13,
         "revenueActual": NaN,
         "revenueEstimated": 47011490000,
         "symbol": "GM"
@@ -44,7 +44,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.21,
         "revenueActual": NaN,
-        "revenueEstimated": 14406350000,
+        "revenueEstimated": 14422060000,
         "symbol": "INTC"
     },
     {
@@ -76,7 +76,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.27,
         "revenueActual": NaN,
-        "revenueEstimated": 35232140000,
+        "revenueEstimated": 35190960000,
         "symbol": "VZ"
     }
 ]
