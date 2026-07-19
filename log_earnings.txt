@@ -1,13 +1,23 @@
 
 C:\Windows\System32>"C:\Users\fish_\AppData\Local\Programs\Python\Python310\python" "C:\git\stock_screener\run_all_recent_earnings.py" 
 https://financialmodelingprep.com/stable/earnings-calendar
-{'from': '2026-06-26', 'to': '2026-07-10', 'apikey': '2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz'}
+{'from': '2026-07-03', 'to': '2026-07-17', 'apikey': '2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz'}
 
---- Successfully Retrieved 3 Earnings Reports ---
+--- Successfully Retrieved 13 Earnings Reports ---
       date symbol  epsActual  epsEstimated  revenueActual  revenueEstimated
-2026-07-09    DAL       1.56          1.49    17666000000       17546620000
+2026-07-16     GE       2.02          1.86    12634000000       11869210000
+2026-07-16   NFLX       0.80          0.79    12560000000       12581160000
+2026-07-16    TSM       4.31          3.82    39356270000       39834730000
+2026-07-16    UNH       6.38          4.94   112032000000      110806600000
+2026-07-15    UAL       1.99          1.88    17672000000       17620250000
+2026-07-15    JNJ       2.90          2.84    25310000000       25062320000
+2026-07-14    WFC       1.96          1.73    22622000000       21861030000
+2026-07-14      C       3.15          2.74    24766000000       23740620000
+2026-07-14     GS      20.98         14.47    20338000000       16224980000
+2026-07-14    JPM       7.59          5.59    57347000000       50720640000
+2026-07-14    BAC       1.21          1.13    31558000000       30776100000
+2026-07-09    DAL       2.45          1.49    19757000000       17426900000
 2026-07-09    PEP       2.20          2.19    24181000000       23946760000
-2026-06-30    NKE       0.20          0.11    10972000000       10849540000
 
 ============================================================
 Running: get_earnings.py
