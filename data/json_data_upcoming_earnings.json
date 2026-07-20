@@ -44,7 +44,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.21,
         "revenueActual": NaN,
-        "revenueEstimated": 14422060000,
+        "revenueEstimated": 14417100000,
         "symbol": "INTC"
     },
     {
@@ -68,7 +68,7 @@
         "epsActual": NaN,
         "epsEstimated": 7.52,
         "revenueActual": NaN,
-        "revenueEstimated": 19675520000,
+        "revenueEstimated": 19683270000,
         "symbol": "HCA"
     },
     {
@@ -188,7 +188,7 @@
         "epsActual": NaN,
         "epsEstimated": -0.65,
         "revenueActual": NaN,
-        "revenueEstimated": 1509024000,
+        "revenueEstimated": 1499699000,
         "symbol": "RIVN"
     },
     {
@@ -204,7 +204,7 @@
         "epsActual": NaN,
         "epsEstimated": -0.34,
         "revenueActual": NaN,
-        "revenueEstimated": 1600642000,
+        "revenueEstimated": 1600651000,
         "symbol": "RBLX"
     },
     {
@@ -236,7 +236,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.82,
         "revenueActual": NaN,
-        "revenueEstimated": 196355900000,
+        "revenueEstimated": 196684400000,
         "symbol": "AMZN"
     },
     {
