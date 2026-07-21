@@ -2,16 +2,8 @@
     {
         "date": "2026-07-21",
         "epsActual": NaN,
-        "epsEstimated": 2.87,
-        "revenueActual": NaN,
-        "revenueEstimated": 116532500000,
-        "symbol": "GOOGL"
-    },
-    {
-        "date": "2026-07-21",
-        "epsActual": NaN,
         "epsEstimated": 3.19,
-        "revenueActual": NaN,
+        "revenueActual": 48026000000.0,
         "revenueEstimated": 47011490000,
         "symbol": "GM"
     },
@@ -22,6 +14,14 @@
         "revenueActual": NaN,
         "revenueEstimated": 26070430000,
         "symbol": "TSLA"
+    },
+    {
+        "date": "2026-07-22",
+        "epsActual": NaN,
+        "epsEstimated": 2.87,
+        "revenueActual": NaN,
+        "revenueEstimated": 116532500000,
+        "symbol": "GOOGL"
     },
     {
         "date": "2026-07-22",
@@ -130,7 +130,7 @@
     {
         "date": "2026-07-28",
         "epsActual": NaN,
-        "epsEstimated": -0.27,
+        "epsEstimated": -0.24,
         "revenueActual": NaN,
         "revenueEstimated": 24190830000,
         "symbol": "BA"
