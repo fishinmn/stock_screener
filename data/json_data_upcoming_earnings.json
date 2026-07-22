@@ -28,7 +28,7 @@
         "epsActual": NaN,
         "epsEstimated": 7.22,
         "revenueActual": NaN,
-        "revenueEstimated": 19365390000,
+        "revenueEstimated": 19339280000,
         "symbol": "LMT"
     },
     {
@@ -66,9 +66,9 @@
     {
         "date": "2026-07-24",
         "epsActual": NaN,
-        "epsEstimated": 7.52,
+        "epsEstimated": 7.56,
         "revenueActual": NaN,
-        "revenueEstimated": 19683270000,
+        "revenueEstimated": 19756770000,
         "symbol": "HCA"
     },
     {
@@ -92,7 +92,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.92,
         "revenueActual": NaN,
-        "revenueEstimated": 13170950000,
+        "revenueEstimated": 13170960000,
         "symbol": "KO"
     },
     {
@@ -172,7 +172,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.65,
         "revenueActual": NaN,
-        "revenueEstimated": 9191721000,
+        "revenueEstimated": 9191340000,
         "symbol": "SBUX"
     },
     {
@@ -180,7 +180,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.82,
         "revenueActual": NaN,
-        "revenueEstimated": 196684400000,
+        "revenueEstimated": 196711300000,
         "symbol": "AMZN"
     },
     {
