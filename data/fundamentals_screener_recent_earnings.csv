@@ -1,18 +1,23 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-07-22,GOOGL,,2.87,,116532500000,GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,4249302073344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-22,T,,0.59,,31795050000,T,AT&T Inc.,Communication Services,Telecom Services,telecom-services,162070003712,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-22,TSLA,,0.5,,26423380000,TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1422442758144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-21,GM,3.57,3.19,48026000000.0,47011490000,GM,General Motors Company,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,75325202432,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-16,NFLX,0.8,0.79,12560000000.0,12581160000,NFLX,"Netflix, Inc.",Communication Services,Entertainment,entertainment,292808228864,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-16,TSM,4.31,3.82,39356270000.0,39834730000,TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,2172095299584,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-16,UNH,6.38,4.94,112032000000.0,110806600000,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,395247157248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-16,GE,2.02,1.86,12634000000.0,11869210000,GE,GE Aerospace,Industrials,Aerospace & Defense,aerospace-defense,356340465664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-15,JNJ,2.9,2.84,25310000000.0,25062320000,JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,608062996480,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-15,UAL,1.99,1.88,17672000000.0,17620250000,UAL,"United Airlines Holdings, Inc.",Industrials,Airlines,airlines,38013607936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-14,WFC,1.96,1.73,22622000000.0,21861030000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,266634297344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-14,C,3.15,2.74,24766000000.0,23740620000,C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,223136137216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-14,GS,20.98,14.47,20338000000.0,16224980000,GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,323929964544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-14,JPM,7.59,5.59,57347000000.0,50720640000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,919963172864,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-14,BAC,1.21,1.13,31558000000.0,30776100000,BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,436227440640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-09,DAL,2.45,1.49,19757000000.0,17426900000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,55220609024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-09,PEP,2.2,2.19,24181000000.0,23946760000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,184573919232,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-23,LMT,,7.19,,19339280000,LMT,Lockheed Martin Corporation,Industrials,Aerospace & Defense,aerospace-defense,118592700416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-23,INTC,,0.21,,14434850000,INTC,Intel Corporation,Technology,Semiconductors,semiconductors,515768123392,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-23,NOK,,0.07,,5567637000,NOK,Nokia Oyj,Technology,Communication Equipment,communication-equipment,57388449792,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-23,AAL,,0.03,,16700550000,AAL,American Airlines Group Inc.,Industrials,Airlines,airlines,9781885952,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-22,GOOGL,9.11,2.87,119796000000.0,116532500000,GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,4174378172416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-22,T,0.65,0.59,31558000000.0,31795050000,T,AT&T Inc.,Communication Services,Telecom Services,telecom-services,160089735168,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-22,TSLA,0.33,0.5,28236000000.0,26423380000,TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1404678307840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-22,GOOGL,9.11,2.64,119796000000.0,117065700000,GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,4174378172416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-21,GM,3.57,3.19,48026000000.0,47011490000,GM,General Motors Company,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,74282598400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-16,UNH,6.38,4.94,112032000000.0,110806600000,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,391691763712,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-16,TSM,4.31,3.87,39356270000.0,39834730000,TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,2184594718720,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-16,NFLX,0.8,0.79,12560000000.0,12581160000,NFLX,"Netflix, Inc.",Communication Services,Entertainment,entertainment,285354786816,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-16,GE,2.02,1.86,12634000000.0,11881570000,GE,GE Aerospace,Industrials,Aerospace & Defense,aerospace-defense,354005942272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-15,JNJ,2.9,2.84,25310000000.0,25062320000,JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,615356891136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-15,UAL,1.99,1.88,17672000000.0,17620250000,UAL,"United Airlines Holdings, Inc.",Industrials,Airlines,airlines,38059048960,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-14,WFC,1.96,1.73,22622000000.0,21861030000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,261724291072,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-14,BAC,1.21,1.13,31558000000.0,30776100000,BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,432447160320,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-14,C,3.15,2.74,24766000000.0,23740620000,C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,221836165120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-14,GS,20.98,14.47,20338000000.0,16224980000,GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,323977150464,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-14,JPM,7.59,5.59,57347000000.0,50720640000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,925611851776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-09,PEP,2.2,2.19,24181000000.0,23946760000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,185297895424,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-09,DAL,2.45,1.49,19757000000.0,17426900000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,54924673024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
