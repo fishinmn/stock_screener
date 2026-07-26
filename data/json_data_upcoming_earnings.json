@@ -28,7 +28,7 @@
         "epsActual": NaN,
         "epsEstimated": 3.22,
         "revenueActual": NaN,
-        "revenueEstimated": 11397730000,
+        "revenueEstimated": 11396890000,
         "symbol": "V"
     },
     {
@@ -76,7 +76,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.39,
         "revenueActual": NaN,
-        "revenueEstimated": 1265284000,
+        "revenueEstimated": 1286575000,
         "symbol": "HOOD"
     },
     {
@@ -122,7 +122,7 @@
     {
         "date": "2026-07-30",
         "epsActual": NaN,
-        "epsEstimated": -0.00202,
+        "epsEstimated": -0.41028,
         "revenueActual": NaN,
         "revenueEstimated": 1293494000,
         "symbol": "COIN"
