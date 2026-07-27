@@ -2,6 +2,14 @@
     {
         "date": "2026-07-28",
         "epsActual": NaN,
+        "epsEstimated": 0.35,
+        "revenueActual": NaN,
+        "revenueEstimated": 47353330000,
+        "symbol": "F"
+    },
+    {
+        "date": "2026-07-28",
+        "epsActual": NaN,
         "epsEstimated": 0.817,
         "revenueActual": NaN,
         "revenueEstimated": 6018040000,
@@ -10,10 +18,26 @@
     {
         "date": "2026-07-28",
         "epsActual": NaN,
+        "epsEstimated": -0.01,
+        "revenueActual": NaN,
+        "revenueEstimated": 246300000,
+        "symbol": "TLRY"
+    },
+    {
+        "date": "2026-07-28",
+        "epsActual": NaN,
         "epsEstimated": 1.28,
         "revenueActual": NaN,
         "revenueEstimated": 8473396000,
         "symbol": "PYPL"
+    },
+    {
+        "date": "2026-07-28",
+        "epsActual": NaN,
+        "epsEstimated": 0.92,
+        "revenueActual": NaN,
+        "revenueEstimated": 13170960000,
+        "symbol": "KO"
     },
     {
         "date": "2026-07-28",
@@ -32,46 +56,6 @@
         "symbol": "V"
     },
     {
-        "date": "2026-07-28",
-        "epsActual": NaN,
-        "epsEstimated": -0.01,
-        "revenueActual": NaN,
-        "revenueEstimated": 246300000,
-        "symbol": "TLRY"
-    },
-    {
-        "date": "2026-07-28",
-        "epsActual": NaN,
-        "epsEstimated": 0.35,
-        "revenueActual": NaN,
-        "revenueEstimated": 47353330000,
-        "symbol": "F"
-    },
-    {
-        "date": "2026-07-28",
-        "epsActual": NaN,
-        "epsEstimated": 0.92,
-        "revenueActual": NaN,
-        "revenueEstimated": 13170960000,
-        "symbol": "KO"
-    },
-    {
-        "date": "2026-07-29",
-        "epsActual": NaN,
-        "epsEstimated": 0.12,
-        "revenueActual": NaN,
-        "revenueEstimated": 1114878000,
-        "symbol": "SOFI"
-    },
-    {
-        "date": "2026-07-29",
-        "epsActual": NaN,
-        "epsEstimated": 0.65,
-        "revenueActual": NaN,
-        "revenueEstimated": 9174497000,
-        "symbol": "SBUX"
-    },
-    {
         "date": "2026-07-29",
         "epsActual": NaN,
         "epsEstimated": 0.39,
@@ -82,10 +66,10 @@
     {
         "date": "2026-07-29",
         "epsActual": NaN,
-        "epsEstimated": 0.562,
+        "epsEstimated": 0.65,
         "revenueActual": NaN,
-        "revenueEstimated": 4420766000,
-        "symbol": "MGM"
+        "revenueEstimated": 9174497000,
+        "symbol": "SBUX"
     },
     {
         "date": "2026-07-29",
@@ -104,28 +88,20 @@
         "symbol": "MSFT"
     },
     {
-        "date": "2026-07-30",
+        "date": "2026-07-29",
         "epsActual": NaN,
-        "epsEstimated": -0.66,
+        "epsEstimated": 0.12,
         "revenueActual": NaN,
-        "revenueEstimated": 1499699000,
-        "symbol": "RIVN"
+        "revenueEstimated": 1114878000,
+        "symbol": "SOFI"
     },
     {
-        "date": "2026-07-30",
+        "date": "2026-07-29",
         "epsActual": NaN,
-        "epsEstimated": 0.78,
+        "epsEstimated": 0.562,
         "revenueActual": NaN,
-        "revenueEstimated": 2136723000,
-        "symbol": "SIRI"
-    },
-    {
-        "date": "2026-07-30",
-        "epsActual": NaN,
-        "epsEstimated": -0.41028,
-        "revenueActual": NaN,
-        "revenueEstimated": 1293494000,
-        "symbol": "COIN"
+        "revenueEstimated": 4420766000,
+        "symbol": "MGM"
     },
     {
         "date": "2026-07-30",
@@ -138,10 +114,10 @@
     {
         "date": "2026-07-30",
         "epsActual": NaN,
-        "epsEstimated": 1.88,
+        "epsEstimated": 0.78,
         "revenueActual": NaN,
-        "revenueEstimated": 108848200000,
-        "symbol": "AAPL"
+        "revenueEstimated": 2136723000,
+        "symbol": "SIRI"
     },
     {
         "date": "2026-07-30",
@@ -150,6 +126,14 @@
         "revenueActual": NaN,
         "revenueEstimated": 1297602000,
         "symbol": "ROKU"
+    },
+    {
+        "date": "2026-07-30",
+        "epsActual": NaN,
+        "epsEstimated": -0.66,
+        "revenueActual": NaN,
+        "revenueEstimated": 1499699000,
+        "symbol": "RIVN"
     },
     {
         "date": "2026-07-30",
@@ -168,20 +152,20 @@
         "symbol": "RBLX"
     },
     {
-        "date": "2026-07-31",
+        "date": "2026-07-30",
         "epsActual": NaN,
-        "epsEstimated": -2.0,
+        "epsEstimated": -0.41028,
         "revenueActual": NaN,
-        "revenueEstimated": 103066100,
-        "symbol": "MRNA"
+        "revenueEstimated": 1293494000,
+        "symbol": "COIN"
     },
     {
-        "date": "2026-07-31",
+        "date": "2026-07-30",
         "epsActual": NaN,
-        "epsEstimated": 5.55,
+        "epsEstimated": 1.88,
         "revenueActual": NaN,
-        "revenueEstimated": 63336230000,
-        "symbol": "CVX"
+        "revenueEstimated": 108848200000,
+        "symbol": "AAPL"
     },
     {
         "date": "2026-07-31",
@@ -198,6 +182,22 @@
         "revenueActual": NaN,
         "revenueEstimated": 110365600000,
         "symbol": "XOM"
+    },
+    {
+        "date": "2026-07-31",
+        "epsActual": NaN,
+        "epsEstimated": 5.55,
+        "revenueActual": NaN,
+        "revenueEstimated": 63336230000,
+        "symbol": "CVX"
+    },
+    {
+        "date": "2026-07-31",
+        "epsActual": NaN,
+        "epsEstimated": -2.0,
+        "revenueActual": NaN,
+        "revenueEstimated": 103066100,
+        "symbol": "MRNA"
     },
     {
         "date": "2026-08-03",
@@ -218,10 +218,10 @@
     {
         "date": "2026-08-04",
         "epsActual": NaN,
-        "epsEstimated": 0.36,
+        "epsEstimated": -2.33749,
         "revenueActual": NaN,
-        "revenueEstimated": 1148280000,
-        "symbol": "PINS"
+        "revenueEstimated": 405004400,
+        "symbol": "LCID"
     },
     {
         "date": "2026-08-04",
@@ -234,10 +234,18 @@
     {
         "date": "2026-08-04",
         "epsActual": NaN,
-        "epsEstimated": -2.33749,
+        "epsEstimated": 1.61,
         "revenueActual": NaN,
-        "revenueEstimated": 405004400,
-        "symbol": "LCID"
+        "revenueEstimated": 11301000000,
+        "symbol": "AMD"
+    },
+    {
+        "date": "2026-08-04",
+        "epsActual": NaN,
+        "epsEstimated": 0.36,
+        "revenueActual": NaN,
+        "revenueEstimated": 1148280000,
+        "symbol": "PINS"
     },
     {
         "date": "2026-08-04",
@@ -248,28 +256,12 @@
         "symbol": "ET"
     },
     {
-        "date": "2026-08-04",
-        "epsActual": NaN,
-        "epsEstimated": 1.61,
-        "revenueActual": NaN,
-        "revenueEstimated": 11301000000,
-        "symbol": "AMD"
-    },
-    {
         "date": "2026-08-05",
         "epsActual": NaN,
-        "epsEstimated": 0.39,
+        "epsEstimated": 1.17,
         "revenueActual": NaN,
-        "revenueEstimated": 3378905000,
-        "symbol": "SHOP"
-    },
-    {
-        "date": "2026-08-05",
-        "epsActual": NaN,
-        "epsEstimated": -0.27932,
-        "revenueActual": NaN,
-        "revenueEstimated": 1494841000,
-        "symbol": "FUBO"
+        "revenueEstimated": 646097000,
+        "symbol": "ETSY"
     },
     {
         "date": "2026-08-05",
@@ -282,10 +274,10 @@
     {
         "date": "2026-08-05",
         "epsActual": NaN,
-        "epsEstimated": 0.83,
+        "epsEstimated": 0.39,
         "revenueActual": NaN,
-        "revenueEstimated": 14233270000,
-        "symbol": "UBER"
+        "revenueEstimated": 3378905000,
+        "symbol": "SHOP"
     },
     {
         "date": "2026-08-05",
@@ -298,9 +290,33 @@
     {
         "date": "2026-08-05",
         "epsActual": NaN,
-        "epsEstimated": 1.17,
+        "epsEstimated": 0.83,
         "revenueActual": NaN,
-        "revenueEstimated": 646097000,
-        "symbol": "ETSY"
+        "revenueEstimated": 14233270000,
+        "symbol": "UBER"
+    },
+    {
+        "date": "2026-08-05",
+        "epsActual": NaN,
+        "epsEstimated": -0.27932,
+        "revenueActual": NaN,
+        "revenueEstimated": 1494841000,
+        "symbol": "FUBO"
+    },
+    {
+        "date": "2026-08-06",
+        "epsActual": NaN,
+        "epsEstimated": 0.33,
+        "revenueActual": NaN,
+        "revenueEstimated": 17165570000,
+        "symbol": "SONY"
+    },
+    {
+        "date": "2026-08-06",
+        "epsActual": NaN,
+        "epsEstimated": 0.1685,
+        "revenueActual": NaN,
+        "revenueEstimated": 2816038000,
+        "symbol": "RKT"
     }
 ]
