@@ -17,25 +17,25 @@
     },
     {
         "date": "2026-07-28",
-        "epsActual": NaN,
+        "epsActual": 0.86,
         "epsEstimated": 0.817,
-        "revenueActual": NaN,
+        "revenueActual": 6351000000.0,
         "revenueEstimated": 6018040000,
         "symbol": "CARR"
     },
     {
         "date": "2026-07-28",
-        "epsActual": NaN,
+        "epsActual": 1.38,
         "epsEstimated": 1.28,
-        "revenueActual": NaN,
+        "revenueActual": 8682000000.0,
         "revenueEstimated": 8473401000,
         "symbol": "PYPL"
     },
     {
         "date": "2026-07-28",
-        "epsActual": NaN,
+        "epsActual": -0.76,
         "epsEstimated": -0.28085,
-        "revenueActual": NaN,
+        "revenueActual": 24560000000.0,
         "revenueEstimated": 24263700000,
         "symbol": "BA"
     },
@@ -49,9 +49,9 @@
     },
     {
         "date": "2026-07-28",
-        "epsActual": NaN,
+        "epsActual": 0.97,
         "epsEstimated": 0.92,
-        "revenueActual": NaN,
+        "revenueActual": 13380000000.0,
         "revenueEstimated": 13170960000,
         "symbol": "KO"
     },
