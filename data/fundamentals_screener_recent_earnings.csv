@@ -17,7 +17,7 @@ date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longNam
 2026-07-29,SBUX,0.85,0.66,9322700000,9174497000,SBUX,Starbucks Corporation,Consumer Cyclical,Restaurants,restaurants,119984996352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-29,SOFI,0.12,0.11,1205550000,1114878000,SOFI,"SoFi Technologies, Inc.",Financial Services,Credit Services,credit-services,21044996096,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-28,BA,-0.76,-0.34,24560000000,24263700000,BA,The Boeing Company,Industrials,Aerospace & Defense,aerospace-defense,170830577664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-28,KO,0.97,0.932,13373000000,13170960000,KO,unknown,Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,376860246016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-28,KO,0.97,0.92,13373000000,13170960000,KO,unknown,Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,376860246016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-28,PYPL,1.38,1.28,8682000000,8473401000,PYPL,"PayPal Holdings, Inc.",Financial Services,Credit Services,credit-services,48940916736,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-28,F,0.42,0.33,48300000000,47237900000,F,unknown,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,58537906176,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-28,TLRY,-0.43,-0.01204,281714000,246297200,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,618364288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
