@@ -4,7 +4,7 @@
         "epsActual": NaN,
         "epsEstimated": -0.12242,
         "revenueActual": NaN,
-        "revenueEstimated": 1537735000,
+        "revenueEstimated": 1539005000,
         "symbol": "SNAP"
     },
     {
@@ -58,14 +58,6 @@
     {
         "date": "2026-08-05",
         "epsActual": NaN,
-        "epsEstimated": -0.28682,
-        "revenueActual": NaN,
-        "revenueEstimated": 154286200,
-        "symbol": "RIOT"
-    },
-    {
-        "date": "2026-08-05",
-        "epsActual": NaN,
         "epsEstimated": 0.605,
         "revenueActual": NaN,
         "revenueEstimated": 1297602000,
@@ -82,18 +74,18 @@
     {
         "date": "2026-08-05",
         "epsActual": NaN,
-        "epsEstimated": 1.89,
+        "epsEstimated": 0.747,
         "revenueActual": NaN,
-        "revenueEstimated": 25391870000,
-        "symbol": "DIS"
+        "revenueEstimated": 646095700,
+        "symbol": "ETSY"
     },
     {
         "date": "2026-08-05",
         "epsActual": NaN,
-        "epsEstimated": 0.48,
+        "epsEstimated": 1.89,
         "revenueActual": NaN,
-        "revenueEstimated": 155792200,
-        "symbol": "CPRX"
+        "revenueEstimated": 25391870000,
+        "symbol": "DIS"
     },
     {
         "date": "2026-08-05",
@@ -106,10 +98,18 @@
     {
         "date": "2026-08-05",
         "epsActual": NaN,
-        "epsEstimated": 0.747,
+        "epsEstimated": 0.48,
         "revenueActual": NaN,
-        "revenueEstimated": 646095700,
-        "symbol": "ETSY"
+        "revenueEstimated": 155792200,
+        "symbol": "CPRX"
+    },
+    {
+        "date": "2026-08-05",
+        "epsActual": NaN,
+        "epsEstimated": -0.28682,
+        "revenueActual": NaN,
+        "revenueEstimated": 154286200,
+        "symbol": "RIOT"
     },
     {
         "date": "2026-08-06",
@@ -118,5 +118,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 2817038000,
         "symbol": "RKT"
+    },
+    {
+        "date": "2026-08-12",
+        "epsActual": NaN,
+        "epsEstimated": 1.17,
+        "revenueActual": NaN,
+        "revenueEstimated": 16819320000,
+        "symbol": "CSCO"
     }
 ]
