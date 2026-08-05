@@ -2,6 +2,22 @@
     {
         "date": "2026-08-05",
         "epsActual": NaN,
+        "epsEstimated": 0.747,
+        "revenueActual": NaN,
+        "revenueEstimated": 646095700,
+        "symbol": "ETSY"
+    },
+    {
+        "date": "2026-08-05",
+        "epsActual": -0.02,
+        "epsEstimated": -0.29351,
+        "revenueActual": 1573867000.0,
+        "revenueEstimated": 1504072000,
+        "symbol": "FUBO"
+    },
+    {
+        "date": "2026-08-05",
+        "epsActual": NaN,
         "epsEstimated": -0.28682,
         "revenueActual": NaN,
         "revenueEstimated": 154286200,
@@ -17,9 +33,9 @@
     },
     {
         "date": "2026-08-05",
-        "epsActual": NaN,
+        "epsActual": 0.42,
         "epsEstimated": 0.39,
-        "revenueActual": NaN,
+        "revenueActual": 3583000000.0,
         "revenueEstimated": 3395927000,
         "symbol": "SHOP"
     },
@@ -33,27 +49,19 @@
     },
     {
         "date": "2026-08-05",
-        "epsActual": NaN,
+        "epsActual": 0.81,
         "epsEstimated": 0.83,
-        "revenueActual": NaN,
+        "revenueActual": 14190000000.0,
         "revenueEstimated": 14235230000,
         "symbol": "UBER"
     },
     {
         "date": "2026-08-05",
-        "epsActual": NaN,
+        "epsActual": 2.06,
         "epsEstimated": 1.88,
-        "revenueActual": NaN,
+        "revenueActual": 25248000000.0,
         "revenueEstimated": 25391870000,
         "symbol": "DIS"
-    },
-    {
-        "date": "2026-08-05",
-        "epsActual": NaN,
-        "epsEstimated": 0.747,
-        "revenueActual": NaN,
-        "revenueEstimated": 646095700,
-        "symbol": "ETSY"
     },
     {
         "date": "2026-08-06",
@@ -70,13 +78,5 @@
         "revenueActual": NaN,
         "revenueEstimated": 16819320000,
         "symbol": "CSCO"
-    },
-    {
-        "date": "2026-08-14",
-        "epsActual": NaN,
-        "epsEstimated": -0.29351,
-        "revenueActual": NaN,
-        "revenueEstimated": 1504072000,
-        "symbol": "FUBO"
     }
 ]
