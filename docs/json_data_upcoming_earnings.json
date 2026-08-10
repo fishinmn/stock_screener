@@ -26,6 +26,14 @@
     {
         "date": "2026-08-20",
         "epsActual": NaN,
+        "epsEstimated": 1.5,
+        "revenueActual": NaN,
+        "revenueEstimated": 39522190000,
+        "symbol": "BABA"
+    },
+    {
+        "date": "2026-08-20",
+        "epsActual": NaN,
         "epsEstimated": 0.742,
         "revenueActual": NaN,
         "revenueEstimated": 186784500000,
