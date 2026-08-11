@@ -9,7 +9,7 @@ date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longNam
 2026-08-05,ETSY,0.98,0.747,668313000.0,646097100,ETSY,"Etsy, Inc.",Consumer Cyclical,Internet Retail,internet-retail,7379252224,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-05,SHOP,0.42,0.3973,3536324000.0,3395198000,SHOP,Shopify Inc.,Technology,Software - Application,software-application,199661404160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-04,ET,0.59,0.3798,34334000000.0,27711960000,ET,Energy Transfer LP,Energy,Oil & Gas Midstream,oil-gas-midstream,70897541120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-04,LCID,-3.3,-2.36463,405347000.0,381593300,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,2579597568,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-04,LCID,-3.3,-2.41,405347000.0,381593300,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,2579597568,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-04,AMD,1.66,1.62,11536000000.0,11309650000,AMD,"Advanced Micro Devices, Inc.",Technology,Semiconductors,semiconductors,766544969728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-04,PFE,0.77,0.682,15034000000.0,14399430000,PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,154176159744,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-04,PINS,0.43,0.3568,1179654000.0,1148293000,PINS,"Pinterest, Inc.",Communication Services,Internet Content & Information,internet-content-information,13651034112,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
@@ -20,7 +20,7 @@ date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longNam
 2026-07-31,ABBV,3.65,3.61,16990000000.0,16804130000,ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,438192078848,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-31,MRNA,-1.97,-2.03,145000000.0,102928400,MRNA,"Moderna, Inc.",Healthcare,Biotechnology,biotechnology,23878299648,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-30,RIVN,-0.47,-0.66295,1658000000.0,1518924000,RIVN,"Rivian Automotive, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,23730434048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-07-30,SONY,0.36,0.2831,17822390000.0,17165570000,SONY,Sony Group Corporation,Technology,Consumer Electronics,consumer-electronics,139882037248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-07-30,SONY,0.36,0.33,17822390000.0,17165570000,SONY,Sony Group Corporation,Technology,Consumer Electronics,consumer-electronics,139882037248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-30,SIRI,0.7,0.781,2160000000.0,2137934000,SIRI,Sirius XM Holdings Inc.,Communication Services,Entertainment,entertainment,9700785152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-30,AAPL,2.02,1.89,109417000000.0,109038900000,AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,4498802081792,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-07-30,RBLX,-0.26,-0.34376,1557000000.0,1599692000,RBLX,Roblox Corporation,Communication Services,Electronic Gaming & Multimedia,electronic-gaming-multimedia,26467627008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
