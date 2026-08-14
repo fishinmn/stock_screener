@@ -4,13 +4,13 @@
         "epsActual": NaN,
         "epsEstimated": 1.51,
         "revenueActual": NaN,
-        "revenueEstimated": 4685462000,
+        "revenueEstimated": 4677180000,
         "symbol": "BIDU"
     },
     {
         "date": "2026-08-19",
         "epsActual": NaN,
-        "epsEstimated": 2.32,
+        "epsEstimated": 2.33,
         "revenueActual": NaN,
         "revenueEstimated": 26117350000,
         "symbol": "TGT"
