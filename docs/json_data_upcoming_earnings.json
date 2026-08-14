@@ -12,7 +12,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.32,
         "revenueActual": NaN,
-        "revenueEstimated": 26101790000,
+        "revenueEstimated": 26117350000,
         "symbol": "TGT"
     },
     {
@@ -26,7 +26,7 @@
     {
         "date": "2026-08-20",
         "epsActual": NaN,
-        "epsEstimated": 0.742,
+        "epsEstimated": 0.741,
         "revenueActual": NaN,
         "revenueEstimated": 186727900000,
         "symbol": "WMT"
