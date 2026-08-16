@@ -10,9 +10,9 @@
     {
         "date": "2026-08-19",
         "epsActual": NaN,
-        "epsEstimated": 2.25,
+        "epsEstimated": 2.26,
         "revenueActual": NaN,
-        "revenueEstimated": 26117350000,
+        "revenueEstimated": 26144440000,
         "symbol": "TGT"
     },
     {
@@ -38,5 +38,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 1266732000,
         "symbol": "ZM"
+    },
+    {
+        "date": "2026-08-26",
+        "epsActual": NaN,
+        "epsEstimated": 2.08,
+        "revenueActual": NaN,
+        "revenueEstimated": 91932130000,
+        "symbol": "NVDA"
     }
 ]
