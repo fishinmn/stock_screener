@@ -1,9 +1,9 @@
 [
     {
         "date": "2026-08-18",
-        "epsActual": NaN,
+        "epsActual": 1.06,
         "epsEstimated": 1.51,
-        "revenueActual": NaN,
+        "revenueActual": 4612791000.0,
         "revenueEstimated": 4677180000,
         "symbol": "BIDU"
     },
@@ -12,7 +12,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.26,
         "revenueActual": NaN,
-        "revenueEstimated": 26152170000,
+        "revenueEstimated": 26152160000,
         "symbol": "TGT"
     },
     {
@@ -28,7 +28,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.741,
         "revenueActual": NaN,
-        "revenueEstimated": 186700200000,
+        "revenueEstimated": 186619700000,
         "symbol": "WMT"
     },
     {
