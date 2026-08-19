@@ -1,18 +1,10 @@
 [
     {
-        "date": "2026-08-18",
-        "epsActual": 1.06,
-        "epsEstimated": 1.51,
-        "revenueActual": 4612791000.0,
-        "revenueEstimated": 4677180000,
-        "symbol": "BIDU"
-    },
-    {
         "date": "2026-08-19",
         "epsActual": NaN,
-        "epsEstimated": 2.26,
+        "epsEstimated": 2.3,
         "revenueActual": NaN,
-        "revenueEstimated": 26152160000,
+        "revenueEstimated": 26133720000,
         "symbol": "TGT"
     },
     {
@@ -20,7 +12,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.5,
         "revenueActual": NaN,
-        "revenueEstimated": 39517890000,
+        "revenueEstimated": 39515260000,
         "symbol": "BABA"
     },
     {
@@ -42,7 +34,7 @@
     {
         "date": "2026-08-26",
         "epsActual": NaN,
-        "epsEstimated": 2.08,
+        "epsEstimated": 2.09,
         "revenueActual": NaN,
         "revenueEstimated": 91932130000,
         "symbol": "NVDA"
