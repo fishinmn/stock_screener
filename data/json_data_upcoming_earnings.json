@@ -1,10 +1,10 @@
 [
     {
         "date": "2026-08-19",
-        "epsActual": NaN,
-        "epsEstimated": 2.3,
-        "revenueActual": NaN,
-        "revenueEstimated": 26133720000,
+        "epsActual": 4.11,
+        "epsEstimated": 2.35,
+        "revenueActual": 26539000000.0,
+        "revenueEstimated": 26152160000,
         "symbol": "TGT"
     },
     {
@@ -28,7 +28,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.48,
         "revenueActual": NaN,
-        "revenueEstimated": 1266732000,
+        "revenueEstimated": 1266733000,
         "symbol": "ZM"
     },
     {
@@ -36,7 +36,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.09,
         "revenueActual": NaN,
-        "revenueEstimated": 91932130000,
+        "revenueEstimated": 91962220000,
         "symbol": "NVDA"
     },
     {
