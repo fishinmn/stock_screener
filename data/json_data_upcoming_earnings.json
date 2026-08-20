@@ -1,17 +1,17 @@
 [
     {
         "date": "2026-08-20",
-        "epsActual": NaN,
-        "epsEstimated": 1.5,
-        "revenueActual": NaN,
+        "epsActual": 1.26,
+        "epsEstimated": 1.49,
+        "revenueActual": 39573170000.0,
         "revenueEstimated": 39515260000,
         "symbol": "BABA"
     },
     {
         "date": "2026-08-20",
-        "epsActual": NaN,
+        "epsActual": 0.81,
         "epsEstimated": 0.741,
-        "revenueActual": NaN,
+        "revenueActual": 187937000000.0,
         "revenueEstimated": 186619700000,
         "symbol": "WMT"
     },
