@@ -1,26 +1,10 @@
 [
     {
-        "date": "2026-08-20",
-        "epsActual": 1.26,
-        "epsEstimated": 1.49,
-        "revenueActual": 39573170000.0,
-        "revenueEstimated": 39515260000,
-        "symbol": "BABA"
-    },
-    {
-        "date": "2026-08-20",
-        "epsActual": 0.81,
-        "epsEstimated": 0.741,
-        "revenueActual": 187937000000.0,
-        "revenueEstimated": 186619700000,
-        "symbol": "WMT"
-    },
-    {
         "date": "2026-08-25",
         "epsActual": NaN,
         "epsEstimated": 1.48,
         "revenueActual": NaN,
-        "revenueEstimated": 1266733000,
+        "revenueEstimated": 1266757000,
         "symbol": "ZM"
     },
     {
@@ -28,7 +12,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.09,
         "revenueActual": NaN,
-        "revenueEstimated": 91962220000,
+        "revenueEstimated": 92062770000,
         "symbol": "NVDA"
     },
     {
