@@ -1,7 +1,7 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
 2026-08-20,BABA,0.16,1.94,39639000000,39515260000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,286042914816,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-20,WMT,0.81,0.742,187937000000,186641100000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,825252773888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-19,TGT,4.11,2.35,26539000000,26132440000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,75141373952,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-19,TGT,4.11,2.35,26539000000,26132440000,TGT,unknown,Consumer Defensive,Discount Stores,discount-stores,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-18,BIDU,1.06,1.51,4610414000,4677180000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,31615576064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-12,CSCO,1.22,1.17,17252000000,16836300000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,437656911872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-08-10,RIOT,-0.68,-0.30328,174235000,154309400,RIOT,"Riot Platforms, Inc.",Financial Services,Capital Markets,capital-markets,7441384960,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
