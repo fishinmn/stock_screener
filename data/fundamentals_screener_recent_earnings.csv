@@ -1,7 +1,8 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-08-25,ZM,,1.48,,1266743000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,30739533824,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-20,BABA,0.16,1.94,39639000000.0,39515260000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,283957624832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-20,WMT,0.81,0.742,187937000000.0,186641100000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,847455780864,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-19,TGT,4.11,2.35,26539000000.0,26132440000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-18,BIDU,1.06,1.51,4610414000.0,4677180000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,31266213888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-12,CSCO,1.22,1.17,17252000000.0,16836300000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,434464358400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-26,NVDA,,2.09,,92270940000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,5160284192768,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-25,ZM,1.55,1.48,1277217000.0,1266743000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,29592995840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-20,BABA,1.25,1.94,39639000000.0,39515260000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,286282612736,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-20,WMT,0.81,0.742,187937000000.0,186641100000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,838622314496,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-19,TGT,4.11,2.35,26539000000.0,26132440000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,74263027712,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-18,BIDU,1.06,1.51,4610414000.0,4677180000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,31690196992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-12,CSCO,1.22,1.17,17252000000.0,16836300000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,437932818432,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
