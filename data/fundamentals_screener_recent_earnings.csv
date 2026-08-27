@@ -1,8 +1,8 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-08-27,BILI,,0.23,,1165147000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,6758867968,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-26,NVDA,2.22,2.09,96221000000.0,92270940000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,5078174924800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-25,ZM,1.55,1.48,1277217000.0,1266743000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,27513980928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-20,BABA,1.25,1.94,39639000000.0,39515260000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,297852272640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-20,WMT,0.81,0.742,187937000000.0,186641100000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,830345904128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-19,TGT,4.11,2.35,26539000000.0,26132440000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,74521968640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-18,BIDU,1.06,1.51,4610414000.0,4677180000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,31632535552,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-27,BILI,0.2325,0.23,1168598000,1166656000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,7016248832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-26,NVDA,2.22,2.09,96221000000,92270940000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,5521903452160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-25,ZM,1.55,1.48,1277217000,1266743000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,29402394624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-20,BABA,1.25,1.94,39639000000,39515260000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,289102856192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-20,WMT,0.81,0.742,187937000000,186641100000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,816737615872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-19,TGT,4.11,2.35,26539000000,26132440000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,75380580352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-18,BIDU,1.06,1.51,4610414000,4677180000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,32880742400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
