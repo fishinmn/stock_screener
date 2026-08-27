@@ -1,18 +1,10 @@
 [
     {
-        "date": "2026-08-26",
-        "epsActual": NaN,
-        "epsEstimated": 2.09,
-        "revenueActual": NaN,
-        "revenueEstimated": 92270940000,
-        "symbol": "NVDA"
-    },
-    {
         "date": "2026-08-27",
         "epsActual": NaN,
         "epsEstimated": 0.23,
         "revenueActual": NaN,
-        "revenueEstimated": 1166656000,
+        "revenueEstimated": 1165147000,
         "symbol": "BILI"
     },
     {
