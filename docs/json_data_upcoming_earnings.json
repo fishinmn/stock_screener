@@ -14,5 +14,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 867208700,
         "symbol": "DOCU"
+    },
+    {
+        "date": "2026-09-10",
+        "epsActual": NaN,
+        "epsEstimated": 6.07,
+        "revenueActual": NaN,
+        "revenueEstimated": 6689580000,
+        "symbol": "ADBE"
     }
 ]
