@@ -1,9 +1,8 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-09-01,NIO,-0.04,-0.07,4729903000,4794806000,NIO,NIO Inc.,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,10248178688,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-27,BILI,0.23,0.23,1168598000,1166656000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,6660518912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-26,NVDA,2.22,2.09,96221000000,92270940000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,5309169401856,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-25,ZM,1.55,1.48,1277217000,1266743000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,27785103360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-20,WMT,0.81,0.742,187937000000,186641100000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,842563846144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-20,BABA,1.25,1.94,39639000000,39515260000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,280962465792,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-19,TGT,4.11,2.35,26539000000,26132440000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,74219864064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-18,BIDU,1.06,1.51,4610414000,4677180000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,32254943232,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-01,NIO,-0.04,-0.07,4729903000,4794806000,NIO,NIO Inc.,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,10173007872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-27,BILI,0.23,0.23,1168598000,1166656000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,6608205824,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-26,NVDA,2.22,2.09,96221000000,92270940000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,5250523594752,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-25,ZM,1.55,1.48,1277217000,1266743000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,27690274816,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-20,BABA,1.25,1.94,39639000000,39515260000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,280502599680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-20,WMT,0.81,0.742,187937000000,186641100000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,842919706624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-19,TGT,4.11,2.35,26539000000,26132440000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,74391093248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2

@@ -1,13 +1,5 @@
 [
     {
-        "date": "2026-09-01",
-        "epsActual": -0.04,
-        "epsEstimated": -0.07,
-        "revenueActual": 4729903000.0,
-        "revenueEstimated": 4794806000,
-        "symbol": "NIO"
-    },
-    {
         "date": "2026-09-03",
         "epsActual": NaN,
         "epsEstimated": 1.09,
