@@ -1,15 +1,16 @@
 
 C:\Windows\System32>"C:\Users\fish_\AppData\Local\Programs\Python\Python310\python" "C:\git\stock_screener\run_all_recent_earnings.py" 
 https://financialmodelingprep.com/stable/earnings-calendar
-{'from': '2026-08-14', 'to': '2026-08-28', 'apikey': '2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz'}
+{'from': '2026-08-18', 'to': '2026-09-01', 'apikey': '2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz'}
 
---- Successfully Retrieved 7 Earnings Reports ---
+--- Successfully Retrieved 8 Earnings Reports ---
       date symbol  epsActual  epsEstimated  revenueActual  revenueEstimated
+2026-09-01    NIO      -0.04        -0.070     4729903000        4794806000
 2026-08-27   BILI       0.23         0.230     1168598000        1166656000
 2026-08-26   NVDA       2.22         2.090    96221000000       92270940000
 2026-08-25     ZM       1.55         1.480     1277217000        1266743000
-2026-08-20   BABA       1.25         1.940    39639000000       39515260000
 2026-08-20    WMT       0.81         0.742   187937000000      186641100000
+2026-08-20   BABA       1.25         1.940    39639000000       39515260000
 2026-08-19    TGT       4.11         2.350    26539000000       26132440000
 2026-08-18   BIDU       1.06         1.510     4610414000        4677180000
 
