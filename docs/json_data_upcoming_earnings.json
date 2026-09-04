@@ -1,13 +1,5 @@
 [
     {
-        "date": "2026-09-03",
-        "epsActual": NaN,
-        "epsEstimated": 1.09,
-        "revenueActual": NaN,
-        "revenueEstimated": 867215700,
-        "symbol": "DOCU"
-    },
-    {
         "date": "2026-09-10",
         "epsActual": NaN,
         "epsEstimated": 6.08,
