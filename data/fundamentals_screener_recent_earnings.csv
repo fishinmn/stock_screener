@@ -1,6 +1,6 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-09-03,DOCU,1.16,1.09,875746000,867215700,DOCU,"DocuSign, Inc.",Technology,Software - Application,software-application,12907854848,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-01,NIO,-0.04,-0.07,4729903000,4794806000,NIO,NIO Inc.,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,9450874880,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-27,BILI,0.23,0.23,1168598000,1166656000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,6434526208,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-26,NVDA,2.22,2.09,96221000000,92270940000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,5586118246400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-25,ZM,1.55,1.48,1277217000,1266743000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,29607292928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-03,DOCU,1.16,1.09,875746000,867215700,DOCU,"DocuSign, Inc.",Technology,Software - Application,software-application,13062520832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-01,NIO,-0.04,-0.07,4729903000,4794806000,NIO,NIO Inc.,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,9521534976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-27,BILI,0.23,0.23,1168598000,1166656000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,6373842432,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-26,NVDA,2.22,2.09,96221000000,92270940000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,5562502742016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-25,ZM,1.55,1.48,1277217000,1266743000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,29566443520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
