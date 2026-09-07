@@ -6,5 +6,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 6693883000,
         "symbol": "ADBE"
+    },
+    {
+        "date": "2026-09-17",
+        "epsActual": NaN,
+        "epsEstimated": 4.21,
+        "revenueActual": NaN,
+        "revenueEstimated": 23211650000,
+        "symbol": "FDX"
     }
 ]
