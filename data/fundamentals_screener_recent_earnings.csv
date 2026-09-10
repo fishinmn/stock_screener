@@ -1,5 +1,5 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-09-10,ADBE,,6.08,,6693883000,ADBE,Adobe Inc.,Technology,Software - Application,software-application,101306851328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-03,DOCU,1.16,1.09,875746000.0,867215700,DOCU,"DocuSign, Inc.",Technology,Software - Application,software-application,12045861888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-01,NIO,-0.04,-0.07,4729903000.0,4794806000,NIO,NIO Inc.,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,9270968320,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-08-27,BILI,0.23,0.23,1168598000.0,1166656000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,6553214976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-10,ADBE,,6.08,,6693883000,ADBE,Adobe Inc.,Technology,Software - Application,software-application,99742687232,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-03,DOCU,1.16,1.09,875746000.0,867215700,DOCU,"DocuSign, Inc.",Technology,Software - Application,software-application,12225290240,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-01,NIO,-0.04,-0.07,4729903000.0,4794806000,NIO,NIO Inc.,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,9070514176,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-08-27,BILI,0.23,0.23,1168598000.0,1166656000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,6388457984,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
