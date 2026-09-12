@@ -1,4 +1,4 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-09-10,ADBE,6.13,6.08,6760000000,6693883000,ADBE,Adobe Inc.,Technology,Software - Application,software-application,98872164352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-03,DOCU,1.16,1.09,875746000,867215700,DOCU,"DocuSign, Inc.",Technology,Software - Application,software-application,12340234240,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-01,NIO,-0.04,-0.07,4729903000,4794806000,NIO,NIO Inc.,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,9195798528,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-10,ADBE,6.13,6.08,6760000000,6693883000,ADBE,Adobe Inc.,Technology,Software - Application,software-application,100261421056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-03,DOCU,1.16,1.09,875746000,867215700,DOCU,"DocuSign, Inc.",Technology,Software - Application,software-application,12270145536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-01,NIO,-0.04,-0.07,4729903000,4794806000,NIO,NIO Inc.,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,9245912064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
