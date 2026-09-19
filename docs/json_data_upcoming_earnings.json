@@ -6,5 +6,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 94863660000,
         "symbol": "COST"
+    },
+    {
+        "date": "2026-09-29",
+        "epsActual": NaN,
+        "epsEstimated": 1.36,
+        "revenueActual": NaN,
+        "revenueEstimated": 8397727000,
+        "symbol": "CCL"
     }
 ]
