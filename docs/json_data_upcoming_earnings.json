@@ -4,7 +4,7 @@
         "epsActual": NaN,
         "epsEstimated": 6.54,
         "revenueActual": NaN,
-        "revenueEstimated": 94863660000,
+        "revenueEstimated": 94966660000,
         "symbol": "COST"
     },
     {
@@ -18,7 +18,7 @@
     {
         "date": "2026-10-01",
         "epsActual": NaN,
-        "epsEstimated": 0.4395,
+        "epsEstimated": 0.4383,
         "revenueActual": NaN,
         "revenueEstimated": 11339590000,
         "symbol": "NKE"
