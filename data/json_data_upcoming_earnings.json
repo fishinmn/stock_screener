@@ -1,18 +1,18 @@
 [
     {
         "date": "2026-09-29",
-        "epsActual": NaN,
+        "epsActual": 1.43,
         "epsEstimated": 1.35,
-        "revenueActual": NaN,
+        "revenueActual": 8435000000.0,
         "revenueEstimated": 8386927000,
         "symbol": "CCL"
     },
     {
         "date": "2026-10-01",
         "epsActual": NaN,
-        "epsEstimated": 0.436,
+        "epsEstimated": 0.4332,
         "revenueActual": NaN,
-        "revenueEstimated": 11337820000,
+        "revenueEstimated": 11329560000,
         "symbol": "NKE"
     },
     {
@@ -20,7 +20,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.3,
         "revenueActual": NaN,
-        "revenueEstimated": 24993920000,
+        "revenueEstimated": 24983520000,
         "symbol": "PEP"
     },
     {
