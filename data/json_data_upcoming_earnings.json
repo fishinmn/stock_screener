@@ -1,13 +1,5 @@
 [
     {
-        "date": "2026-10-01",
-        "epsActual": NaN,
-        "epsEstimated": 0.4365,
-        "revenueActual": NaN,
-        "revenueEstimated": 11320440000,
-        "symbol": "NKE"
-    },
-    {
         "date": "2026-10-08",
         "epsActual": NaN,
         "epsEstimated": 2.3,
@@ -18,7 +10,7 @@
     {
         "date": "2026-10-08",
         "epsActual": NaN,
-        "epsEstimated": -0.164,
+        "epsEstimated": -0.168,
         "revenueActual": NaN,
         "revenueEstimated": 267765200,
         "symbol": "TLRY"
@@ -28,7 +20,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.92,
         "revenueActual": NaN,
-        "revenueEstimated": 17603230000,
+        "revenueEstimated": 17611730000,
         "symbol": "DAL"
     }
 ]
