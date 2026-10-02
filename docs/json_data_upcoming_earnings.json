@@ -4,7 +4,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.3,
         "revenueActual": NaN,
-        "revenueEstimated": 24972690000,
+        "revenueEstimated": 24965630000,
         "symbol": "PEP"
     },
     {
@@ -12,13 +12,13 @@
         "epsActual": NaN,
         "epsEstimated": -0.168,
         "revenueActual": NaN,
-        "revenueEstimated": 267765200,
+        "revenueEstimated": 268678700,
         "symbol": "TLRY"
     },
     {
         "date": "2026-10-09",
         "epsActual": NaN,
-        "epsEstimated": 1.92,
+        "epsEstimated": 1.88,
         "revenueActual": NaN,
         "revenueEstimated": 17611730000,
         "symbol": "DAL"
