@@ -70,5 +70,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 22352410000,
         "symbol": "WFC"
+    },
+    {
+        "date": "2026-10-14",
+        "epsActual": NaN,
+        "epsEstimated": 1.12,
+        "revenueActual": NaN,
+        "revenueEstimated": 30757530000,
+        "symbol": "BAC"
     }
 ]
