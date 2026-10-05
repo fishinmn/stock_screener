@@ -26,7 +26,7 @@
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 2.66,
+        "epsEstimated": 2.65,
         "revenueActual": NaN,
         "revenueEstimated": 23699740000,
         "symbol": "C"
@@ -34,7 +34,7 @@
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 14.44,
+        "epsEstimated": 14.27,
         "revenueActual": NaN,
         "revenueEstimated": 17117400000,
         "symbol": "GS"
@@ -50,7 +50,7 @@
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 5.9,
+        "epsEstimated": 5.91,
         "revenueActual": NaN,
         "revenueEstimated": 51099600000,
         "symbol": "JPM"
@@ -74,9 +74,17 @@
     {
         "date": "2026-10-14",
         "epsActual": NaN,
-        "epsEstimated": 1.12,
+        "epsEstimated": 1.11,
         "revenueActual": NaN,
         "revenueEstimated": 30757530000,
         "symbol": "BAC"
+    },
+    {
+        "date": "2026-10-15",
+        "epsActual": NaN,
+        "epsEstimated": 4.4,
+        "revenueActual": NaN,
+        "revenueEstimated": 45301130000,
+        "symbol": "TSM"
     }
 ]
