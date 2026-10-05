@@ -12,7 +12,7 @@
         "epsActual": NaN,
         "epsEstimated": -0.19333,
         "revenueActual": NaN,
-        "revenueEstimated": 268489800,
+        "revenueEstimated": 267112000,
         "symbol": "TLRY"
     },
     {
@@ -50,7 +50,7 @@
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 5.91,
+        "epsEstimated": 5.9,
         "revenueActual": NaN,
         "revenueEstimated": 51099600000,
         "symbol": "JPM"
@@ -68,7 +68,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.85,
         "revenueActual": NaN,
-        "revenueEstimated": 22352410000,
+        "revenueEstimated": 22312450000,
         "symbol": "WFC"
     },
     {

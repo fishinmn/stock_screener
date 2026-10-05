@@ -1,4 +1,4 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-10-01,NKE,0.48,0.4331,11213000000,11320440000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,50246103040,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-29,CCL,1.43,1.35,8435000000,8386927000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,34637160448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-24,COST,6.75,6.54,93873000000,94966660000,COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,discount-stores,408092835840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-01,NKE,0.48,0.4331,11213000000,11320440000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,50379616256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-29,CCL,1.43,1.35,8435000000,8386927000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,34368233472,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-24,COST,6.75,6.54,93873000000,94966660000,COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,discount-stores,409365020672,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
