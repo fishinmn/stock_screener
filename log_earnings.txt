@@ -1,11 +1,13 @@
 
 C:\Windows\System32>"C:\Users\fish_\AppData\Local\Programs\Python\Python310\python" "C:\git\stock_screener\run_all_recent_earnings.py" 
 https://financialmodelingprep.com/stable/earnings-calendar
-{'from': '2026-09-04', 'to': '2026-09-18', 'apikey': '2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz'}
+{'from': '2026-09-21', 'to': '2026-10-05', 'apikey': '2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz'}
 
---- Successfully Retrieved 1 Earnings Reports ---
+--- Successfully Retrieved 3 Earnings Reports ---
       date symbol  epsActual  epsEstimated  revenueActual  revenueEstimated
-2026-09-10   ADBE       6.13          6.08     6760000000        6693883000
+2026-10-01    NKE       0.48        0.4331    11213000000       11320440000
+2026-09-29    CCL       1.43        1.3500     8435000000        8386927000
+2026-09-24   COST       6.75        6.5400    93873000000       94966660000
 
 ============================================================
 Running: get_earnings.py
