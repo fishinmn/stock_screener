@@ -4,7 +4,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.3,
         "revenueActual": NaN,
-        "revenueEstimated": 24965630000,
+        "revenueEstimated": 24957200000,
         "symbol": "PEP"
     },
     {
@@ -20,7 +20,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.88,
         "revenueActual": NaN,
-        "revenueEstimated": 17621880000,
+        "revenueEstimated": 17637650000,
         "symbol": "DAL"
     },
     {
@@ -28,21 +28,21 @@
         "epsActual": NaN,
         "epsEstimated": 2.65,
         "revenueActual": NaN,
-        "revenueEstimated": 23699740000,
+        "revenueEstimated": 23703400000,
         "symbol": "C"
     },
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 14.27,
+        "epsEstimated": 13.87,
         "revenueActual": NaN,
-        "revenueEstimated": 17117400000,
+        "revenueEstimated": 17019530000,
         "symbol": "GS"
     },
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 2.78,
+        "epsEstimated": 2.75,
         "revenueActual": NaN,
         "revenueEstimated": 25356290000,
         "symbol": "JNJ"
@@ -52,7 +52,7 @@
         "epsActual": NaN,
         "epsEstimated": 5.9,
         "revenueActual": NaN,
-        "revenueEstimated": 51099600000,
+        "revenueEstimated": 51185300000,
         "symbol": "JPM"
     },
     {
@@ -66,7 +66,7 @@
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 1.85,
+        "epsEstimated": 1.84,
         "revenueActual": NaN,
         "revenueEstimated": 22312450000,
         "symbol": "WFC"
@@ -76,7 +76,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.11,
         "revenueActual": NaN,
-        "revenueEstimated": 30757530000,
+        "revenueEstimated": 30718260000,
         "symbol": "BAC"
     },
     {
