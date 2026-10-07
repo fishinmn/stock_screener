@@ -10,15 +10,15 @@
     {
         "date": "2026-10-08",
         "epsActual": NaN,
-        "epsEstimated": -0.19333,
+        "epsEstimated": -0.18143,
         "revenueActual": NaN,
-        "revenueEstimated": 266567600,
+        "revenueEstimated": 266256400,
         "symbol": "TLRY"
     },
     {
         "date": "2026-10-09",
         "epsActual": NaN,
-        "epsEstimated": 1.85,
+        "epsEstimated": 1.81,
         "revenueActual": NaN,
         "revenueEstimated": 17637710000,
         "symbol": "DAL"
@@ -42,7 +42,7 @@
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 2.69,
+        "epsEstimated": 2.67,
         "revenueActual": NaN,
         "revenueEstimated": 25369660000,
         "symbol": "JNJ"
@@ -68,7 +68,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.84,
         "revenueActual": NaN,
-        "revenueEstimated": 22293870000,
+        "revenueEstimated": 22308250000,
         "symbol": "WFC"
     },
     {
@@ -82,9 +82,9 @@
     {
         "date": "2026-10-15",
         "epsActual": NaN,
-        "epsEstimated": 4.41,
+        "epsEstimated": 4.42,
         "revenueActual": NaN,
-        "revenueEstimated": 45358160000,
+        "revenueEstimated": 45372720000,
         "symbol": "TSM"
     }
 ]
