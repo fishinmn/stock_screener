@@ -4,7 +4,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.29,
         "revenueActual": NaN,
-        "revenueEstimated": 24957200000,
+        "revenueEstimated": 24952870000,
         "symbol": "PEP"
     },
     {
@@ -20,7 +20,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.85,
         "revenueActual": NaN,
-        "revenueEstimated": 17637650000,
+        "revenueEstimated": 17637710000,
         "symbol": "DAL"
     },
     {
@@ -28,23 +28,23 @@
         "epsActual": NaN,
         "epsEstimated": 2.65,
         "revenueActual": NaN,
-        "revenueEstimated": 23703400000,
+        "revenueEstimated": 23706010000,
         "symbol": "C"
     },
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 13.87,
+        "epsEstimated": 13.3,
         "revenueActual": NaN,
-        "revenueEstimated": 17019530000,
+        "revenueEstimated": 16863970000,
         "symbol": "GS"
     },
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 2.78,
+        "epsEstimated": 2.69,
         "revenueActual": NaN,
-        "revenueEstimated": 25356290000,
+        "revenueEstimated": 25369660000,
         "symbol": "JNJ"
     },
     {
@@ -76,7 +76,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.1,
         "revenueActual": NaN,
-        "revenueEstimated": 30718260000,
+        "revenueEstimated": 30651410000,
         "symbol": "BAC"
     },
     {
