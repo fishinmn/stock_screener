@@ -1,6 +1,6 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-10-08,PEP,,2.29,,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,169015181312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,TLRY,,-0.18143,,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,549010624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-01,NKE,0.48,0.4331,11213000000.0,11320440000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,51035209728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-29,CCL,1.43,1.35,8435000000.0,8386927000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,35161554944,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-24,COST,6.75,6.54,93873000000.0,94966660000,COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,discount-stores,417667383296,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,PEP,2.34,2.29,25274000000,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,172648742912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,TLRY,-0.32,-0.18143,257147000,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,532754624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-01,NKE,0.48,0.4331,11213000000,11320440000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,51191169024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-29,CCL,1.43,1.35,8435000000,8386927000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,35101048832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-24,COST,6.75,6.54,93873000000,94966660000,COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,discount-stores,419479519232,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
