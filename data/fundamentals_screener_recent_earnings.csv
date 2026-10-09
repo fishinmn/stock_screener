@@ -1,6 +1,6 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-10-09,DAL,,1.77,,17651850000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,54017155072,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,PEP,2.34,2.29,25274000000.0,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,175312437248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,TLRY,-0.32,-0.18143,257147000.0,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,530537888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-01,NKE,0.48,0.4331,11213000000.0,11320440000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,51599630336,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-29,CCL,1.43,1.35,8435000000.0,8386927000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,35134664704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-09,DAL,1.72,1.77,20200000000,17651850000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,53320077312,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,PEP,2.34,2.29,25274000000,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,171432837120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,TLRY,-0.32,-0.18143,257147000,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,517237504,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-01,NKE,0.48,0.4331,11213000000,11320440000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,51755585536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-29,CCL,1.43,1.35,8435000000,8386927000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,35154833408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
