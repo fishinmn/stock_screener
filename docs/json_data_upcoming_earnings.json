@@ -1,13 +1,5 @@
 [
     {
-        "date": "2026-10-09",
-        "epsActual": 1.72,
-        "epsEstimated": 1.77,
-        "revenueActual": 20200000000.0,
-        "revenueEstimated": 17651850000,
-        "symbol": "DAL"
-    },
-    {
         "date": "2026-10-13",
         "epsActual": NaN,
         "epsEstimated": 2.65,
@@ -18,17 +10,17 @@
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 13.07,
+        "epsEstimated": 12.86,
         "revenueActual": NaN,
-        "revenueEstimated": 16839850000,
+        "revenueEstimated": 16833240000,
         "symbol": "GS"
     },
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 2.66,
+        "epsEstimated": 2.5,
         "revenueActual": NaN,
-        "revenueEstimated": 25384340000,
+        "revenueEstimated": 25382480000,
         "symbol": "JNJ"
     },
     {
@@ -42,7 +34,7 @@
     {
         "date": "2026-10-13",
         "epsActual": NaN,
-        "epsEstimated": 4.12,
+        "epsEstimated": 4.15,
         "revenueActual": NaN,
         "revenueEstimated": 111311200000,
         "symbol": "UNH"
@@ -70,5 +62,37 @@
         "revenueActual": NaN,
         "revenueEstimated": 45481210000,
         "symbol": "TSM"
+    },
+    {
+        "date": "2026-10-20",
+        "epsActual": NaN,
+        "epsEstimated": 1.99,
+        "revenueActual": NaN,
+        "revenueEstimated": 12840580000,
+        "symbol": "GE"
+    },
+    {
+        "date": "2026-10-20",
+        "epsActual": NaN,
+        "epsEstimated": 3.65,
+        "revenueActual": NaN,
+        "revenueEstimated": 48755670000,
+        "symbol": "GM"
+    },
+    {
+        "date": "2026-10-20",
+        "epsActual": NaN,
+        "epsEstimated": 0.821,
+        "revenueActual": NaN,
+        "revenueEstimated": 12873570000,
+        "symbol": "NFLX"
+    },
+    {
+        "date": "2026-10-20",
+        "epsActual": NaN,
+        "epsEstimated": 2.61,
+        "revenueActual": NaN,
+        "revenueEstimated": 17886460000,
+        "symbol": "UAL"
     }
 ]
