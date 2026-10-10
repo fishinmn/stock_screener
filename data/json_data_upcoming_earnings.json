@@ -58,9 +58,9 @@
     {
         "date": "2026-10-15",
         "epsActual": NaN,
-        "epsEstimated": 4.42,
+        "epsEstimated": 4.45,
         "revenueActual": NaN,
-        "revenueEstimated": 45481210000,
+        "revenueEstimated": 45505800000,
         "symbol": "TSM"
     },
     {
@@ -74,7 +74,7 @@
     {
         "date": "2026-10-20",
         "epsActual": NaN,
-        "epsEstimated": 3.65,
+        "epsEstimated": 3.66,
         "revenueActual": NaN,
         "revenueEstimated": 48755670000,
         "symbol": "GM"
