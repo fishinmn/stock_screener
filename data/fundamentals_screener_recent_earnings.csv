@@ -1,6 +1,12 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-10-09,DAL,1.72,1.77,20200000000,17643450000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,52682182656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,PEP,2.34,2.29,25274000000,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,172632047616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,TLRY,-0.32,-0.18143,257147000,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,496566048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-01,NKE,0.48,0.4331,11213000000,11320440000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,52505665536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-09-29,CCL,1.43,1.35,8435000000,8386927000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,35605278720,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,C,,2.65,,23715560000,C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,221287464960,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,GS,,12.86,,16833240000,GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,260292673536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,JNJ,,2.52,,25382730000,JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,635562557440,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,JPM,,5.93,,51233790000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,888631656448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,UNH,,4.14,,111310700000,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,339757563904,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,WFC,,1.85,,22312050000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,251959607296,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-09,DAL,1.72,1.77,20200000000.0,17643450000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,52682182656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,PEP,2.34,2.29,25274000000.0,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,172632047616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,TLRY,-0.32,-0.18143,257147000.0,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,496566048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-01,NKE,0.48,0.4331,11213000000.0,11320440000,NKE,"NIKE, Inc.",Consumer Cyclical,Footwear & Accessories,footwear-accessories,52505665536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-09-29,CCL,1.43,1.35,8435000000.0,8386927000,CCL,Carnival Corporation Ltd.,Consumer Cyclical,Travel Services,travel-services,35605278720,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2

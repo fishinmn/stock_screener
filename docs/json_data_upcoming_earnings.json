@@ -76,13 +76,13 @@
         "epsActual": NaN,
         "epsEstimated": 3.68,
         "revenueActual": NaN,
-        "revenueEstimated": 48755670000,
+        "revenueEstimated": 48773550000,
         "symbol": "GM"
     },
     {
         "date": "2026-10-20",
         "epsActual": NaN,
-        "epsEstimated": 1.99,
+        "epsEstimated": 2.0,
         "revenueActual": NaN,
         "revenueEstimated": 12840580000,
         "symbol": "GE"
@@ -116,7 +116,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.08,
         "revenueActual": NaN,
-        "revenueEstimated": 5741834000,
+        "revenueEstimated": 5734642000,
         "symbol": "NOK"
     },
     {
@@ -124,7 +124,7 @@
         "epsActual": NaN,
         "epsEstimated": 7.52,
         "revenueActual": NaN,
-        "revenueEstimated": 20455060000,
+        "revenueEstimated": 20434670000,
         "symbol": "LMT"
     },
     {
