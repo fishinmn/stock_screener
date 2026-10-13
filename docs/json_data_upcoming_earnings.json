@@ -1,49 +1,49 @@
 [
     {
         "date": "2026-10-13",
-        "epsActual": NaN,
+        "epsActual": 1.87,
         "epsEstimated": 1.85,
-        "revenueActual": NaN,
+        "revenueActual": 21870000000.0,
         "revenueEstimated": 22312050000,
         "symbol": "WFC"
     },
     {
         "date": "2026-10-13",
-        "epsActual": NaN,
+        "epsActual": 5.75,
         "epsEstimated": 5.93,
-        "revenueActual": NaN,
-        "revenueEstimated": 51233790000,
+        "revenueActual": 50172000000.0,
+        "revenueEstimated": 51233320000,
         "symbol": "JPM"
     },
     {
         "date": "2026-10-13",
-        "epsActual": NaN,
+        "epsActual": 2.59,
         "epsEstimated": 2.52,
-        "revenueActual": NaN,
+        "revenueActual": 25399000000.0,
         "revenueEstimated": 25382730000,
         "symbol": "JNJ"
     },
     {
         "date": "2026-10-13",
-        "epsActual": NaN,
+        "epsActual": 17.01,
         "epsEstimated": 12.86,
-        "revenueActual": NaN,
-        "revenueEstimated": 16833240000,
+        "revenueActual": 18679000000.0,
+        "revenueEstimated": 16833220000,
         "symbol": "GS"
     },
     {
         "date": "2026-10-13",
-        "epsActual": NaN,
+        "epsActual": 2.85,
         "epsEstimated": 2.65,
-        "revenueActual": NaN,
+        "revenueActual": 23845000000.0,
         "revenueEstimated": 23715560000,
         "symbol": "C"
     },
     {
         "date": "2026-10-13",
-        "epsActual": NaN,
+        "epsActual": 4.69,
         "epsEstimated": 4.14,
-        "revenueActual": NaN,
+        "revenueActual": 112700000000.0,
         "revenueEstimated": 111310700000,
         "symbol": "UNH"
     },
@@ -60,7 +60,7 @@
         "epsActual": NaN,
         "epsEstimated": 4.45,
         "revenueActual": NaN,
-        "revenueEstimated": 45544930000,
+        "revenueEstimated": 45667070000,
         "symbol": "TSM"
     },
     {
@@ -68,7 +68,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.59,
         "revenueActual": NaN,
-        "revenueEstimated": 17886460000,
+        "revenueEstimated": 17883040000,
         "symbol": "UAL"
     },
     {
@@ -98,7 +98,7 @@
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 0.4538,
+        "epsEstimated": 0.4529,
         "revenueActual": NaN,
         "revenueEstimated": 27890030000,
         "symbol": "TSLA"
