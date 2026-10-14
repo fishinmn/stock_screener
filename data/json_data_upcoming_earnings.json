@@ -1,9 +1,9 @@
 [
     {
         "date": "2026-10-14",
-        "epsActual": NaN,
+        "epsActual": 1.08,
         "epsEstimated": 1.1,
-        "revenueActual": NaN,
+        "revenueActual": 30000000000.0,
         "revenueEstimated": 30582100000,
         "symbol": "BAC"
     },
@@ -50,7 +50,7 @@
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 6.76,
+        "epsEstimated": 6.74,
         "revenueActual": NaN,
         "revenueEstimated": 63302300000,
         "symbol": "META"
@@ -66,7 +66,7 @@
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 0.4529,
+        "epsEstimated": 0.4573,
         "revenueActual": NaN,
         "revenueEstimated": 27890030000,
         "symbol": "TSLA"
