@@ -2,7 +2,7 @@
     {
         "date": "2026-10-20",
         "epsActual": NaN,
-        "epsEstimated": 2.0,
+        "epsEstimated": 2.01,
         "revenueActual": NaN,
         "revenueEstimated": 12851270000,
         "symbol": "GE"
@@ -34,7 +34,7 @@
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 6.67,
+        "epsEstimated": 6.59,
         "revenueActual": NaN,
         "revenueEstimated": 63310370000,
         "symbol": "META"
@@ -52,7 +52,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.4481,
         "revenueActual": NaN,
-        "revenueEstimated": 27919930000,
+        "revenueEstimated": 27935200000,
         "symbol": "TSLA"
     },
     {
