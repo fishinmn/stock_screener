@@ -1,18 +1,10 @@
 [
     {
-        "date": "2026-10-15",
-        "epsActual": 4.6,
-        "epsEstimated": 4.45,
-        "revenueActual": 46540200000.0,
-        "revenueEstimated": 45667070000,
-        "symbol": "TSM"
-    },
-    {
         "date": "2026-10-20",
         "epsActual": NaN,
         "epsEstimated": 2.0,
         "revenueActual": NaN,
-        "revenueEstimated": 12838830000,
+        "revenueEstimated": 12851270000,
         "symbol": "GE"
     },
     {
@@ -20,7 +12,7 @@
         "epsActual": NaN,
         "epsEstimated": 3.69,
         "revenueActual": NaN,
-        "revenueEstimated": 48773550000,
+        "revenueEstimated": 48826380000,
         "symbol": "GM"
     },
     {
@@ -28,7 +20,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.821,
         "revenueActual": NaN,
-        "revenueEstimated": 12873570000,
+        "revenueEstimated": 12874000000,
         "symbol": "NFLX"
     },
     {
@@ -42,9 +34,9 @@
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 6.76,
+        "epsEstimated": 6.67,
         "revenueActual": NaN,
-        "revenueEstimated": 63301960000,
+        "revenueEstimated": 63310370000,
         "symbol": "META"
     },
     {
@@ -58,7 +50,7 @@
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 0.455,
+        "epsEstimated": 0.4481,
         "revenueActual": NaN,
         "revenueEstimated": 27919930000,
         "symbol": "TSLA"
@@ -76,7 +68,7 @@
         "epsActual": NaN,
         "epsEstimated": 7.52,
         "revenueActual": NaN,
-        "revenueEstimated": 20461680000,
+        "revenueEstimated": 20475150000,
         "symbol": "LMT"
     },
     {
@@ -86,5 +78,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 5727425000,
         "symbol": "NOK"
+    },
+    {
+        "date": "2026-10-26",
+        "epsActual": NaN,
+        "epsEstimated": 1.27,
+        "revenueActual": NaN,
+        "revenueEstimated": 34768500000,
+        "symbol": "VZ"
     }
 ]
