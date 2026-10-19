@@ -42,7 +42,7 @@
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 0.601,
+        "epsEstimated": 0.602,
         "revenueActual": NaN,
         "revenueEstimated": 31689210000,
         "symbol": "T"
@@ -50,7 +50,7 @@
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 6.58,
+        "epsEstimated": 6.59,
         "revenueActual": NaN,
         "revenueEstimated": 63337790000,
         "symbol": "META"
@@ -138,7 +138,7 @@
     {
         "date": "2026-10-27",
         "epsActual": NaN,
-        "epsEstimated": -0.23581,
+        "epsEstimated": -0.2422,
         "revenueActual": NaN,
         "revenueEstimated": 24317970000,
         "symbol": "BA"
@@ -146,9 +146,9 @@
     {
         "date": "2026-10-28",
         "epsActual": NaN,
-        "epsEstimated": 0.1023,
+        "epsEstimated": 0.08963,
         "revenueActual": NaN,
-        "revenueEstimated": 4241830000,
+        "revenueEstimated": 4236093000,
         "symbol": "MGM"
     },
     {
@@ -156,7 +156,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.97,
         "revenueActual": NaN,
-        "revenueEstimated": 127715900000,
+        "revenueEstimated": 127817800000,
         "symbol": "GOOGL"
     },
     {
@@ -210,7 +210,7 @@
     {
         "date": "2026-10-29",
         "epsActual": NaN,
-        "epsEstimated": 0.141,
+        "epsEstimated": 0.1403,
         "revenueActual": NaN,
         "revenueEstimated": 2574747000,
         "symbol": "RKT"
@@ -242,15 +242,15 @@
     {
         "date": "2026-10-29",
         "epsActual": NaN,
-        "epsEstimated": 0.4011,
+        "epsEstimated": 0.4018,
         "revenueActual": NaN,
-        "revenueEstimated": 16497040000,
+        "revenueEstimated": 16501420000,
         "symbol": "INTC"
     },
     {
         "date": "2026-10-29",
         "epsActual": NaN,
-        "epsEstimated": -0.26641,
+        "epsEstimated": -0.27832,
         "revenueActual": NaN,
         "revenueEstimated": 1201625000,
         "symbol": "COIN"
