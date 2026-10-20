@@ -1,12 +1,16 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-10-15,TSM,4.6,4.45,46059610000,45667070000,TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,2183142440960,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-14,BAC,1.08,1.1,30000000000,30584160000,BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,353098825728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,C,2.85,2.66,23845000000,23735480000,C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,205385367552,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,GS,17.01,12.86,18679000000,16833220000,GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,254938021888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,JNJ,2.59,2.52,25399000000,25382730000,JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,612801052672,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,JPM,5.75,5.93,50172000000,51233320000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,889798656000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,UNH,4.69,4.14,112700000000,111310700000,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,363265589248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,WFC,1.87,1.85,21870000000,22302870000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,247305027584,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-09,DAL,1.72,1.77,20200000000,17643450000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,49396064256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,PEP,2.34,2.29,25274000000,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,181558001664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,TLRY,-0.32,-0.18143,257147000,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,446318304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-20,GE,,2.01,,12875840000,GE,GE Aerospace,Industrials,Aerospace & Defense,aerospace-defense,322972450816,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-20,GM,,3.69,,48782980000,GM,General Motors Company,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,72609112064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-20,NFLX,,0.821,,12869330000,NFLX,"Netflix, Inc.",Communication Services,Entertainment,entertainment,290851160064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-20,UAL,,2.57,,17893810000,UAL,"United Airlines Holdings, Inc.",Industrials,Airlines,airlines,31030208512,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-15,TSM,4.6,4.45,46059610000.0,45667070000,TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,2179460104192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-14,BAC,1.08,1.1,30000000000.0,30584160000,BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,352364593152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,C,2.85,2.66,23845000000.0,23735480000,C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,204127289344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,GS,17.01,12.86,18679000000.0,16833220000,GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,255002083328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,JNJ,2.59,2.52,25399000000.0,25382730000,JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,611608100864,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,JPM,5.75,5.93,50172000000.0,51233320000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,885722316800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,UNH,4.69,4.14,112700000000.0,111310700000,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,365213384704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,WFC,1.87,1.85,21870000000.0,22302870000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,245534064640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-09,DAL,1.72,1.77,20200000000.0,17643450000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,49100001280,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,PEP,2.34,2.29,25274000000.0,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,182021341184,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,TLRY,-0.32,-0.18143,257147000.0,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,447796192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
