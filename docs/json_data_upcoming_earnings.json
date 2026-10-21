@@ -9,16 +9,16 @@
     },
     {
         "date": "2026-10-21",
-        "epsActual": NaN,
+        "epsActual": 0.65,
         "epsEstimated": 0.602,
-        "revenueActual": NaN,
+        "revenueActual": 32300000000.0,
         "revenueEstimated": 31689210000,
         "symbol": "T"
     },
     {
         "date": "2026-10-21",
         "epsActual": NaN,
-        "epsEstimated": 6.64,
+        "epsEstimated": 6.54,
         "revenueActual": NaN,
         "revenueEstimated": 63343010000,
         "symbol": "META"
@@ -84,7 +84,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.556,
         "revenueActual": NaN,
-        "revenueEstimated": 1426753000,
+        "revenueEstimated": 1436945000,
         "symbol": "HOOD"
     },
     {
@@ -100,7 +100,7 @@
         "epsActual": NaN,
         "epsEstimated": -0.24686,
         "revenueActual": NaN,
-        "revenueEstimated": 24303800000,
+        "revenueEstimated": 24286300000,
         "symbol": "BA"
     },
     {
@@ -124,7 +124,7 @@
         "epsActual": NaN,
         "epsEstimated": 4.71,
         "revenueActual": NaN,
-        "revenueEstimated": 90619900000,
+        "revenueEstimated": 90619870000,
         "symbol": "MSFT"
     },
     {
@@ -132,7 +132,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.06387,
         "revenueActual": NaN,
-        "revenueEstimated": 4230670000,
+        "revenueEstimated": 4222577000,
         "symbol": "MGM"
     },
     {
@@ -226,9 +226,9 @@
     {
         "date": "2026-10-29",
         "epsActual": NaN,
-        "epsEstimated": -0.25359,
+        "epsEstimated": -0.25938,
         "revenueActual": NaN,
-        "revenueEstimated": 1201625000,
+        "revenueEstimated": 1193018000,
         "symbol": "COIN"
     },
     {
@@ -244,29 +244,29 @@
         "epsActual": NaN,
         "epsEstimated": 1.96,
         "revenueActual": NaN,
-        "revenueEstimated": 202191400000,
+        "revenueEstimated": 202163700000,
         "symbol": "AMZN"
     },
     {
         "date": "2026-10-30",
         "epsActual": NaN,
-        "epsEstimated": 4.05,
+        "epsEstimated": 4.11,
         "revenueActual": NaN,
-        "revenueEstimated": 103729000000,
+        "revenueEstimated": 105489600000,
         "symbol": "XOM"
     },
     {
         "date": "2026-10-30",
         "epsActual": NaN,
-        "epsEstimated": 4.85,
+        "epsEstimated": 4.86,
         "revenueActual": NaN,
-        "revenueEstimated": 60647210000,
+        "revenueEstimated": 61326020000,
         "symbol": "CVX"
     },
     {
         "date": "2026-10-30",
         "epsActual": NaN,
-        "epsEstimated": 3.74,
+        "epsEstimated": 3.73,
         "revenueActual": NaN,
         "revenueEstimated": 17357050000,
         "symbol": "ABBV"
