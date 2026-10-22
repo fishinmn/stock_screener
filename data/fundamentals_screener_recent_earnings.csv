@@ -1,22 +1,22 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-10-22,AAL,,-0.36101,,16212650000,AAL,American Airlines Group Inc.,Industrials,Airlines,airlines,8099201536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-22,LMT,,7.52,,20476200000,LMT,Lockheed Martin Corporation,Industrials,Aerospace & Defense,aerospace-defense,127283412992,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-22,NOK,,0.08,,5719976000,NOK,Nokia Oyj,Technology,Communication Equipment,communication-equipment,51787464704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-21,META,3.83,6.54,64601000000.0,63343010000,META,"Meta Platforms, Inc.",Communication Services,Internet Content & Information,internet-content-information,1776936550400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-21,T,0.65,0.602,32300000000.0,31689210000,T,AT&T Inc.,Communication Services,Telecom Services,telecom-services,150135767040,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-21,TSLA,0.48,0.4488,28046000000.0,28056790000,TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1526381674496,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-20,GE,2.25,2.01,14118000000.0,12877810000,GE,GE Aerospace,Industrials,Aerospace & Defense,aerospace-defense,306993987584,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-20,GM,3.7,3.69,50015000000.0,48782980000,GM,General Motors Company,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,66782834688,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-20,NFLX,0.87,0.82,12874180000.0,12869330000,NFLX,"Netflix, Inc.",Communication Services,Entertainment,entertainment,270822637568,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-20,UAL,2.54,2.57,17900000000.0,17893810000,UAL,"United Airlines Holdings, Inc.",Industrials,Airlines,airlines,33000431616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-15,TSM,4.6,4.45,46059610000.0,45667070000,TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,2239986401280,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-14,BAC,1.08,1.1,30000000000.0,30584160000,BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,355091775488,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,C,2.85,2.66,23845000000.0,23735480000,C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,207750545408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,GS,17.01,12.86,18679000000.0,16833220000,GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,263428571136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,JNJ,2.59,2.52,25399000000.0,25382730000,JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,621223608320,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,JPM,5.75,5.93,50172000000.0,51233320000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,890130595840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,UNH,4.69,4.14,112700000000.0,111310700000,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,374297034752,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-13,WFC,1.87,1.85,21870000000.0,22302870000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,247395074048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-09,DAL,1.72,1.77,20200000000.0,17643450000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,51100053504,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,PEP,2.34,2.29,25274000000.0,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,183561224192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-08,TLRY,-0.32,-0.18143,257147000.0,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,431539584,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-22,AAL,-0.28,-0.36101,16300000000,16212650000,AAL,American Airlines Group Inc.,Industrials,Airlines,airlines,8301765120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-22,LMT,7.97,7.52,20711000000,20476200000,LMT,Lockheed Martin Corporation,Industrials,Aerospace & Defense,aerospace-defense,133724774400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-22,NOK,0.1,0.08,5784849000,5719976000,NOK,Nokia Oyj,Technology,Communication Equipment,communication-equipment,45488988160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-21,META,7.4,6.54,64601000000,63343010000,META,"Meta Platforms, Inc.",Communication Services,Internet Content & Information,internet-content-information,1648656777216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-21,T,0.65,0.602,32300000000,31689210000,T,AT&T Inc.,Communication Services,Telecom Services,telecom-services,154624081920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-21,TSLA,0.48,0.4488,28046000000,28056790000,TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1500630614016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-20,GE,2.25,2.01,14118000000,12877810000,GE,GE Aerospace,Industrials,Aerospace & Defense,aerospace-defense,301505282048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-20,GM,3.7,3.69,50015000000,48782980000,GM,General Motors Company,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,67673448448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-20,NFLX,0.87,0.82,12874180000,12869330000,NFLX,"Netflix, Inc.",Communication Services,Entertainment,entertainment,280149852160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-20,UAL,2.54,2.57,17900000000,17893810000,UAL,"United Airlines Holdings, Inc.",Industrials,Airlines,airlines,33117282304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-15,TSM,4.6,4.45,46059610000,45667070000,TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,2140042821632,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-14,BAC,1.08,1.1,30000000000,30584160000,BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,356839948288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,C,2.85,2.66,23845000000,23735480000,C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,204924076032,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,GS,17.01,12.86,18679000000,16833220000,GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,259314335744,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,JNJ,2.59,2.52,25399000000,25382730000,JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,642792226816,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,JPM,5.75,5.93,50172000000,51233320000,JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,889546407936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,UNH,4.69,4.14,112700000000,111310700000,UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,381549576192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-13,WFC,1.87,1.85,21870000000,22302870000,WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,249706348544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-09,DAL,1.72,1.77,20200000000,17643450000,DAL,"Delta Air Lines, Inc.",Industrials,Airlines,airlines,51679019008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,PEP,2.34,2.29,25274000000,24952870000,PEP,"PepsiCo, Inc.",Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,188317204480,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-08,TLRY,-0.32,-0.18143,257147000,266256400,TLRY,"Tilray Brands, Inc.",Healthcare,Drug Manufacturers - Specialty & Generic,drug-manufacturers-specialty-generic,437451072,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2

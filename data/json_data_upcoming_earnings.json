@@ -1,25 +1,25 @@
 [
     {
         "date": "2026-10-22",
-        "epsActual": NaN,
+        "epsActual": 0.1,
         "epsEstimated": 0.08,
-        "revenueActual": NaN,
+        "revenueActual": 5784849000.0,
         "revenueEstimated": 5719976000,
         "symbol": "NOK"
     },
     {
         "date": "2026-10-22",
-        "epsActual": NaN,
+        "epsActual": -0.28,
         "epsEstimated": -0.36101,
-        "revenueActual": NaN,
+        "revenueActual": 16300000000.0,
         "revenueEstimated": 16212650000,
         "symbol": "AAL"
     },
     {
         "date": "2026-10-22",
-        "epsActual": NaN,
+        "epsActual": 7.97,
         "epsEstimated": 7.52,
-        "revenueActual": NaN,
+        "revenueActual": 20711000000.0,
         "revenueEstimated": 20476200000,
         "symbol": "LMT"
     },
@@ -68,7 +68,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.558,
         "revenueActual": NaN,
-        "revenueEstimated": 1436945000,
+        "revenueEstimated": 1438491000,
         "symbol": "HOOD"
     },
     {
@@ -76,7 +76,7 @@
         "epsActual": NaN,
         "epsEstimated": 6.65,
         "revenueActual": NaN,
-        "revenueEstimated": 19332110000,
+        "revenueEstimated": 19327650000,
         "symbol": "HCA"
     },
     {
@@ -84,7 +84,7 @@
         "epsActual": NaN,
         "epsEstimated": -0.25495,
         "revenueActual": NaN,
-        "revenueEstimated": 24286300000,
+        "revenueEstimated": 23949660000,
         "symbol": "BA"
     },
     {
@@ -106,7 +106,7 @@
     {
         "date": "2026-10-28",
         "epsActual": NaN,
-        "epsEstimated": 2.99,
+        "epsEstimated": 2.96,
         "revenueActual": NaN,
         "revenueEstimated": 127916100000,
         "symbol": "GOOGL"
@@ -114,9 +114,9 @@
     {
         "date": "2026-10-28",
         "epsActual": NaN,
-        "epsEstimated": 3.31,
+        "epsEstimated": 3.33,
         "revenueActual": NaN,
-        "revenueEstimated": 22748600000,
+        "revenueEstimated": 22732940000,
         "symbol": "FDX"
     },
     {
@@ -194,9 +194,9 @@
     {
         "date": "2026-10-29",
         "epsActual": NaN,
-        "epsEstimated": -0.24674,
+        "epsEstimated": -0.23148,
         "revenueActual": NaN,
-        "revenueEstimated": 1193018000,
+        "revenueEstimated": 1201643000,
         "symbol": "COIN"
     },
     {
@@ -218,7 +218,7 @@
     {
         "date": "2026-10-30",
         "epsActual": NaN,
-        "epsEstimated": 4.11,
+        "epsEstimated": 4.1,
         "revenueActual": NaN,
         "revenueEstimated": 105489600000,
         "symbol": "XOM"
