@@ -1,9 +1,9 @@
 [
     {
         "date": "2026-10-26",
-        "epsActual": NaN,
+        "epsActual": 1.31,
         "epsEstimated": 1.27,
-        "revenueActual": NaN,
+        "revenueActual": 34313000000.0,
         "revenueEstimated": 34768500000,
         "symbol": "VZ"
     },
@@ -68,7 +68,7 @@
         "epsActual": NaN,
         "epsEstimated": 4.71,
         "revenueActual": NaN,
-        "revenueEstimated": 90630470000,
+        "revenueEstimated": 90615400000,
         "symbol": "MSFT"
     },
     {
@@ -82,7 +82,7 @@
     {
         "date": "2026-10-28",
         "epsActual": NaN,
-        "epsEstimated": 3.33,
+        "epsEstimated": 3.34,
         "revenueActual": NaN,
         "revenueEstimated": 22732940000,
         "symbol": "FDX"
@@ -98,7 +98,7 @@
     {
         "date": "2026-10-28",
         "epsActual": NaN,
-        "epsEstimated": 0.761,
+        "epsEstimated": 0.765,
         "revenueActual": NaN,
         "revenueEstimated": 668047300,
         "symbol": "ETSY"
@@ -170,7 +170,7 @@
     {
         "date": "2026-10-29",
         "epsActual": NaN,
-        "epsEstimated": 0.759,
+        "epsEstimated": 0.758,
         "revenueActual": NaN,
         "revenueEstimated": 6084683000,
         "symbol": "CARR"
@@ -178,7 +178,7 @@
     {
         "date": "2026-10-29",
         "epsActual": NaN,
-        "epsEstimated": 1.96,
+        "epsEstimated": 1.97,
         "revenueActual": NaN,
         "revenueEstimated": 202163700000,
         "symbol": "AMZN"
@@ -186,9 +186,9 @@
     {
         "date": "2026-10-29",
         "epsActual": NaN,
-        "epsEstimated": 0.4021,
+        "epsEstimated": 0.4038,
         "revenueActual": NaN,
-        "revenueEstimated": 16501420000,
+        "revenueEstimated": 16517770000,
         "symbol": "INTC"
     },
     {
@@ -210,7 +210,7 @@
     {
         "date": "2026-10-30",
         "epsActual": NaN,
-        "epsEstimated": 3.74,
+        "epsEstimated": 3.73,
         "revenueActual": NaN,
         "revenueEstimated": 17318870000,
         "symbol": "ABBV"
@@ -228,7 +228,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.99,
         "revenueActual": NaN,
-        "revenueEstimated": 113312900000,
+        "revenueEstimated": 113443100000,
         "symbol": "AAPL"
     },
     {
@@ -250,9 +250,9 @@
     {
         "date": "2026-11-03",
         "epsActual": NaN,
-        "epsEstimated": 0.4612,
+        "epsEstimated": 0.4611,
         "revenueActual": NaN,
-        "revenueEstimated": 3700815000,
+        "revenueEstimated": 3700594000,
         "symbol": "SHOP"
     },
     {
@@ -290,7 +290,7 @@
     {
         "date": "2026-11-04",
         "epsActual": NaN,
-        "epsEstimated": 0.00474,
+        "epsEstimated": 0.00463,
         "revenueActual": NaN,
         "revenueEstimated": 1730326000,
         "symbol": "SNAP"
