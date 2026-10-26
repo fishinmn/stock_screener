@@ -218,18 +218,18 @@
     {
         "date": "2026-11-02",
         "epsActual": NaN,
-        "epsEstimated": 1.99,
-        "revenueActual": NaN,
-        "revenueEstimated": 113312900000,
-        "symbol": "AAPL"
-    },
-    {
-        "date": "2026-11-02",
-        "epsActual": NaN,
         "epsEstimated": -0.41454,
         "revenueActual": NaN,
         "revenueEstimated": 1503098000,
         "symbol": "FUBO"
+    },
+    {
+        "date": "2026-11-02",
+        "epsActual": NaN,
+        "epsEstimated": 1.99,
+        "revenueActual": NaN,
+        "revenueEstimated": 113312900000,
+        "symbol": "AAPL"
     },
     {
         "date": "2026-11-02",
@@ -302,5 +302,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 159721400,
         "symbol": "RIOT"
+    },
+    {
+        "date": "2026-11-05",
+        "epsActual": NaN,
+        "epsEstimated": 0.38,
+        "revenueActual": NaN,
+        "revenueEstimated": 20137410000,
+        "symbol": "SONY"
     }
 ]
