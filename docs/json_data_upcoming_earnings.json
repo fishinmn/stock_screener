@@ -1,25 +1,25 @@
 [
     {
         "date": "2026-10-30",
-        "epsActual": NaN,
+        "epsActual": 3.82,
         "epsEstimated": 3.73,
-        "revenueActual": NaN,
+        "revenueActual": 17404000000.0,
         "revenueEstimated": 17315740000,
         "symbol": "ABBV"
     },
     {
         "date": "2026-10-30",
-        "epsActual": NaN,
+        "epsActual": 5.28,
         "epsEstimated": 4.87,
-        "revenueActual": NaN,
+        "revenueActual": 67798000000.0,
         "revenueEstimated": 61817520000,
         "symbol": "CVX"
     },
     {
         "date": "2026-10-30",
-        "epsActual": NaN,
+        "epsActual": 4.23,
         "epsEstimated": 4.12,
-        "revenueActual": NaN,
+        "revenueActual": 104804300000.0,
         "revenueEstimated": 104889800000,
         "symbol": "XOM"
     },
@@ -74,9 +74,9 @@
     {
         "date": "2026-11-03",
         "epsActual": NaN,
-        "epsEstimated": 0.4615,
+        "epsEstimated": 0.4613,
         "revenueActual": NaN,
-        "revenueEstimated": 3701177000,
+        "revenueEstimated": 3700842000,
         "symbol": "SHOP"
     },
     {
