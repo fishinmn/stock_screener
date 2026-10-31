@@ -1,79 +1,79 @@
 Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,roe,score
-MU,"Micron Technology, Inc.",Technology,Semiconductors,semiconductors,994340044800,7.47,3.314,2.898,379.3,80.72,11.82,4.25,-4.02,0,0.07,1059.5,63.800000000000004,2.31,15.76,20
-SHEL,Shell plc,Energy,Oil & Gas Integrated,oil-gas-integrated,303387148288,1.02,1.435,0.985,44.7,26.090000000000003,11.77,10.12,0.42,0,2.93,220.00000000000003,8.76,1.28,10.23,20
-SNDK,Sandisk Corporation,Technology,Computer Hardware,computer-hardware,187784675328,9.27,2.29,1.707,371.6,71.47,17.62,4.88,-7.19,0,0.0,0.0,56.46,3.34,72.66,20
-XOM,ExxonMobil Holdings Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,735950012416,2.04,1.135,0.801,44.1,29.770000000000003,23.03,15.09,0.8,0,2.3,112.79999999999998,9.07,1.0699999999999998,11.12,18
-NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,5170596937728,17.07,4.589,2.918,105.89999999999999,74.67,27.07,13.45,-0.26,0,0.47,127.8,63.660000000000004,1.34,76.33,18
-DELL,Dell Technologies Inc.,Technology,Computer Hardware,computer-hardware,287202967552,1.9,0.962,0.565,57.699999999999996,19.91,26.26,15.09,0.64,0,0.56,272.90000000000003,7.5200000000000005,4.21,-240.32,18
-CVX,Chevron Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,441341149184,2.11,1.252,0.843,53.5,44.269999999999996,21.23,14.77,0.55,0,3.16,321.9,9.83,1.21,6.6,18
-TSM,Taiwan Semiconductor Manufacturing Company Limited,Technology,Semiconductors,semiconductors,2139990917120,0.43,2.505,2.287,50.9,65.85,26.74,17.64,0.07,0,0.91,68.7,51.12,0.63,31.7,18
-LLY,Eli Lilly and Company,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,1120945700864,14.07,1.355,0.679,47.699999999999996,83.39999999999999,42.2,26.64,1.22,0,0.55,26.200000000000003,33.53,0.79,77.78,16
-TM,Toyota Motor Corporation,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,229212946432,0.0,1.169,0.953,10.4,16.77,8.55,12.33,0.0,0,3.22,86.9,8.63,0.1,9.64,16
-GS,"The Goldman Sachs Group, Inc.",Financial Services,Capital Markets,capital-markets,256597704704,3.61,2.626,2.122,23.3,81.28999999999999,12.67,12.01,0.52,0,2.27,38.800000000000004,31.209999999999997,2.3,15.64,16
-AVGO,Broadcom Inc.,Technology,Semiconductors,semiconductors,1569330823168,17.61,2.504,2.153,85.5,75.52,43.31,16.95,0.63,0,0.79,215.3,42.94,1.16,28.45,16
-PLTR,Palantir Technologies Inc.,Technology,Software - Infrastructure,software-infrastructure,447040946176,72.62,7.228,7.095,92.80000000000001,84.8,160.37,79.11,0.79,0,0.0,215.39999999999998,49.01,2.59,22.0,14
-AXP,American Express Company,Financial Services,Credit Services,credit-services,211770408960,2.99,1.553,1.542,12.8,62.339999999999996,19.03,15.56,0.98,0,1.21,11.0,16.14,2.07,32.36,14
-MS,Morgan Stanley,Financial Services,Capital Markets,capital-markets,283597176832,3.55,0.0,0.0,10.8,87.31,14.32,13.23,0.4,0,2.55,8.200000000000001,25.629999999999995,1.23,16.55,14
-ORCL,Oracle Corporation,Technology,Software - Infrastructure,software-infrastructure,388729372672,5.42,1.171,1.02,29.599999999999998,63.959999999999994,20.1,11.67,1.37,0,1.56,54.50000000000001,26.36,2.6,45.5,14
-META,"Meta Platforms, Inc.",Communication Services,Internet Content & Information,internet-content-information,1807009841152,7.92,2.226,1.987,28.000000000000004,81.75,26.73,20.48,1.04,0,0.3,-13.4,29.830000000000002,1.52,27.83,14
-MA,Mastercard Incorporated,Financial Services,Credit Services,credit-services,540866019328,15.42,1.061,0.666,14.099999999999998,100.0,33.96,26.75,0.0,0,0.56,22.1,46.339999999999996,0.73,193.46,12
-RTX,RTX Corporation,Industrials,Aerospace & Defense,aerospace-defense,261357240320,2.8,1.011,0.652,14.499999999999998,20.349999999999998,34.14,24.64,1.9,0,1.51,28.7,8.28,1.01,10.32,12
-AMZN,"Amazon.com, Inc.",Consumer Cyclical,Internet Retail,internet-retail,2696578334720,3.48,1.033,0.843,19.6,50.77,20.11,23.94,1.38,0,0.0,242.3,17.44,0.88,18.89,12
-CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,423394410496,6.69,0.931,0.691,17.599999999999998,64.52,32.25,19.1,1.95,0,1.56,52.1,20.95,1.3,26.38,12
-V,Visa Inc.,Financial Services,Credit Services,credit-services,755841957888,16.99,0.985,0.627,14.399999999999999,97.72,34.26,26.82,0.33,0,0.67,10.2,50.78,1.21,53.97,12
-BHP,BHP Group Limited,Basic Materials,Other Industrial Metals & Mining,other-industrial-metals-mining,211679608832,3.6,1.885,1.434,18.3,85.92,21.58,17.42,0.41,0,4.75,-9.0,16.73,0.83,19.9,12
-TMUS,"T-Mobile US, Inc.",Communication Services,Telecom Services,telecom-services,170662068224,1.85,0.924,0.585,7.9,63.05,16.62,11.03,0.63,0,2.94,5.3,11.459999999999999,3.0,18.57,12
-NVS,Novartis AG,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,286285660160,5.05,0.862,0.55,0.8,74.98,22.75,15.37,1.25,0,3.15,-17.0,22.5,0.3,30.31,10
-MCD,McDonald's Corporation,Consumer Cyclical,Restaurants,restaurants,171935662080,6.21,1.081,0.823,3.6999999999999997,57.379999999999995,19.74,17.65,2.55,0,3.18,5.7,31.72,2.17,-478.38,10
-HD,"The Home Depot, Inc.",Consumer Cyclical,Home Improvement Retail,home-improvement-retail,308914651136,1.83,1.078,0.259,5.7,32.800000000000004,21.55,19.36,1.16,0,3.01,4.6,8.41,1.28,110.48,10
-JPM,JPMorgan Chase & Co.,Financial Services,Banks - Diversified,banks-diversified,902160449536,4.73,0.0,0.0,10.2,0.0,14.25,13.32,4.25,0,1.94,9.9,34.589999999999996,0.91,16.66,10
-JNJ,Johnson & Johnson,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,615873642496,6.2,0.0,0.0,5.8999999999999995,67.75,38.78,21.83,1.88,0,2.1,-96.0,16.2,1.02,32.87,10
-IBM,International Business Machines Corporation,Technology,Information Technology Services,information-technology-services,218707083264,3.17,0.791,0.609,1.0999999999999999,58.099999999999994,20.63,17.65,1.31,0,2.91,-1.7999999999999998,15.52,2.85,32.45,10
-HSBC,HSBC Holdings plc,Financial Services,Banks - Diversified,banks-diversified,323428319232,4.8,0.0,0.0,25.4,0.0,13.51,9.94,3.58,0,3.97,0.0,37.8,0.0,11.24,10
-SAP,SAP SE,Technology,Software - Application,software-application,258876473344,6.78,1.148,0.982,9.4,73.66,28.79,23.36,1.62,0,1.31,30.599999999999998,20.41,0.35000000000000003,16.06,10
-QCOM,QUALCOMM Incorporated,Technology,Semiconductors,semiconductors,183785848832,4.17,2.016,1.137,-4.0,54.230000000000004,19.92,16.89,4.34,0,2.14,-23.0,21.01,3.6999999999999997,26.13,10
-C,Citigroup Inc.,Financial Services,Banks - Diversified,banks-diversified,208438296576,2.5,0.0,0.0,8.0,0.0,12.11,9.52,2.3,0,2.16,53.400000000000006,23.21,1.26,7.44,10
-WFC,Wells Fargo & Company,Financial Services,Banks - Diversified,banks-diversified,251747467264,3.03,0.0,0.0,0.4,0.0,11.83,10.47,3.02,0,2.38,12.7,27.639999999999997,0.9199999999999999,12.97,10
-WDC,Western Digital Corporation,Technology,Computer Hardware,computer-hardware,124275326976,9.62,1.329,0.85,43.8,48.85,12.33,10.03,2.77,0,0.18,984.0999999999999,72.95,4.9,104.9,10
-AZN,AstraZeneca PLC,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,256535314432,4.18,0.886,0.664,6.4,81.69,23.77,14.58,0.72,0,1.94,2.5,17.02,0.16999999999999998,21.01,10
-BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,271437856768,0.26,1.362,0.725,8.6,38.2,26.42,11.77,0.15,0,0.96,-79.4,7.04,1.51,9.76,10
-GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,4165393448960,9.34,2.724,2.471,24.2,60.9,17.09,22.28,2.77,0,0.26,294.0,54.769999999999996,1.37,31.83,10
-BAC,Bank of America Corporation,Financial Services,Banks - Diversified,banks-diversified,358238519296,3.12,0.0,0.0,7.1,0.0,12.23,9.87,2.9,0,2.5,-14.299999999999999,28.060000000000002,1.23,11.0,10
-COST,Costco Wholesale Corporation,Consumer Defensive,Discount Stores,discount-stores,438303653888,1.45,1.06,0.575,11.1,12.770000000000001,47.64,39.54,1.12,0,0.59,15.0,3.04,1.6500000000000001,27.77,10
-RY,Royal Bank of Canada,Financial Services,Banks - Diversified,banks-diversified,273840226304,4.08,0.0,0.0,8.9,0.0,17.29,15.67,3.72,0,2.51,12.8,33.87,0.0,15.98,10
-GOOG,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,4120387518464,9.24,2.724,2.471,24.2,60.9,16.9,22.04,2.74,0,0.26,294.0,54.769999999999996,0.0,31.83,10
-MUFG,"Mitsubishi UFJ Financial Group, Inc.",Financial Services,Banks - Diversified,banks-diversified,246276128768,0.03,0.0,0.0,28.799999999999997,0.0,14.3,21.24,0.02,0,2.46,50.9,27.450000000000003,0.06999999999999999,10.9,10
-PG,The Procter & Gamble Company,Consumer Defensive,Household & Personal Products,household-personal-products,370117869568,4.25,0.677,0.413,1.5,50.870000000000005,24.07,21.56,2.06,0,2.73,-15.5,18.44,1.05,30.09,8
-UNH,UnitedHealth Group Incorporated,Healthcare,Healthcare Plans,healthcare-plans,360321482752,0.8,0.739,0.424,-0.4,20.05,25.82,17.28,0.8,0,2.31,75.9,3.53,1.9800000000000002,12.81,8
-PM,Philip Morris International Inc.,Consumer Defensive,Tobacco,tobacco,319827443712,7.52,0.98,0.47,10.4,67.47999999999999,29.48,22.33,2.19,0,3.12,-7.5,25.56,1.1400000000000001,-113.55,8
-NFLX,"Netflix, Inc.",Communication Services,Entertainment,entertainment,293682642944,6.07,1.142,0.917,13.4,49.120000000000005,22.18,18.56,2.68,0,0.0,11.1,28.22,1.9900000000000002,41.26,8
-WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,945499340800,1.28,0.767,0.195,5.8999999999999995,24.84,43.05,36.82,0.91,0,0.83,-9.1,3.0,1.83,21.98,8
-AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,5012516765696,10.74,1.003,0.812,16.400000000000002,48.65,39.39,35.86,4.61,0,0.31,28.7,27.62,0.83,151.91,8
-MSFT,Microsoft Corporation,Technology,Software - Infrastructure,software-infrastructure,3928485003264,11.84,1.23,1.099,17.7,67.94,29.47,22.3,3.12,0,0.74,31.7,40.300000000000004,0.8200000000000001,30.23,8
-KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,404009353216,8.06,1.305,0.798,6.7,61.89,28.2,26.65,2.87,0,2.26,16.900000000000002,28.560000000000002,1.24,40.74,8
-AMAT,"Applied Materials, Inc.",Technology,Semiconductor Equipment & Materials,semiconductor-equipment-materials,324811489280,10.53,2.423,1.634,24.8,49.4,35.31,22.18,4.01,0,0.52,42.8,30.049999999999997,1.71,34.28,8
-ARM,Arm Holdings plc,Technology,Semiconductors,semiconductors,243290079232,47.19,5.252,5.063,22.400000000000002,97.54,234.85,74.38,0.9,0,0.0,108.3,20.25,11.15,10.91,8
-GE,GE Aerospace,Industrials,Aerospace & Defense,aerospace-defense,325618237440,6.43,0.982,0.632,21.099999999999998,31.05,37.01,34.44,3.5,0,0.6,19.400000000000002,17.72,1.0999999999999999,46.6,8
-GEV,GE Vernova Inc.,Industrials,Specialty Industrial Machinery,specialty-industrial-machinery,245346500608,5.93,0.85,0.563,21.9,20.57,26.41,36.45,3.68,0,0.22,32.800000000000004,23.04,2.77,43.69,8
-CAT,Caterpillar Inc.,Industrials,Farm & Heavy Construction Machinery,farm-heavy-construction-machinery,335912009728,4.5,1.368,0.78,24.0,29.709999999999997,31.46,22.43,2.4,0,0.89,68.2,14.510000000000002,1.94,41.67,8
-LIN,Linde plc,Basic Materials,Specialty Chemicals,specialty-chemicals,229766332416,6.48,0.879,0.68,9.3,48.35,32.18,25.46,3.04,0,1.28,11.3,20.44,1.3,18.04,8
-ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,504370659328,7.83,0.809,0.49,10.2,72.78999999999999,80.63,17.6,1.91,0,2.42,290.4,9.8,1.02,-129.24,8
-STX,Seagate Technology Holdings plc,Technology,Computer Hardware,computer-hardware,145306402816,11.92,1.67,1.075,48.5,45.58,45.97,11.28,3.34,0,0.46,148.8,26.11,3.0700000000000003,146.93,6
-ADI,"Analog Devices, Inc.",Technology,Semiconductors,semiconductors,191616565248,13.8,1.25,0.834,39.6,65.8,46.96,24.07,2.85,0,1.11,163.5,29.79,2.29,6.7,6
-MRK,"Merck & Co., Inc.",Healthcare,Drug Manufacturers - General,drug-manufacturers-general,360083685376,5.41,1.323,0.742,5.1,75.9,115.83,15.72,1.24,0,2.33,0.0,4.77,1.15,34.7,6
-ANET,"Arista Networks, Inc.",Technology,Computer Hardware,computer-hardware,223211536384,21.18,2.957,2.289,37.7,63.0,55.83,33.89,4.88,0,0.0,35.699999999999996,38.37,1.1400000000000001,28.39,6
-LRCX,Lam Research Corporation,Technology,Semiconductor Equipment & Materials,semiconductor-equipment-materials,330300948480,14.22,2.629,1.839,30.0,50.470000000000006,45.82,22.43,4.93,0,0.5,34.8,31.269999999999996,2.07,58.26,6
-TXN,Texas Instruments Incorporated,Technology,Semiconductors,semiconductors,252494725120,12.98,4.857,3.245,22.8,58.330000000000005,42.08,25.97,4.18,0,2.2,51.800000000000004,31.11,2.4899999999999998,30.73,6
-ASML,ASML Holding N.V.,Technology,Semiconductor Equipment & Materials,semiconductor-equipment-materials,632670912512,16.03,1.487,0.934,55.2,54.339999999999996,40.39,26.18,3.28,0,0.55,135.9,34.14,0.38,49.0,6
-KLAC,KLA Corporation,Technology,Semiconductor Equipment & Materials,semiconductor-equipment-materials,216291770368,15.93,2.876,1.841,15.2,61.3,45.28,24.59,5.23,0,0.56,13.8,35.57,1.8599999999999999,76.08,6
-MRVL,"Marvell Technology, Inc.",Technology,Semiconductors,semiconductors,204751880192,21.67,3.168,2.461,36.5,52.22,74.94,31.23,6.57,0,0.11,50.0,27.93,3.2099999999999995,18.66,6
-AMD,"Advanced Micro Devices, Inc.",Technology,Semiconductors,semiconductors,863171182592,20.9,2.609,1.688,50.1,55.720000000000006,134.89,33.56,4.62,0,0.0,159.5,15.58,2.42,6.88,4
-INTC,Intel Corporation,Technology,Semiconductors,semiconductors,474956529664,8.33,1.604,1.157,25.4,38.87,0.0,42.69,3.8,0,0.0,0.0,-19.79,3.16,-0.23,2
-BRK/A,unknown,unknown,unknown,unknown,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.0,2
-TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1400983519232,13.52,1.941,1.347,25.5,18.85,328.44,163.59,8.17,0,0.0,-3.0,3.6700000000000004,2.01,4.62,2
-SPCX,Space Exploration Technologies Corp.,Industrials,Aerospace & Defense,aerospace-defense,1924935319552,83.53,5.115,4.949,91.9,51.88,0.0,71.39,3.26,0,0.0,0.0,-35.66,2.71,-191.88,2
-CCZ,unknown,unknown,unknown,unknown,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.0,2
-PANW,"Palo Alto Networks, Inc.",Technology,Software - Infrastructure,software-infrastructure,279756013568,24.37,0.871,0.735,34.5,70.38,855.0,70.1,4.73,0,0.0,0.0,2.67,2.6599999999999997,1.12,2
-GOOGM,Alphabet Inc. Depositary Shares representing a 1/20th Interest in a Share of Series A Mandatory Convertible Preferred Stock,unknown,unknown,unknown,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,31.83,2
-GOOGN,Alphabet Inc. Depositary Shares representing a 1/20th Interest in a Share of Series B Mandatory Convertible Preferred Stock,unknown,unknown,unknown,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,31.83,2
-BRK/B,unknown,unknown,unknown,unknown,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.0,2
+AAPL,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+MU,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+PG,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+PANW,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+ORCL,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+NVS,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+NVDA,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+NFLX,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+MUFG,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+MSFT,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+PM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+MS,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+MRVL,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+MRK,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+META,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+MCD,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+MA,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+LRCX,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+PLTR,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+QCOM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+ABBV,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+TSLA,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+WMT,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+WFC,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+WDC,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+V,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+UNH,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+TXN,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+TSM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+TMUS,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+RTX,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+TM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+STX,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+SPCX,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+SNDK,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+SHEL,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+SAP,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+RY,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+LLY,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+LIN,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+KO,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+AXP,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+C,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+BRK/B,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+BRK/A,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+BHP,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+BAC,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+BABA,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+AZN,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+AVGO,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+KLAC,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+ASML,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+ARM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+ANET,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+AMZN,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+AMD,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+AMAT,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+ADI,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+CAT,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+CCZ,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+COST,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+CSCO,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+JPM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+JNJ,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+INTC,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+IBM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+HSBC,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+HD,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+GS,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+GOOGN,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+GOOGM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+GOOGL,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+GOOG,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+GEV,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+GE,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+DELL,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+CVX,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+XOM,unknown,unknown,unknown,unknown,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
