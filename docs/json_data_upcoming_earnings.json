@@ -1,34 +1,10 @@
 [
     {
-        "date": "2026-10-30",
-        "epsActual": 3.82,
-        "epsEstimated": 3.73,
-        "revenueActual": 17404000000.0,
-        "revenueEstimated": 17315740000,
-        "symbol": "ABBV"
-    },
-    {
-        "date": "2026-10-30",
-        "epsActual": 5.28,
-        "epsEstimated": 4.87,
-        "revenueActual": 67798000000.0,
-        "revenueEstimated": 61817520000,
-        "symbol": "CVX"
-    },
-    {
-        "date": "2026-10-30",
-        "epsActual": 4.23,
-        "epsEstimated": 4.12,
-        "revenueActual": 104804300000.0,
-        "revenueEstimated": 104889800000,
-        "symbol": "XOM"
-    },
-    {
         "date": "2026-11-02",
         "epsActual": NaN,
         "epsEstimated": 1.99,
         "revenueActual": NaN,
-        "revenueEstimated": 113388500000,
+        "revenueEstimated": 113401200000,
         "symbol": "AAPL"
     },
     {
@@ -52,7 +28,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.95,
         "revenueActual": NaN,
-        "revenueEstimated": 13088690000,
+        "revenueEstimated": 13090440000,
         "symbol": "AMD"
     },
     {
