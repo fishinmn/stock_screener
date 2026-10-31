@@ -1,16 +1,16 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
 2026-10-30,ABBV,3.82,3.73,17404000000,17315740000,ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,521105244160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-30,XOM,4.23,4.12,113164000000,104889800000,XOM,ExxonMobil Holdings Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,769955528704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-30,CVX,5.28,4.87,67798000000,61817520000,CVX,Chevron Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,461996818432,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,AMZN,1.89,1.97,201944000000,202222400000,AMZN,"Amazon.com, Inc.",Consumer Cyclical,Internet Retail,internet-retail,2598423756800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,CARR,0.87,0.758,6263000000,6094383000,CARR,Carrier Global Corporation,Industrials,Building Products & Equipment,building-products-equipment,44544028672,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,COIN,2.51,-0.23045,1215582000,1215732000,COIN,"Coinbase Global, Inc.",Financial Services,Financial Data & Stock Exchanges,financial-data-stock-exchanges,37871149056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,INTC,0.52,0.4066,16513000000,16555180000,INTC,Intel Corporation,Technology,Semiconductors,semiconductors,349185605632,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,PINS,0.46,0.4863,1173929000,1205750000,PINS,"Pinterest, Inc.",Communication Services,Internet Content & Information,internet-content-information,10844646400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,RBLX,-0.32,-0.43352,1572000000,1629712000,RBLX,Roblox Corporation,Communication Services,Electronic Gaming & Multimedia,electronic-gaming-multimedia,30711023616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,RIVN,-0.48,-0.64376,2155000000,2001209000,RIVN,"Rivian Automotive, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,17605984256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,RKT,0.15,0.1354,2574000000,2580471000,RKT,"Rocket Companies, Inc.",Financial Services,Mortgage Finance,mortgage-finance,36245024768,0,0,0,0,100,0,0,0,0,0,0,0,0,0,2
-2026-10-29,SBUX,0.8,0.719,9141200000,9224400000,SBUX,Starbucks Corporation,Consumer Cyclical,Restaurants,restaurants,118183796736,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-30,XOM,4.23,4.12,113164000000,104889800000,XOM,ExxonMobil Holdings Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,763792785408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-30,CVX,5.28,4.87,67798000000,61817520000,CVX,Chevron Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,459499536384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,AMZN,1.89,1.97,201944000000,202222400000,AMZN,"Amazon.com, Inc.",Consumer Cyclical,Internet Retail,internet-retail,2598937821184,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,CARR,0.87,0.758,6263000000,6094383000,CARR,Carrier Global Corporation,Industrials,Building Products & Equipment,building-products-equipment,43877933056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,COIN,2.51,-0.23045,1215582000,1215732000,COIN,"Coinbase Global, Inc.",Financial Services,Financial Data & Stock Exchanges,financial-data-stock-exchanges,38004142080,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,INTC,0.52,0.4066,16513000000,16555180000,INTC,Intel Corporation,Technology,Semiconductors,semiconductors,349514399744,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,PINS,0.46,0.4863,1173929000,1205750000,PINS,"Pinterest, Inc.",Communication Services,Internet Content & Information,internet-content-information,11103112192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,RBLX,-0.32,-0.43352,1572000000,1629712000,RBLX,Roblox Corporation,Communication Services,Electronic Gaming & Multimedia,electronic-gaming-multimedia,30768517120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,RIVN,-0.48,-0.64376,2155000000,2001209000,RIVN,"Rivian Automotive, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,17748840448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,RKT,0.15,0.1354,2574000000,2580471000,RKT,"Rocket Companies, Inc.",Financial Services,Mortgage Finance,mortgage-finance,36325076992,0,0,0,0,100,0,0,0,0,0,0,0,0,0,2
+2026-10-29,SBUX,0.8,0.719,9141200000,9224400000,SBUX,Starbucks Corporation,Consumer Cyclical,Restaurants,restaurants,118194159616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-29,SIRI,0.78,0.773,2153000000,2155771000,SIRI,Sirius XM Holdings Inc.,Communication Services,Entertainment,entertainment,9761479680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-28,GOOGL,2.12,3.02,127577000000,127962300000,GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,3440352690176,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-28,MGM,-0.11,0.036,4211891000,4214433000,MGM,MGM Resorts International,Consumer Cyclical,Resorts & Casinos,resorts-casinos,7580195840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
@@ -19,7 +19,7 @@ date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longNam
 2026-10-28,F,0.49,0.4099,49526000000,49075310000,F,Ford Motor Company,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,48916914176,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-28,ETSY,1.0,0.764,692469000,669035600,ETSY,"Etsy, Inc.",Consumer Cyclical,Internet Retail,internet-retail,7668875776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-27,BA,-0.34,-0.25495,24188000000,23949690000,BA,The Boeing Company,Industrials,Aerospace & Defense,aerospace-defense,135944790016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-27,HCA,7.22,6.65,19849000000,19327650000,HCA,"HCA Healthcare, Inc.",Healthcare,Medical Care Facilities,medical-care-facilities,104972378112,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-27,HCA,7.22,6.65,19849000000,19327650000,HCA,"HCA Healthcare, Inc.",Healthcare,Medical Care Facilities,medical-care-facilities,98845843456,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-27,HOOD,0.6,0.558,1424000000,1438509000,HOOD,"Robinhood Markets, Inc.",Financial Services,Capital Markets,capital-markets,76532752384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-27,KO,0.91,0.881,13400000000,12919930000,KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,404722974720,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-27,PYPL,1.45,1.31,8584000000,8714801000,PYPL,"PayPal Holdings, Inc.",Financial Services,Credit Services,credit-services,47355830272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
