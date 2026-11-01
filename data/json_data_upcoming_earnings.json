@@ -102,5 +102,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 395673000,
         "symbol": "LCID"
+    },
+    {
+        "date": "2026-11-11",
+        "epsActual": NaN,
+        "epsEstimated": 1.32,
+        "revenueActual": NaN,
+        "revenueEstimated": 18113610000,
+        "symbol": "CSCO"
     }
 ]
