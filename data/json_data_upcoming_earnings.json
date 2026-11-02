@@ -4,15 +4,15 @@
         "epsActual": NaN,
         "epsEstimated": 1.99,
         "revenueActual": NaN,
-        "revenueEstimated": 113401200000,
+        "revenueEstimated": 113404200000,
         "symbol": "AAPL"
     },
     {
         "date": "2026-11-02",
-        "epsActual": NaN,
+        "epsActual": 0.44,
         "epsEstimated": 0.4061,
-        "revenueActual": NaN,
-        "revenueEstimated": 2177300000,
+        "revenueActual": 2313411000.0,
+        "revenueEstimated": 2177298000,
         "symbol": "PLTR"
     },
     {
@@ -28,7 +28,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.95,
         "revenueActual": NaN,
-        "revenueEstimated": 13090450000,
+        "revenueEstimated": 13097530000,
         "symbol": "AMD"
     },
     {
@@ -42,7 +42,7 @@
     {
         "date": "2026-11-03",
         "epsActual": NaN,
-        "epsEstimated": 0.729,
+        "epsEstimated": 0.735,
         "revenueActual": NaN,
         "revenueEstimated": 15851860000,
         "symbol": "PFE"
@@ -52,7 +52,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.4613,
         "revenueActual": NaN,
-        "revenueEstimated": 3700842000,
+        "revenueEstimated": 3700571000,
         "symbol": "SHOP"
     },
     {
