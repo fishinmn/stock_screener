@@ -10,7 +10,7 @@
     {
         "date": "2026-11-02",
         "epsActual": NaN,
-        "epsEstimated": 0.4072,
+        "epsEstimated": 0.4061,
         "revenueActual": NaN,
         "revenueEstimated": 2177300000,
         "symbol": "PLTR"
@@ -110,5 +110,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 18113610000,
         "symbol": "CSCO"
+    },
+    {
+        "date": "2026-11-12",
+        "epsActual": NaN,
+        "epsEstimated": 0.28,
+        "revenueActual": NaN,
+        "revenueEstimated": 1231326000,
+        "symbol": "BILI"
     }
 ]
