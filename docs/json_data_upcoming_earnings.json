@@ -1,29 +1,5 @@
 [
     {
-        "date": "2026-11-02",
-        "epsActual": NaN,
-        "epsEstimated": 1.99,
-        "revenueActual": NaN,
-        "revenueEstimated": 113404200000,
-        "symbol": "AAPL"
-    },
-    {
-        "date": "2026-11-02",
-        "epsActual": 0.44,
-        "epsEstimated": 0.4061,
-        "revenueActual": 2313411000.0,
-        "revenueEstimated": 2177298000,
-        "symbol": "PLTR"
-    },
-    {
-        "date": "2026-11-02",
-        "epsActual": NaN,
-        "epsEstimated": 0.53,
-        "revenueActual": NaN,
-        "revenueEstimated": 1410008000,
-        "symbol": "ROKU"
-    },
-    {
         "date": "2026-11-03",
         "epsActual": NaN,
         "epsEstimated": 1.95,
@@ -52,7 +28,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.4613,
         "revenueActual": NaN,
-        "revenueEstimated": 3700571000,
+        "revenueEstimated": 3700188000,
         "symbol": "SHOP"
     },
     {
@@ -60,7 +36,7 @@
         "epsActual": NaN,
         "epsEstimated": -0.33536,
         "revenueActual": NaN,
-        "revenueEstimated": 160389800,
+        "revenueEstimated": 160842400,
         "symbol": "RIOT"
     },
     {
@@ -76,7 +52,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.864,
         "revenueActual": NaN,
-        "revenueEstimated": 14672470000,
+        "revenueEstimated": 14660190000,
         "symbol": "UBER"
     },
     {
