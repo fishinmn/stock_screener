@@ -1,9 +1,9 @@
 [
     {
         "date": "2026-11-04",
-        "epsActual": NaN,
+        "epsActual": 0.01,
         "epsEstimated": -0.33536,
-        "revenueActual": NaN,
+        "revenueActual": 181400000.0,
         "revenueEstimated": 160842400,
         "symbol": "RIOT"
     },
@@ -17,9 +17,9 @@
     },
     {
         "date": "2026-11-04",
-        "epsActual": NaN,
+        "epsActual": 0.88,
         "epsEstimated": 0.864,
-        "revenueActual": NaN,
+        "revenueActual": 14766000000.0,
         "revenueEstimated": 14659410000,
         "symbol": "UBER"
     },
@@ -48,19 +48,19 @@
         "symbol": "LCID"
     },
     {
-        "date": "2026-11-11",
-        "epsActual": NaN,
-        "epsEstimated": 1.32,
-        "revenueActual": NaN,
-        "revenueEstimated": 18113610000,
-        "symbol": "CSCO"
-    },
-    {
         "date": "2026-11-12",
         "epsActual": NaN,
         "epsEstimated": 0.28,
         "revenueActual": NaN,
         "revenueEstimated": 1231326000,
         "symbol": "BILI"
+    },
+    {
+        "date": "2026-11-12",
+        "epsActual": NaN,
+        "epsEstimated": 1.32,
+        "revenueActual": NaN,
+        "revenueEstimated": 18106690000,
+        "symbol": "CSCO"
     }
 ]

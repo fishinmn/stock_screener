@@ -1,44 +1,44 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-11-04,RIOT,,-0.33536,,160842400,RIOT,"Riot Platforms, Inc.",Financial Services,Capital Markets,capital-markets,5261130752,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-04,UBER,,0.864,,14659410000,UBER,"Uber Technologies, Inc.",Technology,Software - Application,software-application,136034500608,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-04,SNAP,,0.00477,,1730665000,SNAP,Snap Inc.,Communication Services,Internet Content & Information,internet-content-information,9453795328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-03,AMD,2.09,1.95,13377000000.0,13097530000,AMD,"Advanced Micro Devices, Inc.",Technology,Semiconductors,semiconductors,789954625536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-03,ET,,0.3998,,30976150000,ET,Energy Transfer LP,Energy,Oil & Gas Midstream,oil-gas-midstream,69416919040,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-03,PFE,0.87,0.735,16583000000.0,15851860000,PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,170990206976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-03,SHOP,0.49,0.4613,3676975000.0,3700188000,SHOP,Shopify Inc.,Technology,Software - Application,software-application,183436836864,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-02,ROKU,1.2,0.53,1502022000.0,1410008000,ROKU,"Roku, Inc.",Communication Services,Entertainment,entertainment,23800467456,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-02,PLTR,0.44,0.4061,2313411000.0,2177298000,PLTR,Palantir Technologies Inc.,Technology,Software - Infrastructure,software-infrastructure,421496422400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-02,AAPL,2.05,1.99,114477000000.0,113404200000,AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,4843808227328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-30,ABBV,3.82,3.73,17404000000.0,17315740000,ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,505395544064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-30,CVX,5.28,4.87,67798000000.0,61817520000,CVX,Chevron Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,439501783040,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-30,XOM,4.23,4.12,113164000000.0,104889800000,XOM,ExxonMobil Holdings Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,723859406848,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,RBLX,-0.32,-0.43352,1572000000.0,1629712000,RBLX,Roblox Corporation,Communication Services,Electronic Gaming & Multimedia,electronic-gaming-multimedia,32529172480,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,SIRI,0.78,0.773,2153000000.0,2155771000,SIRI,Sirius XM Holdings Inc.,Communication Services,Entertainment,entertainment,10363790336,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,RKT,0.15,0.1354,2574000000.0,2580471000,RKT,"Rocket Companies, Inc.",Financial Services,Mortgage Finance,mortgage-finance,39191351296,0,0,0,0,100,0,0,0,0,0,0,0,0,0,2
-2026-10-29,RIVN,-0.48,-0.64376,2155000000.0,2001209000,RIVN,"Rivian Automotive, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,19398197248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,SBUX,0.8,0.719,9141200000.0,9224400000,SBUX,Starbucks Corporation,Consumer Cyclical,Restaurants,restaurants,119448272896,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,PINS,0.46,0.4863,1173929000.0,1205750000,PINS,"Pinterest, Inc.",Communication Services,Internet Content & Information,internet-content-information,11676619776,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,COIN,2.51,-0.23045,1215582000.0,1215732000,COIN,"Coinbase Global, Inc.",Financial Services,Financial Data & Stock Exchanges,financial-data-stock-exchanges,38509838336,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,CARR,0.87,0.758,6263000000.0,6094383000,CARR,Carrier Global Corporation,Industrials,Building Products & Equipment,building-products-equipment,45301530624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,AMZN,1.89,1.97,201944000000.0,202222400000,AMZN,"Amazon.com, Inc.",Consumer Cyclical,Internet Retail,internet-retail,2710745645056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-29,INTC,0.52,0.4066,16513000000.0,16555180000,INTC,Intel Corporation,Technology,Semiconductors,semiconductors,321823244288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-28,ETSY,1.0,0.764,692469000.0,669035600,ETSY,"Etsy, Inc.",Consumer Cyclical,Internet Retail,internet-retail,7746461184,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-28,F,0.49,0.4099,49526000000.0,49075310000,F,Ford Motor Company,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,49156509696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-28,FDX,3.74,3.34,22855000000.0,22731860000,FDX,FedEx Corporation,Industrials,Integrated Freight & Logistics,integrated-freight-logistics,74480074752,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-28,GOOGL,2.12,3.02,127577000000.0,127962300000,GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,3442688655360,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-28,MGM,-0.11,0.036,4211891000.0,4214433000,MGM,MGM Resorts International,Consumer Cyclical,Resorts & Casinos,resorts-casinos,7848387072,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-28,MSFT,4.89,4.72,92279000000.0,90616650000,MSFT,Microsoft Corporation,Technology,Software - Infrastructure,software-infrastructure,3868973072384,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-27,PYPL,1.45,1.31,8584000000.0,8714801000,PYPL,"PayPal Holdings, Inc.",Financial Services,Credit Services,credit-services,48352620544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-27,V,3.48,3.44,12139000000.0,12090620000,V,Visa Inc.,Financial Services,Credit Services,credit-services,785767530496,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-27,SOFI,0.18,0.1623,1371124000.0,1254829000,SOFI,"SoFi Technologies, Inc.",Financial Services,Credit Services,credit-services,21744273408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-27,HCA,7.22,6.65,19849000000.0,19327650000,HCA,"HCA Healthcare, Inc.",Healthcare,Medical Care Facilities,medical-care-facilities,96687980544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-27,KO,0.91,0.881,13400000000.0,12919930000,KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,407820369920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-27,HOOD,0.6,0.558,1424000000.0,1438509000,HOOD,"Robinhood Markets, Inc.",Financial Services,Capital Markets,capital-markets,77154091008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-27,BA,-0.34,-0.25495,24188000000.0,23949690000,BA,The Boeing Company,Industrials,Aerospace & Defense,aerospace-defense,137339494400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-26,VZ,1.31,1.27,34313000000.0,34768500000,VZ,Verizon Communications Inc.,Communication Services,Telecom Services,telecom-services,187501625344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-22,AAL,-0.28,-0.36101,16300000000.0,16212650000,AAL,American Airlines Group Inc.,Industrials,Airlines,airlines,8494768128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-22,LMT,7.97,7.52,20711000000.0,20476200000,LMT,Lockheed Martin Corporation,Industrials,Aerospace & Defense,aerospace-defense,147611959296,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-22,NOK,0.1,0.08,5771192000.0,5719976000,NOK,Nokia Oyj,Technology,Communication Equipment,communication-equipment,47476506624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-21,META,7.4,6.54,64601000000.0,63343010000,META,"Meta Platforms, Inc.",Communication Services,Internet Content & Information,internet-content-information,1587870040064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-21,T,0.65,0.602,32300000000.0,31689210000,T,AT&T Inc.,Communication Services,Telecom Services,telecom-services,144093167616,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-10-21,TSLA,0.48,0.455,28046000000.0,28056790000,TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1575163002880,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-04,RIOT,0.01,-0.33536,181400000.0,160842400,RIOT,"Riot Platforms, Inc.",Financial Services,Capital Markets,capital-markets,5915957248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-04,UBER,0.88,0.864,14766000000.0,14659410000,UBER,"Uber Technologies, Inc.",Technology,Software - Application,software-application,145695817728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-04,SNAP,,0.00477,,1730665000,SNAP,Snap Inc.,Communication Services,Internet Content & Information,internet-content-information,10028802048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-03,AMD,2.09,1.95,13377000000.0,13097530000,AMD,"Advanced Micro Devices, Inc.",Technology,Semiconductors,semiconductors,784649093120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-03,ET,,0.3998,,30976150000,ET,Energy Transfer LP,Energy,Oil & Gas Midstream,oil-gas-midstream,67221131264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-03,PFE,0.87,0.735,16583000000.0,15851860000,PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,174330019840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-03,SHOP,0.49,0.4613,3676975000.0,3700188000,SHOP,Shopify Inc.,Technology,Software - Application,software-application,195113926656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-02,ROKU,1.2,0.53,1502022000.0,1410008000,ROKU,"Roku, Inc.",Communication Services,Entertainment,entertainment,24254312448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-02,PLTR,0.44,0.4061,2313411000.0,2177298000,PLTR,Palantir Technologies Inc.,Technology,Software - Infrastructure,software-infrastructure,412457795584,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-02,AAPL,2.05,1.99,114477000000.0,113404200000,AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,5130659299328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-30,ABBV,3.82,3.73,17404000000.0,17315740000,ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,515786211328,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-30,CVX,5.28,4.87,67798000000.0,61817520000,CVX,Chevron Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,422196412416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-30,XOM,4.23,4.12,113164000000.0,104889800000,XOM,ExxonMobil Holdings Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,689592598528,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,RBLX,-0.32,-0.43352,1572000000.0,1629712000,RBLX,Roblox Corporation,Communication Services,Electronic Gaming & Multimedia,electronic-gaming-multimedia,34869911552,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,SIRI,0.78,0.773,2153000000.0,2155771000,SIRI,Sirius XM Holdings Inc.,Communication Services,Entertainment,entertainment,11250434048,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,RKT,0.15,0.1354,2574000000.0,2580471000,RKT,"Rocket Companies, Inc.",Financial Services,Mortgage Finance,mortgage-finance,42383986688,0,0,0,0,100,0,0,0,0,0,0,0,0,0,2
+2026-10-29,RIVN,-0.48,-0.64376,2155000000.0,2001209000,RIVN,"Rivian Automotive, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,20441819136,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,SBUX,0.8,0.719,9141200000.0,9224400000,SBUX,Starbucks Corporation,Consumer Cyclical,Restaurants,restaurants,123541233664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,PINS,0.46,0.4863,1173929000.0,1205750000,PINS,"Pinterest, Inc.",Communication Services,Internet Content & Information,internet-content-information,12192777216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,COIN,2.51,-0.23045,1215582000.0,1215732000,COIN,"Coinbase Global, Inc.",Financial Services,Financial Data & Stock Exchanges,financial-data-stock-exchanges,40233451520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,CARR,0.87,0.758,6263000000.0,6094383000,CARR,Carrier Global Corporation,Industrials,Building Products & Equipment,building-products-equipment,45825150976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,AMZN,1.89,1.97,201944000000.0,202222400000,AMZN,"Amazon.com, Inc.",Consumer Cyclical,Internet Retail,internet-retail,2904192450560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-29,INTC,0.52,0.4066,16513000000.0,16555180000,INTC,Intel Corporation,Technology,Semiconductors,semiconductors,308322598912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-28,ETSY,1.0,0.764,692469000.0,669035600,ETSY,"Etsy, Inc.",Consumer Cyclical,Internet Retail,internet-retail,8304213504,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-28,F,0.49,0.4099,49526000000.0,49075310000,F,Ford Motor Company,Consumer Cyclical,Auto Manufacturers,auto-manufacturers,50973421568,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-28,FDX,3.74,3.34,22855000000.0,22731860000,FDX,FedEx Corporation,Industrials,Integrated Freight & Logistics,integrated-freight-logistics,76501221376,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-28,GOOGL,2.12,3.02,127577000000.0,127962300000,GOOGL,Alphabet Inc.,Communication Services,Internet Content & Information,internet-content-information,3585729626112,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-28,MGM,-0.11,0.036,4211891000.0,4214433000,MGM,MGM Resorts International,Consumer Cyclical,Resorts & Casinos,resorts-casinos,8234227712,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-28,MSFT,4.89,4.72,92279000000.0,90616650000,MSFT,Microsoft Corporation,Technology,Software - Infrastructure,software-infrastructure,4126587748352,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-27,PYPL,1.45,1.31,8584000000.0,8714801000,PYPL,"PayPal Holdings, Inc.",Financial Services,Credit Services,credit-services,50246520832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-27,V,3.48,3.44,12139000000.0,12090620000,V,Visa Inc.,Financial Services,Credit Services,credit-services,811970199552,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-27,SOFI,0.18,0.1623,1371124000.0,1254829000,SOFI,"SoFi Technologies, Inc.",Financial Services,Credit Services,credit-services,22580592640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-27,HCA,7.22,6.65,19849000000.0,19327650000,HCA,"HCA Healthcare, Inc.",Healthcare,Medical Care Facilities,medical-care-facilities,106407747584,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-27,KO,0.91,0.881,13400000000.0,12919930000,KO,The Coca-Cola Company,Consumer Defensive,Beverages - Non-Alcoholic,beverages-non-alcoholic,413369794560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-27,HOOD,0.6,0.558,1424000000.0,1438509000,HOOD,"Robinhood Markets, Inc.",Financial Services,Capital Markets,capital-markets,78964080640,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-27,BA,-0.34,-0.25495,24188000000.0,23949690000,BA,The Boeing Company,Industrials,Aerospace & Defense,aerospace-defense,140651937792,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-26,VZ,1.31,1.27,34313000000.0,34768500000,VZ,Verizon Communications Inc.,Communication Services,Telecom Services,telecom-services,191169593344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-22,AAL,-0.28,-0.36101,16300000000.0,16212650000,AAL,American Airlines Group Inc.,Industrials,Airlines,airlines,9011676160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-22,LMT,7.97,7.52,20711000000.0,20476200000,LMT,Lockheed Martin Corporation,Industrials,Aerospace & Defense,aerospace-defense,137075843072,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-22,NOK,0.1,0.08,5771192000.0,5719976000,NOK,Nokia Oyj,Technology,Communication Equipment,communication-equipment,46132830208,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-21,META,7.4,6.54,64601000000.0,63343010000,META,"Meta Platforms, Inc.",Communication Services,Internet Content & Information,internet-content-information,1603492249600,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-21,T,0.65,0.602,32300000000.0,31689210000,T,AT&T Inc.,Communication Services,Telecom Services,telecom-services,146789777408,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-10-21,TSLA,0.48,0.455,28046000000.0,28056790000,TSLA,"Tesla, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1544667660288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
