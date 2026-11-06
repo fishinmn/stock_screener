@@ -1,9 +1,9 @@
 [
     {
         "date": "2026-11-06",
-        "epsActual": NaN,
+        "epsActual": 0.38,
         "epsEstimated": -1.1,
-        "revenueActual": NaN,
+        "revenueActual": 1313000000.0,
         "revenueEstimated": 890251500,
         "symbol": "MRNA"
     },
