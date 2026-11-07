@@ -1,13 +1,5 @@
 [
     {
-        "date": "2026-11-06",
-        "epsActual": 0.38,
-        "epsEstimated": -1.1,
-        "revenueActual": 1313000000.0,
-        "revenueEstimated": 890251500,
-        "symbol": "MRNA"
-    },
-    {
         "date": "2026-11-09",
         "epsActual": NaN,
         "epsEstimated": -2.27,
@@ -30,5 +22,29 @@
         "revenueActual": NaN,
         "revenueEstimated": 4602062000,
         "symbol": "BIDU"
+    },
+    {
+        "date": "2026-11-17",
+        "epsActual": NaN,
+        "epsEstimated": 1.69,
+        "revenueActual": NaN,
+        "revenueEstimated": 25190310000,
+        "symbol": "DIS"
+    },
+    {
+        "date": "2026-11-17",
+        "epsActual": NaN,
+        "epsEstimated": -0.41454,
+        "revenueActual": NaN,
+        "revenueEstimated": 1503079000,
+        "symbol": "FUBO"
+    },
+    {
+        "date": "2026-11-17",
+        "epsActual": NaN,
+        "epsEstimated": 2.47,
+        "revenueActual": NaN,
+        "revenueEstimated": 108801500000,
+        "symbol": "NVDA"
     }
 ]
