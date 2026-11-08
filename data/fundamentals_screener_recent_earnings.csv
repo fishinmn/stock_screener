@@ -1,7 +1,7 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
 2026-10-29,PINS,0.46,0.4863,1173929000.0,1205750000,PINS,"Pinterest, Inc.",Communication Services,Internet Content & Information,internet-content-information,10873708544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6
 2026-11-05,SONY,0.48,0.38,21645080000.0,20149630000,SONY,Sony Group Corporation,Technology,Consumer Electronics,consumer-electronics,157362847744,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-06,MRNA,0.38,-1.1,1313000000.0,890251500,MRNA,"Moderna, Inc.",Healthcare,Biotechnology,biotechnology,101481775104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-06,MRNA,0.38,-1.1,1313000000.0,890251500,MRNA,"Moderna, Inc.",Healthcare,Biotechnology,biotechnology,102850600960,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-04,SNAP,0.03,0.00477,1722471000.0,1730665000,SNAP,Snap Inc.,Communication Services,Internet Content & Information,internet-content-information,8563821056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-04,UBER,0.88,0.864,14766000000.0,14659410000,UBER,"Uber Technologies, Inc.",Technology,Software - Application,software-application,140053790720,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-03,AMD,2.09,1.95,13377000000.0,13097530000,AMD,"Advanced Micro Devices, Inc.",Technology,Semiconductors,semiconductors,736464797696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
