@@ -46,5 +46,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 108801500000,
         "symbol": "NVDA"
+    },
+    {
+        "date": "2026-11-18",
+        "epsActual": NaN,
+        "epsEstimated": 2.06,
+        "revenueActual": NaN,
+        "revenueEstimated": 26427290000,
+        "symbol": "TGT"
     }
 ]
