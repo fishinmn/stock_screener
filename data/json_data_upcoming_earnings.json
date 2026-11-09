@@ -1,9 +1,9 @@
 [
     {
         "date": "2026-11-09",
-        "epsActual": NaN,
+        "epsActual": -2.3,
         "epsEstimated": -2.27,
-        "revenueActual": NaN,
+        "revenueActual": 350319000.0,
         "revenueEstimated": 395673000,
         "symbol": "LCID"
     },
