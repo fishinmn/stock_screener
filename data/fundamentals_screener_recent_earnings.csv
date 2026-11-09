@@ -1,5 +1,6 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
 2026-10-29,PINS,0.46,0.4863,1173929000.0,1205750000,PINS,"Pinterest, Inc.",Communication Services,Internet Content & Information,internet-content-information,10873708544,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6
+2026-11-09,LCID,,-2.27,,395673000,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1296490880,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-05,SONY,0.48,0.38,21645080000.0,20149630000,SONY,Sony Group Corporation,Technology,Consumer Electronics,consumer-electronics,157362847744,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-06,MRNA,0.38,-1.1,1313000000.0,890251500,MRNA,"Moderna, Inc.",Healthcare,Biotechnology,biotechnology,102850600960,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-04,SNAP,0.03,0.00477,1722471000.0,1730665000,SNAP,Snap Inc.,Communication Services,Internet Content & Information,internet-content-information,8563821056,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
@@ -10,10 +11,10 @@ date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longNam
 2026-11-03,PFE,0.87,0.735,16583000000.0,15851860000,PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,167518699520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-02,ROKU,1.2,0.53,1502022000.0,1410008000,ROKU,"Roku, Inc.",Communication Services,Entertainment,entertainment,23933745152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-03,SHOP,0.49,0.4613,3676975000.0,3700188000,SHOP,Shopify Inc.,Technology,Software - Application,software-application,191575998464,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-02,PLTR,0.44,0.4061,2313411000.0,2177298000,PLTR,Palantir Technologies Inc.,Technology,Software - Infrastructure,software-infrastructure,386435252224,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-02,AAPL,2.05,1.99,114477000000.0,113404200000,AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,4975383019520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-30,ABBV,3.82,3.73,17404000000.0,17315740000,ABBV,AbbVie Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,514924281856,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-30,CVX,5.28,4.87,67798000000.0,61817520000,CVX,Chevron Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,414856019968,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-02,AAPL,2.05,1.99,114477000000.0,113404200000,AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,4975383019520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-02,PLTR,0.44,0.4061,2313411000.0,2177298000,PLTR,Palantir Technologies Inc.,Technology,Software - Infrastructure,software-infrastructure,386435252224,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-30,XOM,4.23,4.12,113164000000.0,104889800000,XOM,ExxonMobil Holdings Corporation,Energy,Oil & Gas Integrated,oil-gas-integrated,676620599296,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-29,RBLX,-0.32,-0.43352,1572000000.0,1629712000,RBLX,Roblox Corporation,Communication Services,Electronic Gaming & Multimedia,electronic-gaming-multimedia,35284668416,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-10-29,SBUX,0.8,0.719,9141200000.0,9224400000,SBUX,Starbucks Corporation,Consumer Cyclical,Restaurants,restaurants,120177942528,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
