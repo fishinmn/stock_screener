@@ -42,7 +42,7 @@
     {
         "date": "2026-11-18",
         "epsActual": NaN,
-        "epsEstimated": 2.06,
+        "epsEstimated": 2.07,
         "revenueActual": NaN,
         "revenueEstimated": 26435400000,
         "symbol": "TGT"
@@ -50,7 +50,7 @@
     {
         "date": "2026-11-19",
         "epsActual": NaN,
-        "epsEstimated": 1.61,
+        "epsEstimated": 1.62,
         "revenueActual": NaN,
         "revenueEstimated": 40253530000,
         "symbol": "BABA"
