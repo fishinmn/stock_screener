@@ -12,13 +12,13 @@
         "epsActual": NaN,
         "epsEstimated": 0.91,
         "revenueActual": NaN,
-        "revenueEstimated": 4604255000,
+        "revenueEstimated": 4603349000,
         "symbol": "BIDU"
     },
     {
         "date": "2026-11-17",
         "epsActual": NaN,
-        "epsEstimated": 1.69,
+        "epsEstimated": 1.68,
         "revenueActual": NaN,
         "revenueEstimated": 25190310000,
         "symbol": "DIS"
@@ -52,7 +52,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.62,
         "revenueActual": NaN,
-        "revenueEstimated": 40253530000,
+        "revenueEstimated": 40225820000,
         "symbol": "BABA"
     },
     {
