@@ -2,9 +2,9 @@
     {
         "date": "2026-11-16",
         "epsActual": NaN,
-        "epsEstimated": 0.91,
+        "epsEstimated": 0.85,
         "revenueActual": NaN,
-        "revenueEstimated": 4603349000,
+        "revenueEstimated": 4603695000,
         "symbol": "BIDU"
     },
     {
@@ -12,7 +12,7 @@
         "epsActual": NaN,
         "epsEstimated": 1.68,
         "revenueActual": NaN,
-        "revenueEstimated": 25190310000,
+        "revenueEstimated": 25161140000,
         "symbol": "DIS"
     },
     {
@@ -20,7 +20,7 @@
         "epsActual": NaN,
         "epsEstimated": -0.41454,
         "revenueActual": NaN,
-        "revenueEstimated": 1503079000,
+        "revenueEstimated": 1500279000,
         "symbol": "FUBO"
     },
     {
@@ -28,7 +28,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.47,
         "revenueActual": NaN,
-        "revenueEstimated": 108838800000,
+        "revenueEstimated": 108721700000,
         "symbol": "NVDA"
     },
     {
@@ -52,7 +52,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.637,
         "revenueActual": NaN,
-        "revenueEstimated": 187271200000,
+        "revenueEstimated": 187285900000,
         "symbol": "WMT"
     },
     {
