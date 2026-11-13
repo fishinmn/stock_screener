@@ -1,13 +1,5 @@
 [
     {
-        "date": "2026-11-12",
-        "epsActual": NaN,
-        "epsEstimated": 1.33,
-        "revenueActual": NaN,
-        "revenueEstimated": 18122840000,
-        "symbol": "CSCO"
-    },
-    {
         "date": "2026-11-16",
         "epsActual": NaN,
         "epsEstimated": 0.91,
@@ -44,7 +36,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.07,
         "revenueActual": NaN,
-        "revenueEstimated": 26460320000,
+        "revenueEstimated": 26485970000,
         "symbol": "TGT"
     },
     {
@@ -60,7 +52,15 @@
         "epsActual": NaN,
         "epsEstimated": 0.637,
         "revenueActual": NaN,
-        "revenueEstimated": 187271300000,
+        "revenueEstimated": 187271200000,
         "symbol": "WMT"
+    },
+    {
+        "date": "2026-11-23",
+        "epsActual": NaN,
+        "epsEstimated": 1.49,
+        "revenueActual": NaN,
+        "revenueEstimated": 1279012000,
+        "symbol": "ZM"
     }
 ]
