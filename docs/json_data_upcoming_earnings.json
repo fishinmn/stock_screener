@@ -36,13 +36,13 @@
         "epsActual": NaN,
         "epsEstimated": 2.07,
         "revenueActual": NaN,
-        "revenueEstimated": 26485970000,
+        "revenueEstimated": 26484930000,
         "symbol": "TGT"
     },
     {
         "date": "2026-11-19",
         "epsActual": NaN,
-        "epsEstimated": 1.62,
+        "epsEstimated": 1.65,
         "revenueActual": NaN,
         "revenueEstimated": 40225820000,
         "symbol": "BABA"
@@ -62,5 +62,21 @@
         "revenueActual": NaN,
         "revenueEstimated": 1279012000,
         "symbol": "ZM"
+    },
+    {
+        "date": "2026-11-24",
+        "epsActual": NaN,
+        "epsEstimated": 0.27,
+        "revenueActual": NaN,
+        "revenueEstimated": 1228424000,
+        "symbol": "BILI"
+    },
+    {
+        "date": "2026-11-24",
+        "epsActual": NaN,
+        "epsEstimated": -0.03,
+        "revenueActual": NaN,
+        "revenueEstimated": 4938586000,
+        "symbol": "NIO"
     }
 ]
