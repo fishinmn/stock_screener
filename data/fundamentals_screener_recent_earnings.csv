@@ -1,16 +1,16 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-11-16,BIDU,,0.85,,4603695000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,26600697856,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-12,CSCO,1.4,1.33,18500000000.0,18122840000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,376532795392,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-09,LCID,-2.3,-2.27,350319000.0,395673000,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1170927104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-06,MRNA,0.38,-1.1,1313000000.0,890251500,MRNA,"Moderna, Inc.",Healthcare,Biotechnology,biotechnology,90380181504,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-05,SONY,0.48,0.38,21670380000.0,20149630000,SONY,Sony Group Corporation,Technology,Consumer Electronics,consumer-electronics,157770825728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-04,RIOT,0.01,-0.33555,181400000.0,160822200,RIOT,"Riot Platforms, Inc.",Financial Services,Capital Markets,capital-markets,6573223424,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-04,SNAP,0.03,0.00477,1722471000.0,1730665000,SNAP,Snap Inc.,Communication Services,Internet Content & Information,internet-content-information,9081794560,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-04,UBER,0.88,0.864,14766000000.0,14659410000,UBER,"Uber Technologies, Inc.",Technology,Software - Application,software-application,142299889664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-03,AMD,2.09,1.95,13377000000.0,13099620000,AMD,"Advanced Micro Devices, Inc.",Technology,Semiconductors,semiconductors,875905024000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-03,ET,,0.3998,,30976150000,ET,Energy Transfer LP,Energy,Oil & Gas Midstream,oil-gas-midstream,66818490368,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-03,PFE,0.87,0.735,16583000000.0,15851860000,PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,164668768256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-03,SHOP,0.49,0.4613,3676975000.0,3700188000,SHOP,Shopify Inc.,Technology,Software - Application,software-application,189234511872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-02,AAPL,2.05,1.99,114477000000.0,113404200000,AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,5177380175872,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-02,PLTR,0.44,0.4061,2313411000.0,2177298000,PLTR,Palantir Technologies Inc.,Technology,Software - Infrastructure,software-infrastructure,404771504128,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-16,BIDU,1.01,0.85,4588087000.0,4603695000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,25170921472,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-12,CSCO,1.4,1.33,18500000000.0,18122840000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,372123369472,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-09,LCID,-2.3,-2.27,350319000.0,395673000,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1109507968,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-06,MRNA,0.38,-1.1,1313000000.0,890251500,MRNA,"Moderna, Inc.",Healthcare,Biotechnology,biotechnology,87102758912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-05,SONY,0.48,0.38,21670380000.0,20149630000,SONY,Sony Group Corporation,Technology,Consumer Electronics,consumer-electronics,157595992064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-04,RIOT,0.01,-0.33555,181400000.0,160822200,RIOT,"Riot Platforms, Inc.",Financial Services,Capital Markets,capital-markets,6400638464,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-04,SNAP,0.03,0.00477,1722471000.0,1730665000,SNAP,Snap Inc.,Communication Services,Internet Content & Information,internet-content-information,8788276224,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-04,UBER,0.88,0.864,14766000000.0,14659410000,UBER,"Uber Technologies, Inc.",Technology,Software - Application,software-application,142912438272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-03,AMD,2.09,1.95,13377000000.0,13099620000,AMD,"Advanced Micro Devices, Inc.",Technology,Semiconductors,semiconductors,827063205888,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-03,ET,,0.3998,,30976150000,ET,Energy Transfer LP,Energy,Oil & Gas Midstream,oil-gas-midstream,65922985984,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-03,PFE,0.87,0.735,16583000000.0,15851860000,PFE,Pfizer Inc.,Healthcare,Drug Manufacturers - General,drug-manufacturers-general,164497784832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-03,SHOP,0.49,0.4613,3676975000.0,3700188000,SHOP,Shopify Inc.,Technology,Software - Application,software-application,190160814080,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-02,AAPL,2.05,1.99,114477000000.0,113404200000,AAPL,Apple Inc.,Technology,Consumer Electronics,consumer-electronics,5126663176192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-02,PLTR,0.44,0.4061,2313411000.0,2177298000,PLTR,Palantir Technologies Inc.,Technology,Software - Infrastructure,software-infrastructure,386459303936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-02,ROKU,1.2,0.53,1502022000.0,1410008000,ROKU,"Roku, Inc.",Communication Services,Entertainment,entertainment,23933745152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
