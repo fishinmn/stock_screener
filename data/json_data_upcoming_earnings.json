@@ -1,26 +1,18 @@
 [
     {
-        "date": "2026-11-16",
-        "epsActual": 1.01,
-        "epsEstimated": 0.85,
-        "revenueActual": 4588087000.0,
-        "revenueEstimated": 4603695000,
-        "symbol": "BIDU"
-    },
-    {
         "date": "2026-11-17",
         "epsActual": NaN,
-        "epsEstimated": 1.67,
+        "epsEstimated": 1.69,
         "revenueActual": NaN,
-        "revenueEstimated": 25188880000,
+        "revenueEstimated": 25196580000,
         "symbol": "DIS"
     },
     {
         "date": "2026-11-17",
         "epsActual": NaN,
-        "epsEstimated": -0.41454,
+        "epsEstimated": -0.37515,
         "revenueActual": NaN,
-        "revenueEstimated": 1500279000,
+        "revenueEstimated": 1507504000,
         "symbol": "FUBO"
     },
     {
@@ -28,7 +20,7 @@
         "epsActual": NaN,
         "epsEstimated": 2.48,
         "revenueActual": NaN,
-        "revenueEstimated": 108932700000,
+        "revenueEstimated": 108962000000,
         "symbol": "NVDA"
     },
     {
@@ -68,7 +60,7 @@
         "epsActual": NaN,
         "epsEstimated": 0.27,
         "revenueActual": NaN,
-        "revenueEstimated": 1228424000,
+        "revenueEstimated": 1227211000,
         "symbol": "BILI"
     },
     {
