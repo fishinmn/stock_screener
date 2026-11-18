@@ -1,29 +1,5 @@
 [
     {
-        "date": "2026-11-17",
-        "epsActual": NaN,
-        "epsEstimated": 2.48,
-        "revenueActual": NaN,
-        "revenueEstimated": 108966100000,
-        "symbol": "NVDA"
-    },
-    {
-        "date": "2026-11-17",
-        "epsActual": 1.77,
-        "epsEstimated": 1.67,
-        "revenueActual": 25947000000.0,
-        "revenueEstimated": 25158990000,
-        "symbol": "DIS"
-    },
-    {
-        "date": "2026-11-17",
-        "epsActual": -0.44,
-        "epsEstimated": -0.41454,
-        "revenueActual": 1503109000.0,
-        "revenueEstimated": 1500279000,
-        "symbol": "FUBO"
-    },
-    {
         "date": "2026-11-18",
         "epsActual": NaN,
         "epsEstimated": 2.08,
@@ -34,7 +10,7 @@
     {
         "date": "2026-11-19",
         "epsActual": NaN,
-        "epsEstimated": 1.65,
+        "epsEstimated": 1.62,
         "revenueActual": NaN,
         "revenueEstimated": 40225820000,
         "symbol": "BABA"
