@@ -1,12 +1,11 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-11-19,WMT,0.65,0.638,188835000000,187378800000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,1003115905024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-19,BABA,1.21,1.71,40437320000,40224840000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,209536303104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-18,TGT,2.65,2.09,27067000000,26532790000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,75679023104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-17,DIS,1.77,1.67,25947000000,25158990000,DIS,The Walt Disney Company,Communication Services,Entertainment,entertainment,205732167680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-17,FUBO,-0.44,-0.41454,1503109000,1500279000,FUBO,FuboTV Inc.,Communication Services,Broadcasting,broadcasting,188837104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-17,NVDA,2.68,2.49,115844000000,109280400000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,3558301761536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-16,BIDU,1.01,0.85,4588087000,4603695000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,22734385152,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-12,CSCO,1.4,1.33,18500000000,18122840000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,374493151232,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-09,LCID,-2.3,-2.27,350319000,395673000,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1143189376,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-06,MRNA,0.38,-1.1,1313000000,890251500,MRNA,"Moderna, Inc.",Healthcare,Biotechnology,biotechnology,81421877248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-05,SONY,0.48,0.38,21670380000,20149630000,SONY,Sony Group Corporation,Technology,Consumer Electronics,consumer-electronics,159082184704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-19,WMT,0.65,0.638,188835000000,187378800000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,999969390592,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-19,BABA,1.21,1.71,40437320000,40224840000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,207254028288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-18,TGT,2.65,2.09,27067000000,26532790000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,76075646976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-17,DIS,1.77,1.67,25947000000,25158990000,DIS,The Walt Disney Company,Communication Services,Entertainment,entertainment,205390577664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-17,FUBO,-0.44,-0.41454,1503109000,1500279000,FUBO,FuboTV Inc.,Communication Services,Broadcasting,broadcasting,189743520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-17,NVDA,2.68,2.49,115844000000,109280400000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,3524978802688,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-16,BIDU,1.01,0.85,4588087000,4603695000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,22604978176,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-12,CSCO,1.4,1.33,18500000000,18122840000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,373349810176,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-09,LCID,-2.3,-2.27,350319000,395673000,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1105545344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-06,MRNA,0.38,-1.1,1313000000,890251500,MRNA,"Moderna, Inc.",Healthcare,Biotechnology,biotechnology,80653099008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
