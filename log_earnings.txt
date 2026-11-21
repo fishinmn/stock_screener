@@ -1,25 +1,6 @@
 
 C:\Windows\System32>"C:\Users\fish_\AppData\Local\Programs\Python\Python310\python" "C:\git\stock_screener\run_all_recent_earnings.py" 
-https://financialmodelingprep.com/stable/earnings-calendar
-{'from': '2026-10-23', 'to': '2026-11-06', 'apikey': '2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz'}
-
---- Successfully Retrieved 39 Earnings Reports ---
-      date symbol  epsActual  epsEstimated  revenueActual  revenueEstimated
-2026-11-06   MRNA       0.38      -1.10000   1.313000e+09         890251500
-2026-11-05   SONY       0.48       0.38000   2.164508e+10       20149630000
-2026-11-04   RIOT       0.01      -0.33555   1.814000e+08         160822200
-2026-11-04   SNAP       0.03       0.00477   1.722471e+09        1730665000
-2026-11-04   UBER       0.88       0.86400   1.476600e+10       14659410000
-2026-11-03    AMD       2.09       1.95000   1.337700e+10       13097530000
-2026-11-03     ET        NaN       0.39980            NaN       30976150000
-2026-11-03    PFE       0.87       0.73500   1.658300e+10       15851860000
-2026-11-03   SHOP       0.49       0.46130   3.676975e+09        3700188000
-2026-11-02   ROKU       1.20       0.53000   1.502022e+09        1410008000
-2026-11-02   AAPL       2.05       1.99000   1.144770e+11      113404200000
-2026-11-02   PLTR       0.44       0.40610   2.313411e+09        2177298000
-2026-10-30   ABBV       3.82       3.73000   1.740400e+10       17315740000
-2026-10-30    CVX       5.28       4.87000   6.779800e+10       61817520000
-2026-10-30    XOM       4.23       4.12000   1.131640e+11      104889800000
+An error occurred while connecting to FMP: HTTPSConnectionPool(host='financialmodelingprep.com', port=443): Max retries exceeded with url: /stable/earnings-calendar?from=2026-11-06&to=2026-11-20&apikey=2CUeBOw7kDsQZtdWUtKmzyXum1hqMyJz (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000001CD039AD030>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
 
 ============================================================
 Running: get_earnings.py
