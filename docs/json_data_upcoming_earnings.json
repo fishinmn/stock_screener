@@ -14,5 +14,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 1226094000,
         "symbol": "BILI"
+    },
+    {
+        "date": "2026-12-01",
+        "epsActual": NaN,
+        "epsEstimated": -0.03,
+        "revenueActual": NaN,
+        "revenueEstimated": 4938586000,
+        "symbol": "NIO"
     }
 ]
