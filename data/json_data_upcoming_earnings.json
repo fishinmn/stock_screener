@@ -1,34 +1,26 @@
 [
     {
-        "date": "2026-11-05",
-        "epsActual": 0.48,
-        "epsEstimated": 0.38,
-        "revenueActual": 21645080000.0,
-        "revenueEstimated": 20149630000,
-        "symbol": "SONY"
+        "date": "2026-11-23",
+        "epsActual": NaN,
+        "epsEstimated": 1.49,
+        "revenueActual": NaN,
+        "revenueEstimated": 1279019000,
+        "symbol": "ZM"
     },
     {
-        "date": "2026-11-06",
+        "date": "2026-11-24",
         "epsActual": NaN,
-        "epsEstimated": -1.1,
+        "epsEstimated": 0.27,
         "revenueActual": NaN,
-        "revenueEstimated": 890251500,
-        "symbol": "MRNA"
+        "revenueEstimated": 1226094000,
+        "symbol": "BILI"
     },
     {
-        "date": "2026-11-09",
+        "date": "2026-12-01",
         "epsActual": NaN,
-        "epsEstimated": -2.27,
+        "epsEstimated": -0.03,
         "revenueActual": NaN,
-        "revenueEstimated": 395673000,
-        "symbol": "LCID"
-    },
-    {
-        "date": "2026-11-12",
-        "epsActual": NaN,
-        "epsEstimated": 1.32,
-        "revenueActual": NaN,
-        "revenueEstimated": 18106690000,
-        "symbol": "CSCO"
+        "revenueEstimated": 4938586000,
+        "symbol": "NIO"
     }
 ]
