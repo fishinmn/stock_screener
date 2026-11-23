@@ -22,5 +22,13 @@
         "revenueActual": NaN,
         "revenueEstimated": 4938586000,
         "symbol": "NIO"
+    },
+    {
+        "date": "2026-12-03",
+        "epsActual": NaN,
+        "epsEstimated": 1.18,
+        "revenueActual": NaN,
+        "revenueEstimated": 889021900,
+        "symbol": "DOCU"
     }
 ]
