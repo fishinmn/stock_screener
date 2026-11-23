@@ -1,11 +1,11 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-11-23,ZM,,1.49,,1279019000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,23710345216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-19,WMT,0.65,0.638,188835000000.0,187378800000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,1018236174336,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-19,BABA,1.21,1.71,40437320000.0,40224840000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,201706373120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-18,TGT,2.65,2.09,27067000000.0,26532790000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,75076984832,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-17,DIS,1.77,1.67,25947000000.0,25158990000,DIS,The Walt Disney Company,Communication Services,Entertainment,entertainment,201513353216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-17,FUBO,-0.44,-0.41454,1503109000.0,1500279000,FUBO,FuboTV Inc.,Communication Services,Broadcasting,broadcasting,167307536,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-17,NVDA,2.68,2.49,115844000000.0,109280400000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,3031172907008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-16,BIDU,1.01,0.85,4588087000.0,4602874000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,21067134976,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-12,CSCO,1.4,1.33,18500000000.0,18122840000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,357343494144,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-09,LCID,-2.3,-2.27,350319000.0,395673000,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,990632064,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-23,ZM,1.59,1.49,1290638000,1279019000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,25102151680,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-19,WMT,0.65,0.638,188835000000,187378800000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,1031207911424,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-19,BABA,1.21,1.71,40437320000,40224840000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,214045589504,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-18,TGT,2.65,2.09,27067000000,26532790000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,76145434624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-17,DIS,1.77,1.67,25947000000,25158990000,DIS,The Walt Disney Company,Communication Services,Entertainment,entertainment,205424721920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-17,FUBO,-0.44,-0.41454,1503109000,1500279000,FUBO,FuboTV Inc.,Communication Services,Broadcasting,broadcasting,166702448,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-17,NVDA,2.68,2.49,115844000000,109280400000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,3985462263808,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-16,BIDU,1.01,0.85,4588087000,4602874000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,22234507264,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-12,CSCO,1.4,1.33,18500000000,18122840000,CSCO,"Cisco Systems, Inc.",Technology,Communication Equipment,communication-equipment,381629005824,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-09,LCID,-2.3,-2.27,350319000,395673000,LCID,"Lucid Group, Inc.",Consumer Cyclical,Auto Manufacturers,auto-manufacturers,1034219840,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
