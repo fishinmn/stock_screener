@@ -1,13 +1,5 @@
 [
     {
-        "date": "2026-11-23",
-        "epsActual": 1.59,
-        "epsEstimated": 1.49,
-        "revenueActual": 1290638000.0,
-        "revenueEstimated": 1279019000,
-        "symbol": "ZM"
-    },
-    {
         "date": "2026-11-24",
         "epsActual": NaN,
         "epsEstimated": 0.27,
