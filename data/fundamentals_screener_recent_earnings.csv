@@ -1,10 +1,10 @@
 date,symbol,epsActual,epsEstimated,revenueActual,revenueEstimated,Symbol,longName,sector,industry,industryKey,marketCap,priceToSalesTrailing12Months,currentRatio,quickRatio,revenueGrowth,grossMargins,trailingPE,forwardPE,PS_adj,pegRatio,dividendYield,earningsGrowth,profitMargins,shortPercentOfFloat,pegRatio,score
-2026-11-18,TGT,2.65,2.09,27067000000,26532790000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,77942792192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10
 2026-11-24,BILI,0.28,0.27,1238720000,1226094000,BILI,Bilibili Inc.,Communication Services,Internet Content & Information,internet-content-information,4569156096,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-23,ZM,1.59,1.49,1290638000,1279019000,ZM,"Zoom Communications, Inc.",Technology,Software - Application,software-application,25840365568,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-19,WMT,0.65,0.638,188835000000,187378800000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,1046778478592,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-19,BABA,1.21,1.71,40437320000,40224840000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,214555574272,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
-2026-11-17,DIS,1.77,1.67,25947000000,25158990000,DIS,The Walt Disney Company,Communication Services,Entertainment,entertainment,214545612800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-19,WMT,0.65,0.638,188835000000,187378800000,WMT,Walmart Inc.,Consumer Defensive,Discount Stores,discount-stores,1049988956160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-19,BABA,1.21,1.62,40437320000,40224840000,BABA,Alibaba Group Holding Limited,Consumer Cyclical,Internet Retail,internet-retail,214592897024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-18,TGT,2.65,2.09,27067000000,26532790000,TGT,Target Corporation,Consumer Defensive,Discount Stores,discount-stores,77969956864,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
+2026-11-17,DIS,1.77,1.67,25947000000,25158990000,DIS,The Walt Disney Company,Communication Services,Entertainment,entertainment,214528524288,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-17,FUBO,-0.44,-0.41454,1503109000,1500279000,FUBO,FuboTV Inc.,Communication Services,Broadcasting,broadcasting,161256624,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-17,NVDA,2.68,2.49,115844000000,109280400000,NVDA,NVIDIA Corporation,Technology,Semiconductors,semiconductors,3605147156480,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
 2026-11-16,BIDU,1.01,0.85,4588087000,4602874000,BIDU,"Baidu, Inc.",Communication Services,Internet Content & Information,internet-content-information,21592526848,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2
